@@ -1,6 +1,6 @@
 # Coffee 4 Craig Wesbite
 
-**Note:** This site is based off the Gatsby + Netlify CMS Starter
+**Note:** This site is based off the [Gatsby + Netlify CMS Starter](https://github.com/netlify-templates/gatsby-starter-netlify-cms)
 
 ## Prerequisites
 
