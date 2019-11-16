@@ -18,7 +18,7 @@ export const IndexPageTemplate = ({
   intro,
 }) => (
   <div>
-    <Hero />
+    <Hero title={title} />
     <Accreditation />
     <Feature />
     <Card />
