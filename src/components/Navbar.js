@@ -24,7 +24,7 @@ class Navbar extends React.Component {
   }
 
   handleScroll = () => {
-    if (window.scrollY > 80) {
+    if (window.scrollY > 5) {
       this.setState({
         navbarBackground: '#ffffff',
       })
