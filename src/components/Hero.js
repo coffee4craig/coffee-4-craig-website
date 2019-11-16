@@ -1,10 +1,10 @@
 import React from 'react';
 
-const Hero = () => (
+const Hero = ({ title }) => (
   <div className="hero">
     <div className="hero__wrapper">
       <div className="hero__col">
-        <h1 className="hero__title">Make a massive difference today</h1>
+        <h1 className="hero__title">{title}</h1>
         <p className="hero__subtitle">Here in Manchester, we have had a dramatic increase in numbers, the likes that have never been seen before and it is increasing every day.</p>
       </div>
       <div className="hero__col">
