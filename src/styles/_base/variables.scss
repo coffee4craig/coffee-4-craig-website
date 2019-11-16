@@ -1,13 +1,15 @@
-$primary-color-a: #f3cdc2; // tea rose
-$primary-color-b: #28262c; // charleston green
-$primary-color-c: #ffecec; // seashell
-$primary-color-d: #e9676c; // light carmine pink
-$primary-color-e: #fff9f9; // snow
+$primary-color-a: #FA887A;
+$primary-color-b: #2DB88E;
+$primary-color-c: #f4efe4;
+$primary-color-d: #e9676c;
+$primary-color-e: #fff9f9;
 
-$font-family-sans-serif: "Metropolis", "Arial", "sans-serif";
-$font-family-serif: "Merriweather", "Georgia", "serif";
+$secondary-color-a: #303E48;
+$secondary-color-b: #FFFFFF;
 
-$body-text-color: $primary-color-b;
+$font-family-sans-serif: "Lato", "Arial", "sans-serif";
+
+$body-text-color: $secondary-color-a;
 $body-text-size: 16px;
 $body-text-font-family: $font-family-sans-serif;
 
@@ -19,7 +21,11 @@ $link-text-decoration: underline;
 $link-hover-color: $primary-color-b;
 
 $grid-max-width: 1200px;
-$grid-gutter-small: 8px;
-$grid-gutter-large: 12px;
+$grid-gutter-small: 12px;
+$grid-gutter-large: 15px;
 
-$btn-border-radius: 3px;
+$btn-border-radius: 5px;
+
+$bp-a: 600px;
+$bp-b: 960px;
+$bp-c: 1280px;

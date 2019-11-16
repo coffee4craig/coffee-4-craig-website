@@ -47,3 +47,21 @@
     outline: none;
   }
 }
+
+@mixin list-unstyled {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  li {
+    padding-left: 0;
+
+    &:before {
+      content: none;
+    }
+  }
+
+  ul {
+    padding-left: 0;
+  }
+}
