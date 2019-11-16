@@ -4,17 +4,29 @@
   cursor: pointer;
   border-radius: $btn-border-radius;
   transition: background-color 0.5s ease;
-  background: lightsalmon;
-  padding: 10px;
+  padding: 12px 16px;
 
   &:hover {
     transition: background-color 0.5s ease;
-    background: darken(lightsalmon, 10%);
   }
 }
 
-.btn--style-a {}
+.btn--style-a {
+  background: $primary-color-a;
+  color: $secondary-color-b;
 
-.btn--style-b {}
+  &:hover {
+    background: darken($primary-color-a, 10%);
+  }
+}
+
+.btn--style-b {
+  background: $primary-color-b;
+  color: $secondary-color-b;
+
+  &:hover {
+    background: darken($primary-color-b, 10%);
+  }
+}
 
 .btn--style-c {}
