@@ -1,3 +1,17 @@
 .hero {
-  background: lightgoldenrodyellow;
+  background: $primary-color-c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 660px;
+}
+
+.hero__wrapper {
+  @include gridWidth;
+
+  width: 100%;
+}
+
+.hero__col {
+  @include col(6, 12);
 }

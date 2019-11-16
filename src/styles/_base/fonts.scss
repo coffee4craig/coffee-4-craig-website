@@ -1,74 +1,15 @@
 @font-face {
-  font-family: "Metropolis";
-  src: url("/fonts/Metropolis-Regular/Metropolis-Regular.eot"); /* IE9 Compat Modes */
-  src: url("/fonts/Metropolis-Regular/Metropolis-Regular.eot?#iefix")
-      format("embedded-opentype"),
-    /* IE6-IE8 */ url("/fonts/Metropolis-Regular/Metropolis-Regular.woff2")
-      format("woff2"),
-    /* Super Modern Browsers */
-      url("/fonts/Metropolis-Regular/Metropolis-Regular.woff") format("woff"),
-    /* Pretty Modern Browsers */
-      url("/fonts/Metropolis-Regular/Metropolis-Regular.ttf") format("truetype"),
-    /* Safari, Android, iOS */
-      url("/fonts/Metropolis-Regular/Metropolis-Regular.svg#svgFontName")
-      format("svg"); /* Legacy iOS */
+  font-family: "Lato";
+  src: url("/fonts/Lato-Regular.eot"); /* IE9 Compat Modes */
+  src: url("/fonts/Lato-Regular.eot?#iefix") format("embedded-opentype"), url("/fonts/Lato-Regular.woff2") format("woff2"), url("/fonts/Lato-Regular.woff") format("woff"), url("/fonts/Lato-Regular.ttf") format("truetype"), url("/fonts/Lato-Regular.svg#svgFontName") format("svg"); /* Legacy iOS */
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "Metropolis";
-  src: url("/fonts/Metropolis-SemiBold/Metropolis-SemiBold.eot"); /* IE9 Compat Modes */
-  src: url("/fonts/Metropolis-SemiBold/Metropolis-SemiBold.eot?#iefix")
-      format("embedded-opentype"),
-    /* IE6-IE8 */ url("/fonts/Metropolis-SemiBold/Metropolis-SemiBold.woff2")
-      format("woff2"),
-    /* Super Modern Browsers */
-      url("/fonts/Metropolis-SemiBold/Metropolis-SemiBold.woff") format("woff"),
-    /* Pretty Modern Browsers */
-      url("/fonts/Metropolis-SemiBold/Metropolis-SemiBold.ttf")
-      format("truetype"),
-    /* Safari, Android, iOS */
-      url("/fonts/Metropolis-SemiBold/Metropolis-SemiBold.svg#svgFontName")
-      format("svg"); /* Legacy iOS */
-  font-weight: 600;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Metropolis";
-  src: url("/fonts/Metropolis-Bold/Metropolis-Bold.eot"); /* IE9 Compat Modes */
-  src: url("/fonts/Metropolis-Bold/Metropolis-Bold.eot?#iefix")
-      format("embedded-opentype"),
-    /* IE6-IE8 */ url("/fonts/Metropolis-Bold/Metropolis-Bold.woff2")
-      format("woff2"),
-    /* Super Modern Browsers */
-      url("/fonts/Metropolis-Bold/Metropolis-Bold.woff") format("woff"),
-    /* Pretty Modern Browsers */
-      url("/fonts/Metropolis-Bold/Metropolis-Bold.ttf") format("truetype"),
-    /* Safari, Android, iOS */
-      url("/fonts/Metropolis-Bold/Metropolis-Bold.svg#svgFontName")
-      format("svg"); /* Legacy iOS */
+  font-family: "Lato";
+  src: url("/fonts/Lato-Bold.eot"); /* IE9 Compat Modes */
+  src: url("/fonts/Lato-Bold.eot?#iefix") format("embedded-opentype"), url("/fonts/Lato-Bold.woff2") format("woff2"), url("/fonts/Lato-Bold.woff") format("woff"), url("/fonts/Lato-Bold.ttf") format("truetype"), url("/fonts/Lato-Bold.svg#svgFontName") format("svg"); /* Legacy iOS */
   font-weight: 700;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Merriweather";
-  src: url("/fonts/Merriweather-Regular/Merriweather-Regular.eot"); /* IE9 Compat Modes */
-  src: url("/fonts/Merriweather-Regular/Merriweather-Regular.eot?#iefix")
-      format("embedded-opentype"),
-    /* IE6-IE8 */ url("/fonts/Merriweather-Regular/Merriweather-Regular.woff2")
-      format("woff2"),
-    /* Super Modern Browsers */
-      url("/fonts/Merriweather-Regular/Merriweather-Regular.woff")
-      format("woff"),
-    /* Pretty Modern Browsers */
-      url("/fonts/Merriweather-Regular/Merriweather-Regular.ttf")
-      format("truetype"),
-    /* Safari, Android, iOS */
-      url("/fonts/Merriweather-Regular/Merriweather-Regular.svg#svgFontName")
-      format("svg"); /* Legacy iOS */
-  font-weight: 400;
   font-style: normal;
 }
