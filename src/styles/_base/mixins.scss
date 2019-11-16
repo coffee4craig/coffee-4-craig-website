@@ -1,0 +1,49 @@
+@mixin gridWidth {
+  max-width: $grid-max-width;
+  margin: 0 auto;
+  padding-left: $grid-gutter-small * 2;
+  padding-right: $grid-gutter-small * 2;
+
+  @media only screen and (min-width: 768px) {
+    padding-left: $grid-gutter-large * 2;
+    padding-right: $grid-gutter-large * 2;
+  }
+}
+
+@mixin col($col, $sum, $first: false, $last: false) {
+  width: percentage($col / $sum);
+  font-size: 16px;
+  display: inline-block;
+  box-sizing: border-box;
+  padding-left: if($first, 0, $grid-gutter-small);
+  padding-right: if($last, 0, $grid-gutter-small);
+
+  @media only screen and (min-width: 768px) {
+    padding-left: if($first, 0, $grid-gutter-large);
+    padding-right: if($last, 0, $grid-gutter-large);
+  }
+}
+
+@mixin btn-reset {
+  border: none;
+  margin: 0;
+  padding: 0;
+  width: auto;
+  overflow: visible;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  line-height: normal;
+  -webkit-font-smoothing: inherit;
+  -moz-osx-font-smoothing: inherit;
+  -webkit-appearance: none;
+
+  &::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+  }
+
+  &:focus {
+    outline: none;
+  }
+}

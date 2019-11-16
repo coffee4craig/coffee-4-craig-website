@@ -1,0 +1,20 @@
+.btn {
+  @include btn-reset;
+
+  cursor: pointer;
+  border-radius: $btn-border-radius;
+  transition: background-color 0.5s ease;
+  background: lightsalmon;
+  padding: 10px;
+
+  &:hover {
+    transition: background-color 0.5s ease;
+    background: darken(lightsalmon, 10%);
+  }
+}
+
+.btn--style-a {}
+
+.btn--style-b {}
+
+.btn--style-c {}

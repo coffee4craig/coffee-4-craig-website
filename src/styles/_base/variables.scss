@@ -1,0 +1,25 @@
+$primary-color-a: #f3cdc2; // tea rose
+$primary-color-b: #28262c; // charleston green
+$primary-color-c: #ffecec; // seashell
+$primary-color-d: #e9676c; // light carmine pink
+$primary-color-e: #fff9f9; // snow
+
+$font-family-sans-serif: "Metropolis", "Arial", "sans-serif";
+$font-family-serif: "Merriweather", "Georgia", "serif";
+
+$body-text-color: $primary-color-b;
+$body-text-size: 16px;
+$body-text-font-family: $font-family-sans-serif;
+
+$heading-color: $primary-color-b;
+$heading-font-family: $font-family-sans-serif;
+
+$link-color: $primary-color-d;
+$link-text-decoration: underline;
+$link-hover-color: $primary-color-b;
+
+$grid-max-width: 1200px;
+$grid-gutter-small: 8px;
+$grid-gutter-large: 12px;
+
+$btn-border-radius: 3px;
