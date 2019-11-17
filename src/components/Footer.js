@@ -3,9 +3,11 @@ import React from 'react'
 const Footer = class extends React.Component {
   render() {
     return (
+
+
       <footer className="footer">
         <div class="footer__wrapper">
-          
+        
           <div class="footer__column">
                 <img class="footer__image" src="https://via.placeholder.com/115"></img>
                 <p class="footer__copyright">Copyright Coffee4Craig 2019</p>
@@ -27,23 +29,31 @@ const Footer = class extends React.Component {
           <div class="footer__column">
             <h5 class="footer__title">Terms and conditions</h5>
             <ul class="footer__list">
-              <li class="footer__list_item">Disclaimar</li>
-              <li class="footer__list_item">Privacy</li>
-              <li class="footer__list_item">Cookies</li>
-              <li class="footer__list_item">Accessibility</li>
+              <li>
+                <a  href="www.google.com" class="footer__list_item">Disclaimar</a>
+              </li>
+              <li>
+                <a  href="www.google.com" class="footer__list_item">Privacy</a>
+              </li>
+              <li>
+                <a  href="www.google.com" class="footer__list_item">Cookies</a>
+              </li>
+              <li>
+                <a  href="www.google.com" class="footer__list_item">Accessibility</a>
+              </li>
             </ul>
           </div>
-
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></link>
           <div class="footer__column">
             <ul class="footer__list_social">
-              <li class="footer__list_social_item social_twitter">
-                <a href="https://stackoverflow.blog?blb=1">Follow</a>
+              <li>
+              <a href="https://stackoverflow.blog?blb=1" class="footer__list_social_button social_twitter"><i class="fa fa-twitter"></i> Follow </a>
               </li>
-              <li class="footer__list_social_item social_facebook">
-                <a href="https://stackoverflow.blog?blb=1">Like </a>
+              <li >
+                <a href="https://stackoverflow.blog?blb=1" class="footer__list_social_button social_facebook"><i class="fa fa-facebook-f"></i> Like </a>
               </li>
-              <li class="footer__list_social_item social_instagram">
-                <a href="https://stackoverflow.blog?blb=1">Follow </a>
+              <li > 
+                <a href="https://stackoverflow.blog?blb=1" class="footer__list_social_button social_instagram"><i class="fa fa-instagram"></i> Follow </a>
               </li>
             </ul>           
           </div>
