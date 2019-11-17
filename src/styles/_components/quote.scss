@@ -1,0 +1,27 @@
+.quote {
+  @include gridWidth;
+
+  display: flex;
+  justify-content: center;
+  padding: 40px 0;
+}
+
+.quote__wrapper {
+  @include col(8, 12, true, true);
+
+  text-align: center;
+}
+
+.quote__text {
+  font-size: 45px;
+  line-height: 55px;
+  font-weight: 400;
+  padding: 0 30px;
+}
+
+.quote__source {
+  font-weight: 700;
+  line-height: 26px;
+  color: $primary-color-a;
+  padding: 0 30px;
+}
