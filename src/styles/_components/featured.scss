@@ -1,0 +1,37 @@
+.featured {
+  margin-bottom: 100px;
+  justify-content: center;
+  }
+  
+  .featured__wrapper {
+    @include gridWidth();
+  }
+
+  .featured__row_1 {
+    @include col(12, 12);
+    justify-content: center;
+    display: flex;
+    
+    .featured__row_1_text {
+      text-align: center;
+      font: Bold 38px/50px Lato;
+      letter-spacing: 0;
+      color: #303E48;
+      opacity: 1;
+    }
+	}
+	
+  .featured__row_2 {
+    @include col(12, 12);
+    display: flex;
+    justify-content: center;
+    text-align: center;
+
+    .featured___column{
+      display: inline-block;
+      vertical-align: middle;
+      width: 25%;
+      height: 100px;
+      line-height:120px;
+    }
+  }
