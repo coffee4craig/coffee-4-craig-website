@@ -36,7 +36,6 @@ class Navbar extends React.Component {
   };
 
   handleResize = () => {
-    console.log(window.innerWidth);
     if (window.innerWidth > 961 ) {
       this.setState({
         showMobile: false,
@@ -62,7 +61,7 @@ class Navbar extends React.Component {
       <nav
         className={`navbar`}
         style={{
-          'background-color': navbarBackground
+          'backgroundColor': navbarBackground
          }}
         role="navigation"
         aria-label="main-navigation"
