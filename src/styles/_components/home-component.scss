@@ -1,0 +1,72 @@
+.home-component {
+    background: $primary-color-b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 680px;
+    margin-bottom: 100px;
+  }
+  
+  .home-component__wrapper {
+    @include gridWidth;
+  
+    display: flex;
+    width: 100%;
+    height: calc(100% - 80px);
+    margin-top: 80px;
+  }
+  
+  .home-component__col {
+    &:first-child {
+      @include col(6, 12, true, false);
+  
+      justify-content: center;
+      display: flex;
+      flex-direction: column;
+    }
+  
+    &:last-child {
+      @include col(6, 12, false, true);
+  
+      justify-content: center;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+    }
+
+    .home-component__col-image {
+        width: 528px;
+        height: 599px;
+    }
+  }
+
+  .home-component__donate {
+    display: flex;
+    flex-direction: column;
+  
+    h1 {
+      margin-bottom: 15px;
+    }
+  
+    p {
+      line-height: 26px;
+    }
+  }
+    
+  .home-component__donate-cta {
+    margin-top: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+  
+  .home-component__donate-btn {
+    padding: 20px 16px;
+    color: black;
+    margin-right: 15px;
+
+    &.btn--style-b {
+        background-color: blanchedalmond;
+    }
+  }
+  
