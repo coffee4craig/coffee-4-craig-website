@@ -5,6 +5,7 @@ import { disableBodyScroll, enableBodyScroll, clearAllBodyScrollLocks } from 'bo
 import logo from '../img/logo.png';
 import CloseIcon from '../img/icons/close-icon.svg';
 import MenuIcon from '../img/icons/menu-icon.svg';
+import { Link } from 'gatsby';
 
 class Navbar extends React.Component {
   state = {
@@ -86,16 +87,16 @@ class Navbar extends React.Component {
       >
       <div className="navbar__wrapper">
         <div className="navbar__flex">
-          <span className="navbar__logo">
+          <Link className="navbar__logo" to="/">
             <img src={logo} alt="Coffee 4 Craig Logo" />
-          </span>
+          </Link>
         </div>
         
         
         <div ref={this.targetRef} className={`navbar__flex navbar__menu ${isMobile ? `is-mobile` : ``}`} style={{ 'transform': isMobile ? transform : 'translateX(0%)'}}>
           <ul className="navbar__links">
               <li>
-                <a href="http://google.com">About Us</a>
+                <Link to="/about">About Us</Link>
               </li>
               <li>
                 <a href="http://google.com">Support Us</a>
