@@ -81,7 +81,7 @@ const Footer = () => {
           <div className="footer__column">
             <ul className="footer__list_social">
               <li>
-              <a href="https://stackoverflow.blog?blb=1" className="footer__list_social_button"> Follow </a>
+              <a href="https://stackoverflow.blog?blb=1" className="footer__list_social_button"> <DonateIcon /> Follow </a>
               </li>
               <li >
                 <a href="https://stackoverflow.blog?blb=1" className="footer__list_social_button">Like </a>
