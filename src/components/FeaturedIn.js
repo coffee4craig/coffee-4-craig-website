@@ -10,28 +10,28 @@ const Featured = class extends React.Component {
   render() {
     return (
 
-    <div class="featured">
-        <div class="featured__wrapper">
-            <div class="featured__row_1">
-                <p class="featured__row_1_text">As featured in...</p>
+    <div className="featured">
+        <div className="featured__wrapper">
+            <div className="featured__row_1">
+                <p className="featured__row_1_text">As featured in...</p>
             </div>
-            <div class="featured__row_2">
-                <div class="featured___column">
+            <div className="featured__row_2">
+                <div className="featured___column">
                     <a href="https://www.w3schools.com">
                         <img src={bbc} alt="BBC news icon"/>
                     </a>
                 </div>
-                <div class="featured___column">
+                <div className="featured___column">
                     <a href="https://www.w3schools.com">
                         <img src={independent} alt="independent news icon"/>
                     </a>
                 </div>
-                <div class="featured___column">
+                <div className="featured___column">
                     <a href="https://www.w3schools.com">
                         <img src={times} alt="times news icon"/>
                     </a>
                 </div>
-                <div class="featured___column">
+                <div className="featured___column">
                     <a href="https://www.w3schools.com">
                         <img src={telegraph} alt="telegraph news icon"/>
                     </a>

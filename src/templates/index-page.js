@@ -8,6 +8,7 @@ import Card from '../components/Card'
 import Feature from '../components/Feature'
 import Accreditation from '../components/Accreditation'
 import Quote from '../components/Quote'
+import Featured from '../components/FeaturedIn'
 
 export const IndexPageTemplate = ({
   image,
@@ -24,6 +25,8 @@ export const IndexPageTemplate = ({
     <Accreditation />
     <Feature />
     <Card />
+    <Featured />
+
   </div>
 )
 
