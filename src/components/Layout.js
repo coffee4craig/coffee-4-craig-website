@@ -4,6 +4,7 @@ import Footer from '../components/Footer'
 import Navbar from '../components/Navbar'
 import Featured from '../components/FeaturedIn'
 import Services from '../components/ServicesComponent'
+import SuperHeroes from '../components/SuperHeroes'
 
 import '../styles/app.scss'
 import useSiteMetadata from './SiteMetadata'
@@ -54,7 +55,8 @@ const TemplateWrapper = ({ children }) => {
       <Navbar />
       <div>{children}</div>
       <Services />
-      <Featured />
+      <SuperHeroes />
+      <Featured /> 
       <Footer />
     </div>
   )
