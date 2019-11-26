@@ -1,0 +1,43 @@
+.richtext {
+    @include gridWidth;
+  
+    display: flex;
+    justify-content: center;
+    padding: 40px 0;
+  }
+
+.richtext__wrapper {
+    @include col(8, 12, true, true);
+    width: 684px;
+ }
+
+.richtext__source {
+    font-weight: 400;
+    line-height: 26px;
+    color: $primary-color-a;
+    padding: 0 30px;
+    letter-spacing: 0;
+    color: #181F27;
+    opacity: 1;
+
+    &.richtext-bold {
+        font-weight: 700;
+    }
+}
+
+.richtext__donate-btn {
+    margin-bottom: 20px;
+    padding: 20px 282px;
+}
+
+.richtext__image__wrapper {
+    margin-top: 40px;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+
+    .richtext__image {
+    width: 149px;
+    height: 42px;
+    }
+}

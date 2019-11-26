@@ -40,3 +40,12 @@
     opacity: 1;
   }
 }
+
+.btn--style-d {
+  background: $primary-color-b;
+  color: $secondary-color-b;
+
+  &:hover {
+    background: darken($primary-color-b, 10%);
+  }
+}
