@@ -46,17 +46,13 @@
   flex: 4;
 
   &.is-mobile {
-    display: none;
-  }
-
-  &.is-open {
-    display: block;
     position: fixed;
-    top: 0;
+    top: 80px;
     left: 0;
-    height: 100%;
+    height: calc(100% - 80px);
     width: 100%;
-    background: lightgray;
+    background: #ffffff;
+    transition: transform 0.5s ease-in-out;
   }
 }
 

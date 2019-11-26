@@ -2,9 +2,6 @@ import React from 'react'
 import { Helmet } from 'react-helmet'
 import Footer from '../components/Footer'
 import Navbar from '../components/Navbar'
-import Featured from '../components/FeaturedIn'
-import Services from '../components/ServicesComponent'
-import RichText from '../components/RichTextComponent'
 
 import '../styles/app.scss'
 import useSiteMetadata from './SiteMetadata'
@@ -54,9 +51,6 @@ const TemplateWrapper = ({ children }) => {
       </Helmet>
       <Navbar />
       <div>{children}</div>
-      <RichText />
-      <Services />
-      <Featured />
       <Footer />
     </div>
   )
