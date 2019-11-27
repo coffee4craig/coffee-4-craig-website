@@ -4,13 +4,22 @@ import { graphql } from 'gatsby'
 
 import Layout from '../components/Layout'
 import ServicesComponent from '../components/ServicesComponent'
+import Hero from '../components/Hero'
+import LeadText from '../components/LeadText'
+import AddressMap from '../components/AddressMap'
+import Partners from '../components/Partner'
+import Timeline from '../components/Timeline'
 
 export const AboutPageTemplate = ({
   title,
 }) => (
   <div>
-    <h1>{title}</h1>
+    <Hero />
+    <LeadText />
+    <AddressMap />
+    <Partners />
     <ServicesComponent />
+    <Timeline />
   </div>
 )
 
