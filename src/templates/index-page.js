@@ -3,11 +3,12 @@ import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 
 import Layout from '../components/Layout'
-import Hero from '../components/Hero'
-import Card from '../components/Card'
 import Feature from '../components/Feature'
 import Accreditation from '../components/Accreditation'
 import Quote from '../components/Quote'
+import Video from '../components/Video'
+import Friends from '../components/Friends'
+import HomepageHero from '../components/HomepageHero'
 
 export const IndexPageTemplate = ({
   image,
@@ -19,11 +20,12 @@ export const IndexPageTemplate = ({
   intro,
 }) => (
   <div>
-    <Hero title={title} />
+    <HomepageHero title={title} />
     <Quote />
-    <Accreditation />
+    <Video/>
     <Feature />
-    <Card />
+    <Friends />
+    <Accreditation />
   </div>
 )
 

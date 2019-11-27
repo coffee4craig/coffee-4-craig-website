@@ -1,0 +1,50 @@
+.superheroes {
+    background: $primary-color-c;
+    display: flex;
+    justify-content: center;
+    height: 1000px;
+    margin-bottom: 100px;
+  }
+  
+  .superheroes__wrapper {
+    @include gridWidth;
+  
+    display: flex;
+    width: 100%;
+    margin-top: 80px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .superheroes__section {
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    margin-top: 40px;
+
+    .superheroes__section-col {
+        @include col(4, 12, true, false);
+    
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+
+        img {
+            max-width: 100%
+        }
+
+        h2 {
+            font-weight: 700;
+            letter-spacing: 0;
+            opacity: 1;
+            margin-top: 10px;
+        }
+
+        p {
+            padding-right: 20px;
+            padding-left: 20px;
+            letter-spacing: 0;
+            opacity: 0.85;
+            line-height: 27px;        }
+    }
+  }
