@@ -123,7 +123,7 @@ export const IndexPageTemplate = ({
     <Feature
       {...feature}
     />
-    {/* <Friends {...friends} /> */}
+    <Friends friends={friends} title="Here are just a few people we now call our friends." />
     <Credits title="As featured in…" credits={credits} />
   </div>
 )
@@ -138,7 +138,6 @@ const IndexPage = ({ data }) => {
         quote={frontmatter.quote}
         video={frontmatter.video}
         feature={frontmatter.feature}
-        // friends={frontmatter.friends}
       />
     </Layout>
   )
