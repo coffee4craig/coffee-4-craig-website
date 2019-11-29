@@ -1,15 +1,24 @@
 ---
 templateKey: index-page
 homepageHero:
-  donateButtonText: Donate Now
-  donationDescription: Donation Description
-  donationTitle: Donation Title
-  subtitle: Subtitle
   title: Title
+  subtitle: Subtitle
+  donationTitle: Donation Title
+  donationDescription: >
+    Donation description
+  donateButtonText: Donate Now
 quote:
-  quoteSource: Quote Source
   quoteText: Quote Text
+  quoteSource: Quote Source
 video:
-  videoId: Video ID
+  videoId: video id
+feature:
+  title: Feature Title
+  text: > 
+    Feature text
+  primaryButtonText: Button One
+  secondaryButtonText: Button Two
+  featureImage: 
+    image: /img/home-jumbotron.jpg
+    alt: feature media alt text
 ---
-

@@ -1,7 +1,10 @@
 import React from 'react';
 
-const Video = () => (
-  <p>Video Component</p>
+const Video = ({ videoId }) => (
+  <>
+    <p>Video Component</p>
+    {videoId}
+  </>  
 );
 
 export default Video;

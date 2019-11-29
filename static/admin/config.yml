@@ -30,22 +30,51 @@ collections:
   - name: "pages"
     label: "Pages"
     files:
-      - file: "src/pages/index.md"
-        label: "Landing Page"
+      - label: "Homepage"
         name: "index"
+        file: "src/pages/index.md"
         fields:
-          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "index-page"}
-          - {label: Title, name: title, widget: string}
-          - {label: Image, name: image, widget: image}
-          - {label: Heading, name: heading, widget: string}
-          - {label: Subheading, name: subheading, widget: string}
-          - {label: Mainpitch, name: mainpitch, widget: object, fields: [{label: Title, name: title, widget: string}, {label: Description, name: description, widget: text}]}
-          - {label: Description, name: description, widget: string}
-          - {label: Intro, name: intro, widget: object, fields: [{label: Heading, name: heading, widget: string}, {label: Description, name: description, widget: text}, {label: Blurbs, name: blurbs, widget: list, fields: [{label: Image, name: image, widget: image}, {label: Text, name: text, widget: text}]}]}
-          - {label: Main, name: main, widget: object, fields: [{label: Heading, name: heading, widget: string}, {label: Description, name: description, widget: text}, {label: Image1, name: image1, widget: object, fields: [{label: Image, name: image, widget: image}, {label: Alt, name: alt, widget: string}]}, {label: Image2, name: image2, widget: object, fields: [{label: Image, name: image, widget: image}, {label: Alt, name: alt, widget: string}]}, {label: Image3, name: image3, widget: object, fields: [{label: Image, name: image, widget: image}, {label: Alt, name: alt, widget: string}]}]}
-      - file: "src/pages/about/index.md"
-        label: "About"
+          - label: "Template Key"
+            name: "templateKey"
+            widget: "hidden"
+            default: "index-page"
+          - label: Homepage Hero
+            name: homepageHero
+            widget: object
+            fields:
+              - {label: Title, name: title, widget: string}
+              - {label: Subtitle, name: subtitle, widget: string}
+              - {label: Donation Title, name: donationTitle, widget: string}
+              - {label: Donation Description, name: donationDescription, widget: markdown}
+              - {label: Donate Button Text, name: donateButtonText, widget: string}
+          - label: Quote
+            name: quote
+            widget: object
+            fields:
+              - {label: Quote Text, name: quoteText, widget: text} 
+              - {label: Quote Source, name: quoteSource, widget: string}
+          - label: Video
+            name: video
+            widget: object
+            fields:
+              - {label: Video ID, name: videoId, widget: string} 
+          - label: Feature
+            name: feature
+            widget: object
+            fields:
+              - {label: Title, name: title, widget: string}
+              - {label: Text, name: text, widget: text}
+              - {label: Button One, name: primaryButtonText, widget: string}
+              - {label: Button Two, name: secondaryButtonText, widget: string}
+              - label: Image
+                name: featureImage
+                widget: object
+                fields:
+                  - {label: Image, name: image, widget: image}
+                  - {label: Alt Text, name: alt, widget: string}
+      - label: "About"
         name: "about"
+        file: "src/pages/about/index.md"
         fields:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "about-page"}
           - {label: "Title", name: "title", widget: "string"}
