@@ -1,6 +1,8 @@
 import React from 'react'
 
-const Credits = ({ title, credits }) => (
+import PreviewCompatibleImage from './PreviewCompatibleImage';
+
+const Credits = ({ title, creditList }) => (
     <div className="featured">
         <div className="featured__wrapper">
             <div className="featured__row_1">
@@ -8,10 +10,10 @@ const Credits = ({ title, credits }) => (
             </div>
             <div className="featured__row_2">
                 {
-                    credits.map((credit, i) => (
+                    creditList.map((credit, i) => (
                         <div key={i} className="featured___column">
                             <a href={credit.link.url} target={credit.link.target}>
-                                <img src={credit.image.src} alt={credit.image.alt} />
+                                <PreviewCompatibleImage cName="" imageInfo={credit.logo} />
                             </a>
                         </div>
                     ))

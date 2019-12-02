@@ -1,8 +1,8 @@
 ---
 templateKey: about-page
 hero:
-  title: Title
-  backgroundImage: 
+  title: About Us
+  backgroundImage:
     image: /img/home-jumbotron.jpg
     alt: feature media alt text
 leadText: The Manchester drop-in is an evening and weekend service, working in partnership with Centre Point, this service is supported by a grant from Manchester City Council.
@@ -10,10 +10,10 @@ addressMap:
   title: Manchester Drop-in
   address:
     title: Address
-    addressLine1:
-    addressLine2:
-    postcode:
-  telephone: 
+    addressLine1: Address Line One
+    addressLine2: Address Line Two
+    postcode: Postcode
+  telephone:
     title: Phone
     phoneNumberOne: +44 1111 111111
     phoneNumberTwo: +44 1111 111111
@@ -28,7 +28,7 @@ partners:
   text: Centre Point North, Team Vow, The Myriad Foundation, North West First Aid, Not Just Soup…and all of our amazing staff and volunteers.
 services:
   title: This service provides
-  services: 
+  serviceList:
     - icon: sandwich
       text: Hot meals
     - icon: shower
@@ -42,19 +42,19 @@ services:
 history:
   title: Our History
   timeline:
-    year: 2013
-    text: Here in Manchester, we have had a dramatic increase in numbers, the likes that have never been seen before and it is increasing every day.Here in Manchester, we have had a dramatic increase in numbers, the likes that have never been seen before and it is increasing every day. 
-    image:
-      image: /img/home-jumbotron.jpg
-      alt: feature media alt text
-    year: 2014
-    text: Here in Manchester, we have had a dramatic increase in numbers, the likes that have never been seen before and it is increasing every day.Here in Manchester, we have had a dramatic increase in numbers, the likes that have never been seen before and it is increasing every day. 
-    image:
-      image: /img/home-jumbotron.jpg
-      alt: feature media alt text
-    year: 2015
-    text: Here in Manchester, we have had a dramatic increase in numbers, the likes that have never been seen before and it is increasing every day.Here in Manchester, we have had a dramatic increase in numbers, the likes that have never been seen before and it is increasing every day. 
-    image:
-      image: /img/home-jumbotron.jpg
-      alt: feature media alt text
+    - year: 2013
+      text: Here in Manchester, we have had a dramatic increase in numbers, the likes that have never been seen before and it is increasing every day.Here in Manchester, we have had a dramatic increase in numbers, the likes that have never been seen before and it is increasing every day.
+      featuredImage:
+        image: /img/home-jumbotron.jpg
+        alt: feature media alt text
+    - year: 2014
+      text: Here in Manchester, we have had a dramatic increase in numbers, the likes that have never been seen before and it is increasing every day.Here in Manchester, we have had a dramatic increase in numbers, the likes that have never been seen before and it is increasing every day.
+      featuredImage:
+        image: /img/home-jumbotron.jpg
+        alt: feature media alt text
+    - year: 2015
+      text: Here in Manchester, we have had a dramatic increase in numbers, the likes that have never been seen before and it is increasing every day.Here in Manchester, we have had a dramatic increase in numbers, the likes that have never been seen before and it is increasing every day.
+      featuredImage:
+        image: /img/home-jumbotron.jpg
+        alt: feature media alt text
 ---
