@@ -1,0 +1,15 @@
+.video {
+  @include gridWidth;
+
+  position: relative;
+  padding: 40px 0;
+  z-index: 2;
+  margin-bottom: -70px;
+}
+
+.video__wrapper {
+    @include col(12, 12, true, true);
+
+    display: flex;
+    justify-content: center;
+}
