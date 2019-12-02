@@ -20,7 +20,7 @@ export const AboutPageTemplate = ({
 }) => (
   <div>
     <Hero {...hero} />
-    <LeadText {...leadText} />
+    <LeadText text={leadText} />
     <AddressMap {...addressMap} />
     <Partners {...partners} />
     <ServicesComponent {...services} />
