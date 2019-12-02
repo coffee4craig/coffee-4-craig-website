@@ -1,23 +1,26 @@
 import React from 'react';
 
-const Friends = ({ title, friends }) => (
+import PreviewCompatibleImage from './PreviewCompatibleImage';
+
+const Friends = ({ title, friendsList }) => (
   <div className="friends">
     <div className="friends__wrapper">
-      <div class="friends__section">
-        {
-          friends.map((friend, i) =>
-            <div key={i} class="friends__section-col">
-              <img src={friend.image.src} alt={friend.image.alt}></img>
-              <div class="friends__section-col-text">
-                <h2>{friend.name}</h2>
-                <p>{friend.bio}</p>
+        <h2 className="friends__title">{title}</h2>
+        <div className="friends__grid">
+          {
+            friendsList.map((friend, i) =>
+              <div key={i} class="friends__section-col">
+                <PreviewCompatibleImage cName="" imageInfo={friend.profileImage} />
+                <div class="friends__section-col-text">
+                  <h2>{friend.name}</h2>
+                  <p>{friend.bio}</p>
+                </div>
               </div>
-            </div>
-          )
-        }
+            )
+          }
+        </div>
       </div>
     </div>
-  </div>
 );
 
 export default Friends;

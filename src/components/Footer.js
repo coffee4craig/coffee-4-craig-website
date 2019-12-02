@@ -44,8 +44,8 @@ const Footer = () => {
         <div className="footer__wrapper">
         
           <div className="footer__column">
-                <img className="footer__image" src="https://via.placeholder.com/115"></img>
-                <p className="footer__copyright">Copyright Coffee4Craig 2019</p>
+            <img className="footer__image" src="https://via.placeholder.com/115" alt=""/>
+            <p className="footer__copyright">Copyright Coffee4Craig 2019</p>
           </div>
 
           <div className="footer__column">
@@ -65,16 +65,16 @@ const Footer = () => {
             <h5 className="footer__title">Terms and conditions</h5>
             <ul className="footer__list">
               <li>
-                <a  href="www.google.com" className="footer__list_item">Disclaimer</a>
+                <a href="www.google.com" className="footer__list_item">Disclaimer</a>
               </li>
               <li>
-                <a  href="www.google.com" className="footer__list_item">Privacy</a>
+                <a href="www.google.com" className="footer__list_item">Privacy</a>
               </li>
               <li>
-                <a  href="www.google.com" className="footer__list_item">Cookies</a>
+                <a href="www.google.com" className="footer__list_item">Cookies</a>
               </li>
               <li>
-                <a  href="www.google.com" className="footer__list_item">Accessibility</a>
+                <a href="www.google.com" className="footer__list_item">Accessibility</a>
               </li>
             </ul>
           </div>

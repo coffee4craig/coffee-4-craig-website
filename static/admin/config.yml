@@ -2,11 +2,11 @@ backend:
   name: git-gateway
   branch: master
   commit_messages:
-    create: 'Create {{collection}} “{{slug}}”'
-    update: 'Update {{collection}} “{{slug}}”'
-    delete: 'Delete {{collection}} “{{slug}}”'
-    uploadMedia: '[skip ci] Upload “{{path}}”'
-    deleteMedia: '[skip ci] Delete “{{path}}”'
+    create: "Create {{collection}} “{{slug}}”"
+    update: "Update {{collection}} “{{slug}}”"
+    delete: "Delete {{collection}} “{{slug}}”"
+    uploadMedia: "[skip ci] Upload “{{path}}”"
+    deleteMedia: "[skip ci] Delete “{{path}}”"
 
 media_folder: static/img
 public_folder: /img
@@ -18,14 +18,19 @@ collections:
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
-      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "blog-post"}
-      - {label: "Title", name: "title", widget: "string"}
-      - {label: "Publish Date", name: "date", widget: "datetime"}
-      - {label: "Description", name: "description", widget: "text"}
-      - {label: "Featured Post", name: "featuredpost", widget: "boolean"}
-      - {label: "Featured Image", name: "featuredimage", widget: image}
-      - {label: "Body", name: "body", widget: "markdown"}
-      - {label: "Tags", name: "tags", widget: "list"}
+      - {
+          label: "Template Key",
+          name: "templateKey",
+          widget: "hidden",
+          default: "blog-post",
+        }
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "Description", name: "description", widget: "text" }
+      - { label: "Featured Post", name: "featuredpost", widget: "boolean" }
+      - { label: "Featured Image", name: "featuredimage", widget: image }
+      - { label: "Body", name: "body", widget: "markdown" }
+      - { label: "Tags", name: "tags", widget: "list" }
 
   - name: "pages"
     label: "Pages"
@@ -42,39 +47,69 @@ collections:
             name: homepageHero
             widget: object
             fields:
-              - {label: Title, name: title, widget: string}
-              - {label: Subtitle, name: subtitle, widget: string}
-              - {label: Donation Title, name: donationTitle, widget: string}
-              - {label: Donation Description, name: donationDescription, widget: markdown}
-              - {label: Donate Button Text, name: donateButtonText, widget: string}
+              - { label: Title, name: title, widget: string }
+              - { label: Subtitle, name: subtitle, widget: string }
+              - { label: Donation Title, name: donationTitle, widget: string }
+              - {
+                  label: Donation Description,
+                  name: donationDescription,
+                  widget: markdown,
+                }
+              - {
+                  label: Donate Button Text,
+                  name: donateButtonText,
+                  widget: string,
+                }
           - label: Quote
             name: quote
             widget: object
             fields:
-              - {label: Quote Text, name: quoteText, widget: text} 
-              - {label: Quote Source, name: quoteSource, widget: string}
+              - { label: Quote Text, name: quoteText, widget: text }
+              - { label: Quote Source, name: quoteSource, widget: string }
           - label: Video
             name: video
             widget: object
             fields:
-              - {label: Video ID, name: videoId, widget: string} 
+              - { label: Video ID, name: videoId, widget: string }
           - label: Feature
             name: feature
             widget: object
             fields:
-              - {label: Title, name: title, widget: string}
-              - {label: Text, name: text, widget: text}
-              - {label: Button One, name: primaryButtonText, widget: string}
-              - {label: Button Two, name: secondaryButtonText, widget: string}
+              - { label: Title, name: title, widget: string }
+              - { label: Text, name: text, widget: text }
+              - { label: Button One, name: primaryButtonText, widget: string }
+              - { label: Button Two, name: secondaryButtonText, widget: string }
               - label: Image
                 name: featureImage
                 widget: object
                 fields:
-                  - {label: Image, name: image, widget: image}
-                  - {label: Alt Text, name: alt, widget: string}
+                  - { label: Image, name: image, widget: image }
+                  - { label: Alt Text, name: alt, widget: string }
+          - label: People
+            name: people
+            widget: object
+            fields:
+              - { label: Title, name: title, widget: string }
+              - {
+                  label: Our Friends,
+                  name: friendsList,
+                  widget: list,
+                  fields:
+                    [
+                      { label: Image, name: image, widget: image },
+                      { label: Alt Text, name: alt, widget: string },
+                      { label: Name, name: name, widget: string },
+                      { label: Bio, name: bio, widget: text },
+                    ],
+                }
       - label: "About"
         name: "about"
         file: "src/pages/about/index.md"
         fields:
-          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "about-page"}
-          - {label: "Title", name: "title", widget: "string"}
+          - {
+              label: "Template Key",
+              name: "templateKey",
+              widget: "hidden",
+              default: "about-page",
+            }
+          - { label: "Title", name: "title", widget: "string" }

@@ -1,7 +1,7 @@
 import React from 'react';
 
-const Hero = () => (
-  <p>Hero Component</p>
+const Hero = ({ title }) => (
+  <p>{title}</p>
 );
 
 export default Hero;

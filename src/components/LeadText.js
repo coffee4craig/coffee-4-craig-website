@@ -1,7 +1,7 @@
 import React from 'react';
 
-const LeadText = () => (
-  <p>Lead Text Component</p>
+const LeadText = ({ text }) => (
+  <p>{text}</p>
 );
 
 export default LeadText;
