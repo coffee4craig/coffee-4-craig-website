@@ -3,8 +3,33 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 680px;
+    min-height: 680px;
     margin-bottom: 100px;
+    position: relative;
+
+    &:before,
+    &:after {
+      content: '';
+      display: block;
+      position: absolute;
+      z-index: -1;
+      left: 0;
+      width: 100%;
+    }
+
+    &:before {
+      top: -20px;
+      height: 30px;
+      background: url('../img/green-brush-top.svg') center top no-repeat;
+      background-size: cover;
+    }
+
+    &:after {
+      bottom: -30px;
+      height: 40px;
+      background: url('../img/green-brush-bottom.svg') center top no-repeat;
+      background-size: cover;
+    }
   }
   
   .feature-component__wrapper {

@@ -11,21 +11,22 @@ import Partners from '../components/Partner'
 import Timeline from '../components/Timeline'
 
 export const AboutPageTemplate = ({
-  title,
+  hero,
+  leadText,
+  addressMap,
+  partners,
+  services,
+  timeline
 }) => (
   <div>
-    <Hero />
-    <LeadText />
-    <AddressMap />
-    <Partners />
-    <ServicesComponent />
-    <Timeline />
+    <Hero {...hero} />
+    <LeadText text={leadText} />
+    <AddressMap {...addressMap} />
+    <Partners {...partners} />
+    <ServicesComponent {...services} />
+    <Timeline {...timeline} />
   </div>
 )
-
-AboutPageTemplate.propTypes = {
-  title: PropTypes.string,
-}
 
 const AboutPage = ({ data }) => {
   const { frontmatter } = data.markdownRemark
@@ -33,7 +34,12 @@ const AboutPage = ({ data }) => {
   return (
     <Layout>
       <AboutPageTemplate
-        { ...frontmatter }
+        hero={frontmatter.hero}
+        leadText={frontmatter.leadText}
+        addressMap={frontmatter.addressMap}
+        partners={frontmatter.partners}
+        services={frontmatter.services}
+        timeline={frontmatter.history}
       />
     </Layout>
   )
@@ -53,7 +59,69 @@ export const pageQuery = graphql`
   query AboutPageTemplate {
     markdownRemark(frontmatter: { templateKey: { eq: "about-page" } }) {
       frontmatter {
-        title  
+        hero {
+          title
+          backgroundImage {
+            image {
+              childImageSharp {
+                fluid(maxWidth: 1200, quality: 64) {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            },
+            alt
+          }
+        }
+        leadText
+        addressMap {
+          title,
+          address {
+            title,
+            addressLine1,
+            addressLine2,
+            postcode
+          },
+          telephone {
+            title,
+            phoneNumberOne,
+            phoneNumberTwo
+          },
+          openingHours {
+            title,
+            monFriLabel,
+            monFriTime,
+            satSunLabel,
+            satSunTime
+          }
+        }
+        partners {
+          title,
+          text
+        }
+        services {
+          title,
+          serviceList {
+            icon,
+            text
+          }
+        }
+        history {
+          title,
+          timeline {
+            year,
+            text,
+            featuredImage {
+              image {
+                childImageSharp {
+                  fluid(maxWidth: 1200, quality: 64) {
+                    ...GatsbyImageSharpFluid
+                  }
+                }
+              },
+              alt
+            }
+          }
+        }
       }
     }
   }

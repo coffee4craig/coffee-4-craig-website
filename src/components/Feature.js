@@ -1,5 +1,5 @@
 import React from 'react';
-import makeDifference from '../img/make-a-dif.png'
+
 import PreviewCompatibleImage from './PreviewCompatibleImage';
 
 const FeatureComponent = ({ title, text, primaryButtonText, secondaryButtonText, featureImage }) => (

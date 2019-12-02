@@ -10,105 +10,13 @@ import Video from '../components/Video'
 import Friends from '../components/Friends'
 import HomepageHero from '../components/HomepageHero'
 
-const friends = [
-  {
-    image: {
-      "src": "../img/make-a-dif.png",
-      "alt": "profile picture"
-    },
-    "name": "Peter",
-    "bio": "By donating just £10, you can provide two pairs of thermal gloves for those sleeping rough."
-  },
-  {
-    image: {
-      "src": "../img/make-a-dif.png",
-      "alt": "profile picture"
-    },
-    "name": "Peter",
-    "bio": "By donating just £10, you can provide two pairs of thermal gloves for those sleeping rough."
-  },
-  {
-    image: {
-      "src": "../img/make-a-dif.png",
-      "alt": "profile picture"
-    },
-    "name": "Peter",
-    "bio": "By donating just £10, you can provide two pairs of thermal gloves for those sleeping rough."
-  },
-  {
-    image: {
-      "src": "../img/make-a-dif.png",
-      "alt": "profile picture"
-    },
-    "name": "Peter",
-    "bio": "By donating just £10, you can provide two pairs of thermal gloves for those sleeping rough."
-  },
-  {
-    image: {
-      "src": "../img/make-a-dif.png",
-      "alt": "profile picture"
-    },
-    "name": "Peter",
-    "bio": "By donating just £10, you can provide two pairs of thermal gloves for those sleeping rough."
-  },
-  {
-    image: {
-      "src": "../img/make-a-dif.png",
-      "alt": "profile picture"
-    },
-    "name": "Peter",
-    "bio": "By donating just £10, you can provide two pairs of thermal gloves for those sleeping rough."
-  }
-];
-
-const credits = [
-  {
-      "image": {
-        "src": "../img/bbc-news.png",
-        "alt": "company logo"
-      },
-      "link": {
-        "url": "https://www.w3schools.com",
-        "target": "_blank"
-      }
-  },
-  {
-    "image": {
-      "src": "../img/bbc-news.png",
-      "alt": "company logo"
-    },
-    "link": {
-      "url": "https://www.w3schools.com",
-      "target": "_blank"
-    }
-  },
-  {
-    "image": {
-      "src": "../img/bbc-news.png",
-      "alt": "company logo"
-    },
-    "link": {
-      "url": "https://www.w3schools.com",
-      "target": "_blank"
-    }
-  },
-  {
-    "image": {
-      "src": "../img/bbc-news.png",
-      "alt": "company logo"
-    },
-    "link": {
-      "url": "https://www.w3schools.com",
-      "target": "_blank"
-    }
-  },
-]
-
 export const IndexPageTemplate = ({
   homepageHero,
   quote,
   video,
-  feature
+  feature,
+  friends,
+  credits
 }) => (
   <div>
     <HomepageHero 
@@ -123,8 +31,12 @@ export const IndexPageTemplate = ({
     <Feature
       {...feature}
     />
-    <Friends friends={friends} title="Here are just a few people we now call our friends." />
-    <Credits title="As featured in…" credits={credits} />
+    <Friends
+      {...friends}
+    />
+    <Credits 
+      {...credits}
+    />
   </div>
 )
 
@@ -138,6 +50,8 @@ const IndexPage = ({ data }) => {
         quote={frontmatter.quote}
         video={frontmatter.video}
         feature={frontmatter.feature}
+        friends={frontmatter.friends}
+        credits={frontmatter.credits}
       />
     </Layout>
   )
@@ -185,6 +99,42 @@ export const pageQuery = graphql`
               }
             },
             alt
+          }
+        }
+        friends {
+          title,
+          friendsList {
+            profileImage {
+              image {
+                childImageSharp {
+                  fluid(maxWidth: 1200, quality: 64) {
+                    ...GatsbyImageSharpFluid
+                  }
+                }
+              },
+              alt
+            }
+            name,
+            bio
+          }
+        }
+        credits {
+          title,
+          creditList {
+            logo {
+              image {
+                childImageSharp {
+                  fluid(maxWidth: 1200, quality: 64) {
+                    ...GatsbyImageSharpFluid
+                  }
+                }
+              },
+              alt
+            }
+            link {
+              url,
+              target
+            }
           }
         }
       }
