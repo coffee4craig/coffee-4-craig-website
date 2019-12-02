@@ -4,42 +4,41 @@ import { graphql } from 'gatsby'
 
 import Layout from '../components/Layout'
 import Feature from '../components/Feature'
-import Accreditation from '../components/Accreditation'
+import Credits from '../components/Credits'
 import Quote from '../components/Quote'
 import Video from '../components/Video'
 import Friends from '../components/Friends'
 import HomepageHero from '../components/HomepageHero'
 
 export const IndexPageTemplate = ({
-  image,
-  title,
-  heading,
-  subheading,
-  mainpitch,
-  description,
-  intro,
+  homepageHero,
+  quote,
+  video,
+  feature,
+  friends,
+  credits
 }) => (
   <div>
-    <HomepageHero title={title} />
-    <Quote />
-    <Video/>
-    <Feature />
-    <Friends />
-    <Accreditation />
+    <HomepageHero 
+      {...homepageHero}
+    />
+    <Quote
+      {...quote}
+    />
+    <Video
+      {...video}
+    />
+    <Feature
+      {...feature}
+    />
+    <Friends
+      {...friends}
+    />
+    <Credits 
+      {...credits}
+    />
   </div>
 )
-
-IndexPageTemplate.propTypes = {
-  image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
-  title: PropTypes.string,
-  heading: PropTypes.string,
-  subheading: PropTypes.string,
-  mainpitch: PropTypes.object,
-  description: PropTypes.string,
-  intro: PropTypes.shape({
-    blurbs: PropTypes.array,
-  }),
-}
 
 const IndexPage = ({ data }) => {
   const { frontmatter } = data.markdownRemark
@@ -47,13 +46,12 @@ const IndexPage = ({ data }) => {
   return (
     <Layout>
       <IndexPageTemplate
-        image={frontmatter.image}
-        title={frontmatter.title}
-        heading={frontmatter.heading}
-        subheading={frontmatter.subheading}
-        mainpitch={frontmatter.mainpitch}
-        description={frontmatter.description}
-        intro={frontmatter.intro}
+        homepageHero={frontmatter.homepageHero}
+        quote={frontmatter.quote}
+        video={frontmatter.video}
+        feature={frontmatter.feature}
+        friends={frontmatter.friends}
+        credits={frontmatter.credits}
       />
     </Layout>
   )
@@ -73,34 +71,71 @@ export const pageQuery = graphql`
   query IndexPageTemplate {
     markdownRemark(frontmatter: { templateKey: { eq: "index-page" } }) {
       frontmatter {
-        title
-        image {
-          childImageSharp {
-            fluid(maxWidth: 2048, quality: 100) {
-              ...GatsbyImageSharpFluid
-            }
-          }
+        homepageHero {
+          title,
+          subtitle,
+          donationTitle,
+          donationDescription,
+          donateButtonText
         }
-        heading
-        subheading
-        mainpitch {
-          title
-          description
+        quote {
+          quoteText,
+          quoteSource
         }
-        description
-        intro {
-          blurbs {
+        video {
+          videoId
+        }
+        feature {
+          title,
+          text,
+          primaryButtonText,
+          secondaryButtonText,
+          featureImage {
             image {
               childImageSharp {
-                fluid(maxWidth: 240, quality: 64) {
+                fluid(maxWidth: 1200, quality: 64) {
                   ...GatsbyImageSharpFluid
                 }
               }
-            }
-            text
+            },
+            alt
           }
-          heading
-          description
+        }
+        friends {
+          title,
+          friendsList {
+            profileImage {
+              image {
+                childImageSharp {
+                  fluid(maxWidth: 1200, quality: 64) {
+                    ...GatsbyImageSharpFluid
+                  }
+                }
+              },
+              alt
+            }
+            name,
+            bio
+          }
+        }
+        credits {
+          title,
+          creditList {
+            logo {
+              image {
+                childImageSharp {
+                  fluid(maxWidth: 1200, quality: 64) {
+                    ...GatsbyImageSharpFluid
+                  }
+                }
+              },
+              alt
+            }
+            link {
+              url,
+              target
+            }
+          }
         }
       }
     }

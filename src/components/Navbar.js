@@ -110,7 +110,7 @@ class Navbar extends React.Component {
             </ul>
           </div>
           <div className="navbar__flex">
-            <button className="btn btn--style-b" type="button">Donate Now</button>
+            <button className="btn btn--style-b btn--paypal" type="button"><em>Donate Now</em></button>
             {
               isMobile && 
                 <button className="btn" type="button" onClick={this.toggleMenu}>{ isOpen ? <CloseIcon/> : <MenuIcon/>}</button>
