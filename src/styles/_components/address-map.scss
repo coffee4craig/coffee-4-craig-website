@@ -1,0 +1,75 @@
+.address-map {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 680px;
+    margin-bottom: 100px;
+  }
+  
+.address-map__wrapper {
+  @include gridWidth;
+
+  display: flex;
+  width: 100%;
+  height: calc(100% - 80px);
+  margin-top: 80px;
+}
+
+.address-map__column{
+  
+  &:first-child {
+    @include col(8, 12, true, false);
+
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &:last-child {
+    @include col(4, 12, false, true);
+
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  } 
+
+  img {
+    width: 629px;
+    height: 420px;
+  }
+
+  .address-map__row {
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+    justify-content: space-between;
+
+    .address-map__column-address {
+      line-height: 25px;
+      text-align: left;
+      letter-spacing: 0;
+      color: #181F27;
+      opacity: 0.9;
+
+      
+      .address-map__row-open-title {
+        font-size: 20px;
+        letter-spacing: 0;
+        color: $primary-color-b;
+        opacity: 0.9;
+        font-weight: 700;
+      }
+    }
+
+    p {
+        font-weight: 400;
+    }
+
+    .address-map__row-title {
+      font-weight: 700;
+    }
+
+  }
+}
+  
