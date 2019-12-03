@@ -100,8 +100,8 @@ collections:
                     fields:
                       - { label: Image, name: image, widget: image }
                       - { label: Alt Text, name: alt, widget: string }
-                  - { label: Name, name: name, widget: string },
-                  - { label: Bio, name: bio, widget: text },
+                  - { label: Name, name: name, widget: string }
+                  - { label: Bio, name: bio, widget: text }
       - label: "About"
         name: "about"
         file: "src/pages/about/index.md"
