@@ -1,18 +1,15 @@
 ---
 templateKey: index-page
 homepageHero:
-  donateButtonText: Donate Now
-  donationDescription: >-
-    By donating just £10, you can provide two pairs of thermal gloves for those
-    sleeping rough in the winter months.
+  title: Title
+  subtitle: Subtitle
   donationTitle: Donation Title
-  subtitle: >-
-    Here in Manchester, we have had a dramatic increase in numbers, the likes
-    that have never been seen before and it is increasing every day.
-  title: Make a huge difference today
+  donationDescription: >
+    Donation description
+  donateButtonText: Donate Now
 quote:
-  quoteSource: Hendrix Lancaster CEO
-  quoteText: "‘Homelessness is not the problem, it is a symptom of the problem’"
+  quoteText: Quote Text
+  quoteSource: Quote Source
 video:
   videoId: video id
 feature:
@@ -70,24 +67,24 @@ credits:
         image: /img/coffee.png
         alt: feature media alt text
       link:
-        url: https://www.w3schools.com,
+        url: https://www.w3schools.com
         target: _blank
     - logo:
         image: /img/coffee.png
         alt: feature media alt text
       link:
-        url: https://www.w3schools.com,
+        url: https://www.w3schools.com
         target: _blank
     - logo:
         image: /img/coffee.png
         alt: feature media alt text
       link:
-        url: https://www.w3schools.com,
+        url: https://www.w3schools.com
         target: _blank
     - logo:
         image: /img/coffee.png
         alt: feature media alt text
       link:
-        url: https://www.w3schools.com,
+        url: https://www.w3schools.com
         target: _blank
 ---

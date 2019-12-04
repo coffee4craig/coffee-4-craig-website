@@ -10,7 +10,7 @@ const Credits = ({ title, creditList }) => (
             </div>
             <div className="featured__row_2">
                 {
-                    creditList.map((credit, i) => (
+                    creditList && creditList.length > 0 && creditList.map((credit, i) => (
                         <div key={i} className="featured___column">
                             <a href={credit.link.url} target={credit.link.target}>
                                 <PreviewCompatibleImage cName="" imageInfo={credit.logo} />
