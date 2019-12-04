@@ -4,6 +4,7 @@ import HeartIcon from '../img/icons/heart.svg';
 import DonateIcon from '../img/icons/donate.svg';
 import BalloonIcon from '../img/icons/balloon.svg';
 import EnvelopeIcon from '../img/icons/envelope.svg';
+import LivingWageLogo from '../img/LW_logo_employer_rgb.svg';
 
 const Footer = () => {
   return (
@@ -44,8 +45,8 @@ const Footer = () => {
         <div className="footer__wrapper">
         
           <div className="footer__column">
-            <img className="footer__image" src="https://via.placeholder.com/115" alt=""/>
-            <p className="footer__copyright">Copyright Coffee4Craig 2019</p>
+            <img className="footer__image" src={LivingWageLogo} alt="We are a Living Wage employer"/>
+            <p className="footer__copyright">&copy; 2019 Coffee4Craig</p>
           </div>
 
           <div className="footer__column">
@@ -81,7 +82,7 @@ const Footer = () => {
           <div className="footer__column">
             <ul className="footer__list_social">
               <li>
-              <a href="https://stackoverflow.blog?blb=1" className="footer__list_social_button"> <DonateIcon /> Follow </a>
+                <a href="https://stackoverflow.blog?blb=1" className="footer__list_social_button"> <DonateIcon /> Follow </a>
               </li>
               <li >
                 <a href="https://stackoverflow.blog?blb=1" className="footer__list_social_button">Like </a>
