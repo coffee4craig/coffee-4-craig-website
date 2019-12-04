@@ -11,10 +11,12 @@
     @include col(12, 12);
     justify-content: center;
     display: flex;
+    border-top: 1px solid $color-grey-1;
+    padding-top: 70px;
     
     .featured__row_1_text {
       text-align: center;
-      font: Bold 38px/50px Lato;
+      font: 38px/50px Lato;
       letter-spacing: 0;
       color: #303E48;
       opacity: 1;

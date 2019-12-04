@@ -9,9 +9,9 @@ const Friends = ({ title, friendsList }) => (
         <div className="friends__grid">
           {
             friendsList.map((friend, i) =>
-              <div key={i} class="friends__section-col">
+              <div key={i} className="friends__section-col">
                 <PreviewCompatibleImage cName="" imageInfo={friend.profileImage} />
-                <div class="friends__section-col-text">
+                <div className="friends__section-col-text">
                   <h2>{friend.name}</h2>
                   <p>{friend.bio}</p>
                 </div>

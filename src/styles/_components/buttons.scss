@@ -42,6 +42,34 @@
 }
 
 .btn--style-d {
+  background: $primary-color-d;
+  color: $secondary-color-a;
+
+  &:hover {
+    background: darken($primary-color-d, 10%);
+  }
+}
+
+.btn--style-e {
+  background: $primary-color-e;
+  color: $secondary-color-a;
+
+  &:hover {
+    background: darken($primary-color-e, 10%);
+  }
+}
+
+.btn--style-f {
+  background: $primary-color-f;
+  color: $secondary-color-a;
+
+  &:hover {
+    background: darken($primary-color-f, 10%);
+  }
+}
+
+
+.btn--style-d {
   background: $primary-color-b;
   color: $secondary-color-b;
 
@@ -49,6 +77,7 @@
     background: darken($primary-color-b, 10%);
   }
 }
+
 
 .btn--paypal {
   background: $color-paypal-blue;
