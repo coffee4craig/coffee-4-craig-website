@@ -25,7 +25,7 @@ export const IndexPageTemplate = ({
     <Quote
       {...quote}
     />
-    <Video
+    <Video  
       {...video}
     />
     <Feature

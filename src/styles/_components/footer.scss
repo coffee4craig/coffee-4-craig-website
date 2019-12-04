@@ -4,13 +4,15 @@
 
 .footer__cta-block {
   position: absolute;
+  z-index: 2;
   width: 100%;
   top: -100px;
 }
 
 .footer__cta-row {
   @include gridWidth;
-
+  position: relative;
+  z-index: +1;
   display: flex;
 }
 
@@ -73,6 +75,7 @@
   justify-content: center;
   align-items: center;
   text-align: center;
+  padding: 10px;
 
   svg {
     padding-bottom: 25px;
@@ -91,6 +94,21 @@
 .footer__main {
   background: $primary-color-c;
   padding-top: 300px;
+  position: relative;
+  z-index: 1;
+
+  &:before {
+    content: '';
+    display: block;
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    width: 100%;
+    top: -20px;
+    height: 30px;
+    background: url('../img/white-brush-top.svg') center top no-repeat;
+    background-size: cover;
+  }
 }
 
 .footer__wrapper {
@@ -147,6 +165,10 @@
     letter-spacing: 0;
     color: #222222;
     opacity: 0.6;
+
+    &:hover {
+      text-decoration: underline;
+    }
   }
 }
 
@@ -165,6 +187,10 @@
       font-size: 24px;
     }
   }
+}
+
+.footer__image {
+  max-width: 145px;
 }
 
 .footer__list_social_button {
