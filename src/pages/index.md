@@ -1,90 +1,91 @@
 ---
 templateKey: index-page
 homepageHero:
-  title: Title
-  subtitle: Subtitle
-  donationTitle: Donation Title
-  donationDescription: >
-    Donation description
   donateButtonText: Donate Now
+  donationDescription: |
+    Donation description
+  donationTitle: Donation Title
+  subtitle: Subtitle
+  title: Title
 quote:
-  quoteText: Quote Text
   quoteSource: Quote Source
+  quoteText: Quote Text
 video:
   videoId: video id
 feature:
-  title: Feature Title
-  text: >
-    Feature text
+  featureImage:
+    alt: feature media alt text
+    image: /img/home-jumbotron.jpg
   primaryButtonText: Button One
   secondaryButtonText: Button Two
-  featureImage:
-    image: /img/home-jumbotron.jpg
-    alt: feature media alt text
+  text: |
+    Feature text
+  title: Feature Title
 friends:
-  title: Our friends
   friendsList:
-    - profileImage:
-        image: /img/coffee.png
-        alt: feature media alt text
-      name: Friend Name
-      bio: >
+    - bio: |
         Friend bio
-    - profileImage:
-        image: /img/coffee.png
+      name: Friend Name
+      profileImage:
         alt: feature media alt text
-      name: Friend 2 Name
-      bio: >
+        image: /img/bob_shot.jpg
+    - bio: |
         Friend 2 bio
-    - profileImage:
-        image: /img/coffee.png
+      name: Friend 2 Name
+      profileImage:
         alt: feature media alt text
-      name: Friend 3 Name
-      bio: >
+        image: /img/bob_shot.jpg
+    - bio: |
         Friend 3 bio
-    - profileImage:
-        image: /img/coffee.png
+      name: Friend 3 Name
+      profileImage:
         alt: feature media alt text
-      name: Friend 4 Name
-      bio: >
+        image: /img/bob_shot.jpg
+    - bio: |
         Friend 4 bio
-    - profileImage:
-        image: /img/coffee.png
+      name: Friend 4 Name
+      profileImage:
         alt: feature media alt text
-      name: Friend 5 Name
-      bio: >
+        image: /img/bob_shot.jpg
+    - bio: |
         Friend 5 bio
-    - profileImage:
-        image: /img/coffee.png
+      name: Friend 5 Name
+      profileImage:
         alt: feature media alt text
-      name: Friend 6 Name
-      bio: >
+        image: /img/bob_shot.jpg
+    - bio: |
         Friend 6 bio
+      name: Friend 6 Name
+      profileImage:
+        alt: feature media alt text
+        image: /img/bob_shot.jpg
+  title: Our friends
 credits:
-  title: As featured in…
   creditList:
-    - logo:
-        image: /img/coffee.png
-        alt: feature media alt text
-      link:
-        url: https://www.w3schools.com
+    - link:
         target: _blank
-    - logo:
-        image: /img/coffee.png
+        url: 'https://www.w3schools.com'
+      logo:
         alt: feature media alt text
-      link:
-        url: https://www.w3schools.com
-        target: _blank
-    - logo:
         image: /img/coffee.png
-        alt: feature media alt text
-      link:
-        url: https://www.w3schools.com
+    - link:
         target: _blank
-    - logo:
+        url: 'https://www.w3schools.com'
+      logo:
+        alt: feature media alt text
         image: /img/coffee.png
-        alt: feature media alt text
-      link:
-        url: https://www.w3schools.com
+    - link:
         target: _blank
+        url: 'https://www.w3schools.com'
+      logo:
+        alt: feature media alt text
+        image: /img/coffee.png
+    - link:
+        target: _blank
+        url: 'https://www.w3schools.com'
+      logo:
+        alt: feature media alt text
+        image: /img/coffee.png
+  title: As featured in…
 ---
+
