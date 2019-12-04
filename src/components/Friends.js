@@ -11,7 +11,7 @@ const Friends = ({ title, friendsList }) => (
             friendsList && friendsList.length > 0 && friendsList.map((friend, i) =>
               <div key={i} class="friends__section-col">
                 <PreviewCompatibleImage cName="" imageInfo={friend.profileImage} />
-                <div class="friends__section-col-text">
+                <div className="friends__section-col-text">
                   <h2>{friend.name}</h2>
                   <p>{friend.bio}</p>
                 </div>

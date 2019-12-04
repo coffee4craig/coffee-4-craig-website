@@ -6,6 +6,7 @@
     min-height: 680px;
     margin-bottom: 100px;
     position: relative;
+    z-index: 1;
 
     &:before,
     &:after {
@@ -39,11 +40,28 @@
     width: 100%;
     height: calc(100% - 80px);
     margin-top: 80px;
+    position: relative;
+
+    &:before {
+      content: '';
+      display: block;
+      position: absolute;
+      top: 56%;
+      left: -30px;
+      height: 316px;
+      width: 345px;
+      background: url('../img/coffee-ring.svg') center right no-repeat;
+      background-size: cover;
+    }
   }
   
   .feature-component__col {
+    position: relative;
+    z-index: 1;
+    width: 50%;
+
     &:first-child {
-      @include col(6, 12, true, false);
+      // @include col(6, 12, true, false);
   
       justify-content: center;
       display: flex;
@@ -51,12 +69,24 @@
     }
   
     &:last-child {
-      @include col(6, 12, false, true);
+      // @include col(6, 12, false, true);
   
       justify-content: center;
       display: flex;
       flex-direction: column;
       position: relative;
+
+      &:before {
+        content: '';
+        display: block;
+        position: absolute;
+        top: -30px;
+        right: -30px;
+        height: 538px;
+        width: 213px;
+        background: url('../img/photo-frame.svg') center right no-repeat;
+        background-size: contain;
+      }
     }
 
     .feature-component__col-image {
