@@ -67,24 +67,24 @@ credits:
         image: /img/coffee.png
         alt: feature media alt text
       link:
-        url: https://www.w3schools.com,
+        url: https://www.w3schools.com
         target: _blank
     - logo:
         image: /img/coffee.png
         alt: feature media alt text
       link:
-        url: https://www.w3schools.com,
+        url: https://www.w3schools.com
         target: _blank
     - logo:
         image: /img/coffee.png
         alt: feature media alt text
       link:
-        url: https://www.w3schools.com,
+        url: https://www.w3schools.com
         target: _blank
     - logo:
         image: /img/coffee.png
         alt: feature media alt text
       link:
-        url: https://www.w3schools.com,
+        url: https://www.w3schools.com
         target: _blank
 ---
