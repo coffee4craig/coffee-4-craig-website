@@ -85,23 +85,33 @@ collections:
                 fields:
                   - { label: Image, name: image, widget: image }
                   - { label: Alt Text, name: alt, widget: string }
-          - label: People
-            name: people
+          - label: Friends
+            name: friends
             widget: object
             fields:
               - { label: Title, name: title, widget: string }
-              - {
-                  label: Our Friends,
-                  name: friendsList,
-                  widget: list,
-                  fields:
-                    [
-                      { label: Image, name: image, widget: image },
-                      { label: Alt Text, name: alt, widget: string },
-                      { label: Name, name: name, widget: string },
-                      { label: Bio, name: bio, widget: text },
-                    ],
-                }
+              - label: Our Friends
+                name: friendsList
+                widget: list
+                fields:
+                  [ 
+                    { label: Profile Image, name: profileImage, widget: object, fields: [{ label: Image, name: image, widget: image },{ label: Alt Text, name: alt, widget: string }]},
+                    { label: Name, name: name, widget: string },
+                    { label: Bio, name: bio, widget: text }
+                  ]
+          - label: Credits
+            name: credits
+            widget: object
+            fields:
+              - { label: Title, name: title, widget: string }
+              - label: Credit List
+                name: creditList
+                widget: list
+                fields:
+                  [ 
+                    { label: Link, name: link, widget: object, fields: [{ label: Url, name: url, widget: string },{ label: Target, name: target, widget: string }]},
+                    { label: Logo, name: logo, widget: object, fields: [{ label: Image, name: image, widget: image },{ label: Alt Text, name: alt, widget: string }]},
+                  ]
       - label: "About"
         name: "about"
         file: "src/pages/about/index.md"
