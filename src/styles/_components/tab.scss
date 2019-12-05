@@ -1,0 +1,46 @@
+.tab {
+  display: flex;
+  flex-direction: column;
+}
+
+.tab.is-inverted {
+  flex-direction: column-reverse;
+}
+
+.tab__button-wrapper {
+  position: relative;
+  display: flex;
+}
+
+.tab__button {
+  padding: 10px 8px;
+  margin-bottom: 15px;
+  border: 0;
+  border-radius: 5px;
+  flex: 1;
+  margin: 5px;
+  background: #182027;
+  color: $secondary-color-b;
+}
+
+.tab__button.is-active {
+  background: $primary-color-a;
+}
+
+.tab__content-wrapper {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.tab__content {
+  padding: 15px;
+  line-height: 1.6;
+  opacity: 0;
+  grid-row-start: 1;
+  grid-column-start: 1;
+}
+
+.tab__content.is-active {
+  opacity: 1;
+}

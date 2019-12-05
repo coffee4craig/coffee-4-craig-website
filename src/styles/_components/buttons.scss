@@ -68,8 +68,7 @@
   }
 }
 
-
-.btn--style-d {
+.btn--style-g {
   background: $primary-color-b;
   color: $secondary-color-b;
 
@@ -78,19 +77,11 @@
   }
 }
 
-
 .btn--paypal {
-  background: $color-paypal-blue;
-
-  &:hover {
-    background: darken($color-paypal-blue, 10%);
-  }
-
   em {
-    background: url('../img/pp-white.svg') left center no-repeat;
+    background: url("../img/pp-white.svg") left center no-repeat;
     background-size: contain;
     padding-left: 24px;
     font-style: normal;
   }
-  
 }

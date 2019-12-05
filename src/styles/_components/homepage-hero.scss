@@ -1,14 +1,14 @@
-.hero {
+.homepage-hero {
   background: $primary-color-c;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 660px;
+  height: 500px;
   margin-bottom: 100px;
   position: relative;
 
   &:after {
-    content: '';
+    content: "";
     display: block;
     position: absolute;
     z-index: -1;
@@ -16,12 +16,12 @@
     left: 0;
     width: 100%;
     height: 70px;
-    background: url('../img/brush-home-bottom.svg') center bottom no-repeat;
+    background: url("../img/brush-home-bottom.svg") center bottom no-repeat;
     background-size: contain;
   }
 }
 
-.hero__wrapper {
+.homepage-hero__wrapper {
   @include gridWidth;
 
   display: flex;
@@ -30,7 +30,7 @@
   margin-top: 80px;
 }
 
-.hero__col {
+.homepage-hero__col {
   &:first-child {
     @include col(6, 12, true, false);
 
@@ -49,45 +49,13 @@
   }
 }
 
-.hero__title {
+.homepage-hero__title {
   font-size: 60px;
   line-height: 72px;
   padding-bottom: 15px;
 }
 
-.hero__subtitle {
+.homepage-hero__subtitle {
   max-width: 390px;
   line-height: 26px;
-}
-
-.hero__donate {
-  background: $secondary-color-b;
-  box-shadow: 0px 0px 40px #00000017;
-  border-radius: 5px;
-  padding: 40px 25px 32px;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  position: absolute;
-  top: 80px;
-  min-height: 500px;
-
-  h1 {
-    margin-bottom: 15px;
-  }
-
-  p {
-    line-height: 26px;
-  }
-}
-
-.hero__donate-cta {
-  margin-top: auto;
-  display: flex;
-  flex-direction: column;
-}
-
-.hero__donate-btn {
-  margin-bottom: 20px;
-  padding: 20px 16px;
 }

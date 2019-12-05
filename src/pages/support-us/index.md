@@ -1,4 +1,4 @@
 ---
-templateKey: service-page
-title: Service Page
+templateKey: support-page
+title: Support Us
 ---
