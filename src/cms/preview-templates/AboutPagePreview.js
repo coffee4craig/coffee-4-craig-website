@@ -8,7 +8,12 @@ const AboutPagePreview = ({ entry, getAsset }) => {
   if (data) {
     return (
       <AboutPageTemplate
-        title={data.title}
+        hero={data.hero || {}}
+        leadText={data.leadText || ""}
+        addressMap={data.addressMap || {}}
+        partners={data.partners || {}}
+        services={data.services || {}}
+        timeline={data.history || {}}
       />
     )
   } else {

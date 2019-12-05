@@ -1,6 +1,7 @@
 import React from 'react';
 import TotalGiving from '../img/totalgiving.png'
-const RichTextComp = () => (
+
+const RichText = () => (
   <div className="richtext">
     <div className="richtext__wrapper">
     <p className="richtext__source richtext-bold">    We have running costs and the six paid staff (three of which are part-time) are all on the same hourly living wage. 
@@ -19,4 +20,4 @@ const RichTextComp = () => (
   </div>
 );
 
-export default RichTextComp;
+export default RichText;

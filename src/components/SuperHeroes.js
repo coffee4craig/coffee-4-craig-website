@@ -3,8 +3,9 @@ import SuperHero1 from '../img/hero1.jpg';
 import SuperHero2 from '../img/hero2.jpg';
 import SuperHero3 from '../img/hero3.jpg';
 
-const SuperHeroes = () => (
+const Superheroes = ({ title, list }) => (
   <div className="superheroes">
+    {title}
     <div className="superheroes__wrapper">
         <h2>Our Super Heroes</h2>
         <div class="superheroes__section">
@@ -34,4 +35,4 @@ const SuperHeroes = () => (
   </div>
 )
 
-export default SuperHeroes;
+export default Superheroes;

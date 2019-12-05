@@ -96,21 +96,21 @@ class Navbar extends React.Component {
         <div ref={this.targetRef} className={`navbar__flex navbar__menu ${isMobile ? `is-mobile` : ``}`} style={{ 'transform': isMobile ? transform : 'translateX(0%)'}}>
           <ul className="navbar__links">
               <li>
-                <Link to="/about">About Us</Link>
+                <Link to="/about-us">About Us</Link>
               </li>
               <li>
-                <a href="http://google.com">Support Us</a>
+                <Link to="/support-us">Support Us</Link>
               </li>
               <li>
-                <a href="http://google.com">Fundraise</a>
+                <Link to="/fundraising">Fundraising</Link>
               </li>
               <li>
-                <a href="http://google.com">Get in touch</a>
+                <Link to="/contact-us">Contact Us</Link>
               </li>
             </ul>
           </div>
           <div className="navbar__flex">
-            <button className="btn btn--style-b btn--paypal" type="button"><em>Donate Now</em></button>
+            <button className="btn btn--style-g btn--paypal" type="button"><em>Donate Now</em></button>
             {
               isMobile && 
                 <button className="btn" type="button" onClick={this.toggleMenu}>{ isOpen ? <CloseIcon/> : <MenuIcon/>}</button>
