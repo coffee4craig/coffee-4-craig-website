@@ -7,7 +7,7 @@ import Hero from '../components/Hero'
 import LeadText from '../components/LeadText'
 import Volunteer from '../components/Volunteer'
 import DonateItems from '../components/DonateItems'
-import Superheroes from '../components/Superheroes'
+import Superheroes from '../components/SuperHeroes'
 import CtaBlock from '../components/CtaBlock'
 
 export const SupportPageTemplate = ({ title }) => (
