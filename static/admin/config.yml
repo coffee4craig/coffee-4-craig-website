@@ -90,28 +90,30 @@ collections:
             widget: object
             fields:
               - { label: Title, name: title, widget: string }
-              - label: Our Friends
-                name: friendsList
-                widget: list
+              - { label: Our Friends,
+                name: friendsList,
+                widget: list,
                 fields:
                   [ 
                     { label: Profile Image, name: profileImage, widget: object, fields: [{ label: Image, name: image, widget: image },{ label: Alt Text, name: alt, widget: string }]},
                     { label: Name, name: name, widget: string },
                     { label: Bio, name: bio, widget: text }
                   ]
+                }
           - label: Credits
             name: credits
             widget: object
             fields:
               - { label: Title, name: title, widget: string }
-              - label: Credit List
-                name: creditList
-                widget: list
+              - { label: Credit List,
+                name: creditList,
+                widget: list,
                 fields:
                   [ 
                     { label: Link, name: link, widget: object, fields: [{ label: Url, name: url, widget: string },{ label: Target, name: target, widget: string }]},
                     { label: Logo, name: logo, widget: object, fields: [{ label: Image, name: image, widget: image },{ label: Alt Text, name: alt, widget: string }]},
                   ]
+                }
       - label: "About"
         name: "about"
         file: "src/pages/about/index.md"
@@ -122,4 +124,38 @@ collections:
               widget: "hidden",
               default: "about-page",
             }
-          - { label: "Title", name: "title", widget: "string" }
+          - label: Hero
+            name: hero
+            widget: object
+            fields:
+              - { label: Title, name: title, widget: string }
+              - { label: Background Image, name: backgroundImage, widget: object, fields: [{ label: Image, name: image, widget: image },{ label: Alt Text, name: alt, widget: string }]}
+          - label: Lead Text
+            name: leadText
+            widget: text
+          - label: Address Map
+            name: addressMap
+            widget: object
+            fields:
+              - { label: Title, name: title, widget: string }
+              - { label: Address, name: address, widget: object, fields: [{ label: Title, name: title, widget: string },{ label: Address Line 1, name: addressLine1, widget: string },{ label: Address Line 2, name: addressLine2, widget: string },{ label: Postcode , name: postcode, widget: string }]}
+              - { label: Telephone, name: telephone, widget: object, fields: [{ label: Title, name: title, widget: string },{ label: Phone Number One, name: phoneNumberOne, widget: string },{ label: Phone Number Two, name: phoneNumberTwo, widget: string }]}
+              - { label: Opening Hours, name: openingHours, widget: object, fields: [{ label: Title, name: title, widget: string },{ label: Mon-Fri Label, name: monFriLabel, widget: string },{ label: Mon-Fri Time, name: monFriTime, widget: string },{ label: Sat-Sun Label , name: satSunLabel, widget: string },{ label: Sat-Sun Time , name: satSunTime, widget: string }]}
+          - label: Partners
+            name: partners
+            widget: object
+            fields:
+              - { label: Title, name: title, widget: string }
+              - { label: Text, name: text, widget: text }
+          - label: Services
+            name: services
+            widget: object
+            fields:
+              - { label: Title, name: title, widget: string }
+              - { label: Service List, name: serviceList, widget: list, fields: [{ label: Icon, name: icon, widget: string },{ label: Label, name: text, widget: string }]}
+          - label: History
+            name: history
+            widget: object
+            fields:
+              - { label: Title, name: title, widget: string }
+              - { label: Timeline, name: timeline, widget: list, fields: [{ label: Year, name: year, widget: string}, { label: text, name: text, widget: text }, { label: Featured Image, name: featuredImage, widget: object, fields: [{ label: Image, name: image, widget: image }, { label: Alt, name: alt, widget: string }]}]}
