@@ -6,7 +6,7 @@ const Timeline = ({ title, timeline}) => (
   <>
     <h2>{title}</h2>
     {
-      timeline.map((item, i) =>
+      timeline && timeline.length > 0 && timeline.map((item, i) =>
         <div key={i}>
           {item.year}
           {item.text}

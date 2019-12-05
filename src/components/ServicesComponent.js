@@ -6,7 +6,7 @@ const ServicesComponent = ({ title, serviceList }) => (
       <h2 class="services__title">{title}</h2>
       <div class="services__col">
         {
-          serviceList.map((service, i) => 
+          serviceList && serviceList.length > 0 && serviceList.map((service, i) => 
               <div key={i} class="services__col-item">
                 {service.icon}
                 <p>{service.text}</p>

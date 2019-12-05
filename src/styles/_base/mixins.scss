@@ -12,7 +12,6 @@
 
 @mixin col($col, $sum, $first: false, $last: false) {
   width: percentage($col / $sum);
-  font-size: 16px;
   display: inline-block;
   box-sizing: border-box;
   padding-left: if($first, 0, $grid-gutter-small);
