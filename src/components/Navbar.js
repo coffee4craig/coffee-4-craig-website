@@ -96,16 +96,16 @@ class Navbar extends React.Component {
         <div ref={this.targetRef} className={`navbar__flex navbar__menu ${isMobile ? `is-mobile` : ``}`} style={{ 'transform': isMobile ? transform : 'translateX(0%)'}}>
           <ul className="navbar__links">
               <li>
-                <Link to="/about">About Us</Link>
+                <Link to="/about-us">About Us</Link>
               </li>
               <li>
-                <a href="http://google.com">Support Us</a>
+                <Link to="/support-us">Support Us</Link>
               </li>
               <li>
-                <a href="http://google.com">Fundraise</a>
+                <Link to="/fundraising">Fundraising</Link>
               </li>
               <li>
-                <a href="http://google.com">Get in touch</a>
+                <Link to="/contact-us">Contact Us</Link>
               </li>
             </ul>
           </div>
