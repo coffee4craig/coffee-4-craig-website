@@ -1,7 +1,7 @@
 import React from 'react';
-import SuperHero1 from '../img/hero1.jpg';
-import SuperHero2 from '../img/hero2.jpg';
-import SuperHero3 from '../img/hero3.jpg';
+import SuperHero1 from '../img/placeholders/hero1.jpg';
+import SuperHero2 from '../img/placeholders/hero2.jpg';
+import SuperHero3 from '../img/placeholders/hero3.jpg';
 
 const Superheroes = ({ title, list }) => (
   <div className="superheroes">
