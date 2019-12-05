@@ -5,7 +5,8 @@ hero:
   backgroundImage:
     image: /img/home-jumbotron.jpg
     alt: feature media alt text
-leadText: The Manchester drop-in is an evening and weekend service, working in partnership with Centre Point, this service is supported by a grant from Manchester City Council.
+leadText: >
+  The Manchester drop-in is an evening and weekend service, working in partnership with Centre Point, this service is supported by a grant from Manchester City Council.
 addressMap:
   title: Manchester Drop-in
   address:
@@ -25,7 +26,8 @@ addressMap:
     satSunTime: 17:00 - 19:00
 partners:
   title: Working in partnership with
-  text: Centre Point North, Team Vow, The Myriad Foundation, North West First Aid, Not Just Soup…and all of our amazing staff and volunteers.
+  text: >
+    Centre Point North, Team Vow, The Myriad Foundation, North West First Aid, Not Just Soup…and all of our amazing staff and volunteers.
 services:
   title: This service provides
   serviceList:

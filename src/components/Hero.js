@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Hero = ({ title }) => (
+const Hero = ({ title, backgroundImage }) => (
   <p>{title}</p>
 );
 

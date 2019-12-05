@@ -69,13 +69,13 @@
   top: 0;
   left: 0;
   height: 100%;
-  width: 100%;
+  width: calc(100% - 20px);
+  padding: 10px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding: 10px;
 
   svg {
     padding-bottom: 25px;
