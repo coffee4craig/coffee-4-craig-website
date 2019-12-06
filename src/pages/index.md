@@ -11,7 +11,7 @@ quote:
   quoteSource: Quote Source
   quoteText: Quote Text
 video:
-  videoId: video id
+  videoId: 8rn5Yef9OGw
 feature:
   featureImage:
     alt: feature media alt text
@@ -64,27 +64,28 @@ credits:
   creditList:
     - link:
         target: _blank
-        url: "https://www.w3schools.com"
+        url: 'https://www.w3schools.com'
       logo:
         alt: feature media alt text
         image: /img/coffee.png
     - link:
         target: _blank
-        url: "https://www.w3schools.com"
+        url: 'https://www.w3schools.com'
       logo:
         alt: feature media alt text
         image: /img/coffee.png
     - link:
         target: _blank
-        url: "https://www.w3schools.com"
+        url: 'https://www.w3schools.com'
       logo:
         alt: feature media alt text
         image: /img/coffee.png
     - link:
         target: _blank
-        url: "https://www.w3schools.com"
+        url: 'https://www.w3schools.com'
       logo:
         alt: feature media alt text
         image: /img/coffee.png
   title: As featured in…
 ---
+
