@@ -9,11 +9,11 @@ import Quote from '../components/Quote'
 import Video from '../components/Video'
 import Friends from '../components/Friends'
 import HomepageHero from '../components/HomepageHero'
-import Hero from '../components/Hero'
+import FullWidthImage from '../components/FullWidthImage'
 
 export const IndexPageTemplate = ({
   homepageHero,
-  hero,
+  fullWidthImage,
   quote,
   video,
   feature,
@@ -24,8 +24,8 @@ export const IndexPageTemplate = ({
     <HomepageHero 
       {...homepageHero}
     />
-    <Hero 
-    {...hero}
+    <FullWidthImage 
+    {...fullWidthImage}
     />
     <Quote
       {...quote}
@@ -52,7 +52,7 @@ const IndexPage = ({ data }) => {
     <Layout>
       <IndexPageTemplate
         homepageHero={frontmatter.homepageHero}
-        hero={frontmatter.hero}
+        fullWidthImage={frontmatter.fullWidthImage}
         quote={frontmatter.quote}
         video={frontmatter.video}
         feature={frontmatter.feature}
@@ -84,8 +84,15 @@ export const pageQuery = graphql`
           donationDescription,
           donateButtonText
         }
-        hero {
-          title
+        fullWidthImage {
+          image {
+            childImageSharp {
+              fluid(maxWidth: 1200, quality: 64) {
+                ...GatsbyImageSharpFluid
+              }
+            }
+          },
+          alt
         }
         quote {
           quoteText,

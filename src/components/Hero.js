@@ -1,11 +1,23 @@
 import React from 'react';
-import Group from '../img/placeholders/group-photo.png';
 
-const Hero = ({ title, backgroundImage }) => (
-  <div className="hero">
-      <img src={backgroundImage}></img>
-      <p>{title}</p>
-  </div>
-);
+import PreviewCompatibleImage from './PreviewCompatibleImage';
+
+const Hero = ({ title, image, alt }) => {
+  const backgroundImage = {};
+
+  backgroundImage['image'] = image;
+  backgroundImage['alt'] = alt;
+
+  return (
+    <div className="hero">
+      <div className="hero__image-wrapper">
+        <PreviewCompatibleImage cName="hero__image-wrapper" imageInfo={backgroundImage}></PreviewCompatibleImage>
+      </div>
+      <div className="hero__overlay">
+        <h1 className="hero__title">{title}</h1>
+      </div>
+    </div>
+  );
+}
 
 export default Hero;

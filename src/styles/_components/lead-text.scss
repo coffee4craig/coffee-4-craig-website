@@ -3,7 +3,7 @@
 
   display: flex;
   justify-content: center;
-  padding: 40px 0;
+  padding: 95px 0 40px 0;
 }
 
 .lead-text__col {
@@ -14,10 +14,8 @@
 
 .lead-text__text {
   font-size: 36px;
+  line-height: 55px;
   text-align: center;
-  font-weight: 400;
-  letter-spacing: 0;
-  opacity: 1;
 
   .leadText__color {
     color: $primary-color-b;

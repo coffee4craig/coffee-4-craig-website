@@ -1,6 +1,5 @@
 import React from 'react';
 
-import PreviewCompatibleImage from './PreviewCompatibleImage';
 import Tab from './Tab';
 
 const Timeline = ({ title, timeline}) => {

@@ -12,11 +12,16 @@ media_folder: static/img
 public_folder: /img
 
 collections:
-  - name: "siteSettings"
-    label: "Site Settings"
-    folder: "src/pages/siteSettings.md"
-    fields:
-      - { label: "Site Title", name: siteTitle, widget: string }
+  - name: "settings"
+    label: "Settings"
+    files:
+      - name: "siteSettings"
+        label: "Site Settings"
+        file: "src/pages/siteSettings.md"
+        editor:
+          preview: false
+        fields:
+          - { label: "Site Title", name: siteTitle, widget: string }
 
   - name: "pages"
     label: "Pages"
@@ -46,6 +51,12 @@ collections:
                   name: donateButtonText,
                   widget: string,
                 }
+          - label: Full Width Image
+            name: fullWidthImage
+            widget: object
+            fields:
+              - { label: Image, name: image, widget: iamge }
+              - { label: Alt, name: alt, widget: string }
           - label: Quote
             name: quote
             widget: object

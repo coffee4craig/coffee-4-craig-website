@@ -17,7 +17,9 @@ export const AboutPageTemplate = ({
   partners,
   services,
   timeline
-}) => (
+}) => {
+  console.log(hero);
+  return (
   <div>
     <Hero {...hero} />
     <LeadText text={leadText} />
@@ -26,7 +28,7 @@ export const AboutPageTemplate = ({
     <ServicesComponent {...services} />
     <Timeline {...timeline} />
   </div>
-)
+)}
 
 const AboutPage = ({ data }) => {
   const { frontmatter } = data.markdownRemark
@@ -61,6 +63,14 @@ export const pageQuery = graphql`
       frontmatter {
         hero {
           title
+          image {
+            childImageSharp {
+              fluid(maxWidth: 1200, quality: 64) {
+                ...GatsbyImageSharpFluid
+              }
+            }
+          },
+          alt
         }
         leadText
         addressMap {
