@@ -86,16 +86,6 @@ export const pageQuery = graphql`
         }
         hero {
           title
-          backgroundImage {
-            image {
-              childImageSharp {
-                fluid(maxWidth: 1200, quality: 64) {
-                  ...GatsbyImageSharpFluid
-                }
-              }
-            },
-            alt
-          }
         }
         quote {
           quoteText,
