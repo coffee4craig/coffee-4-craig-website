@@ -10,11 +10,13 @@ class Video extends React.Component {
       }
     };
 
+    const videoId = this.props.videoId
+
     return (
       <div className="video">
         <div class="video__wrapper">
           <YouTube
-            videoId="8rn5Yef9OGw"
+            videoId={videoId}
             opts={opts}
             onReady={this._onReady} 
           />
