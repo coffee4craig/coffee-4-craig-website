@@ -39,8 +39,13 @@
   opacity: 0;
   grid-row-start: 1;
   grid-column-start: 1;
+  display: flex;
 }
 
 .tab__content.is-active {
   opacity: 1;
+}
+
+.tab__content-col {
+  flex: 1;
 }
