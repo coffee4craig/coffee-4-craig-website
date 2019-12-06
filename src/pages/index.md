@@ -7,6 +7,11 @@ homepageHero:
   donationTitle: Donation Title
   subtitle: Subtitle
   title: Title
+hero:
+  title: 
+  backgroundImage:
+    image: /img/placeholder/group-photo.png
+    alt: feature media alt text
 quote:
   quoteSource: Quote Source
   quoteText: Quote Text

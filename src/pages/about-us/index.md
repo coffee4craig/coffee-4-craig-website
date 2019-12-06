@@ -3,7 +3,7 @@ templateKey: about-page
 hero:
   title: About Us
   backgroundImage:
-    image: /img/home-jumbotron.jpg
+    image: /img/placeholder/group-photo.png
     alt: feature media alt text
 leadText: >
   The Manchester drop-in is an evening and weekend service, working in partnership with Centre Point, this service is supported by a grant from Manchester City Council.
