@@ -61,16 +61,6 @@ export const pageQuery = graphql`
       frontmatter {
         hero {
           title
-          backgroundImage {
-            image {
-              childImageSharp {
-                fluid(maxWidth: 1200, quality: 64) {
-                  ...GatsbyImageSharpFluid
-                }
-              }
-            },
-            alt
-          }
         }
         leadText
         addressMap {

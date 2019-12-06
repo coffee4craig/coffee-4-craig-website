@@ -9,9 +9,11 @@ import Quote from '../components/Quote'
 import Video from '../components/Video'
 import Friends from '../components/Friends'
 import HomepageHero from '../components/HomepageHero'
+import Hero from '../components/Hero'
 
 export const IndexPageTemplate = ({
   homepageHero,
+  hero,
   quote,
   video,
   feature,
@@ -21,6 +23,9 @@ export const IndexPageTemplate = ({
   <div>
     <HomepageHero 
       {...homepageHero}
+    />
+    <Hero 
+    {...hero}
     />
     <Quote
       {...quote}
@@ -47,6 +52,7 @@ const IndexPage = ({ data }) => {
     <Layout>
       <IndexPageTemplate
         homepageHero={frontmatter.homepageHero}
+        hero={frontmatter.hero}
         quote={frontmatter.quote}
         video={frontmatter.video}
         feature={frontmatter.feature}
@@ -77,6 +83,9 @@ export const pageQuery = graphql`
           donationTitle,
           donationDescription,
           donateButtonText
+        }
+        hero {
+          title
         }
         quote {
           quoteText,

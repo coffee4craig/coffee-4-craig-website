@@ -3,7 +3,7 @@ templateKey: about-page
 hero:
   title: About Us
   backgroundImage:
-    image: /img/home-jumbotron.jpg
+    image: /img/placeholder/group-photo.png
     alt: feature media alt text
 leadText: >
   The Manchester drop-in is an evening and weekend service, working in partnership with Centre Point, this service is supported by a grant from Manchester City Council.
@@ -50,7 +50,7 @@ history:
         image: /img/home-jumbotron.jpg
         alt: feature media alt text
     - year: 2014
-      text: Here in Manchester, we have had a dramatic increase in numbers, the likes that have never been seen before and it is increasing every day.Here in Manchester, we have had a dramatic increase in numbers, the likes that have never been seen before and it is increasing every day.
+      text: Here in Manchester, we have had a dramatic increase in numbers, the likes that have never been seen before and it is increasing every day.Here in Manchester, we have had a dramatic increase in numbers, the likes that have never been seen before and it is increasing every day. Here in Manchester, we have had a dramatic increase in numbers, the likes that have never been seen before and it is increasing every day.Here in Manchester, we have had a dramatic increase in numbers, the likes that have never been seen before and it is increasing every day.
       featuredImage:
         image: /img/home-jumbotron.jpg
         alt: feature media alt text

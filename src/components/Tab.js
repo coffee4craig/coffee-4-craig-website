@@ -1,4 +1,7 @@
 import React from "react";
+
+import PreviewCompatibleImage from "./PreviewCompatibleImage";
+
 import { matchHeight } from "../helpers/matchHeightHelper";
 
 class Tab extends React.Component {
@@ -7,12 +10,10 @@ class Tab extends React.Component {
   };
 
   componentDidMount() {
-    const { tabList } = this.props;
-
     matchHeight("tab__content");
 
     this.setState({
-      activeTab: tabList[0].id
+      activeTab: 0
     });
   }
 
@@ -26,7 +27,7 @@ class Tab extends React.Component {
     const { tabList, content, isInverted } = this.props;
 
     return (
-      <div className={`tab ${isInverted? `is-inverted` : ``}`}>
+      <div className={`tab ${isInverted ? `is-inverted` : ``}`}>
         <div className="tab__button-wrapper">
           {tabList &&
             tabList.length > 0 &&
@@ -34,11 +35,11 @@ class Tab extends React.Component {
               <button
                 key={i}
                 className={`tab__button ${
-                  this.state.activeTab === item.id ? `is-active` : ``
-                }`}
-                onClick={() => this.selectTabCallback(item.id)}
+                  this.state.activeTab === i ? `is-active` : ``
+                  }`}
+                onClick={() => this.selectTabCallback(i)}
               >
-                {item.label}
+                {item}
               </button>
             ))}
         </div>
@@ -49,10 +50,21 @@ class Tab extends React.Component {
               <div
                 key={i}
                 className={`tab__content ${
-                  this.state.activeTab === item.id ? `is-active` : ``
-                }`}
+                  this.state.activeTab === i ? `is-active` : ``
+                  }`}
               >
-                <p>{item.text}</p>
+                {item.text &&
+                  <div class="tab__content-col ">
+                    <p>{item.text}</p>
+                  </div>
+                }
+                {item.featuredImage &&
+                  <div class="tab__content-col">
+                    <PreviewCompatibleImage
+                      imageInfo={item.featuredImage}
+                    />
+                  </div>
+                }
               </div>
             ))}
         </div>
