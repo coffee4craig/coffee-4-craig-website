@@ -10,13 +10,15 @@ import DonateItems from '../components/DonateItems'
 import Superheroes from '../components/SuperHeroes'
 import CtaBlock from '../components/CtaBlock'
 
-export const SupportPageTemplate = ({ title }) => (
+export const SupportPageTemplate = ({ 
+  volunteer
+ }) => (
   <div>
     <Hero title="Hero" backgroundImage={{}} />
     <LeadText text="Lead Text" />
-    <Volunteer title="Volunteer" text="" buttonOne={{}} buttonTwo={{}} />
     <DonateItems title="Donate Items" text="" list={[]} button={{}} />
     <Superheroes title="Superheros" list={[]} />
+    <Volunteer {...volunteer}/>
     <CtaBlock title="CTA Block" button={{}} />
   </div>
 )
@@ -28,6 +30,7 @@ const SupportPage = ({ data }) => {
     <Layout>
       <SupportPageTemplate
         title={frontmatter.title}
+        volunteer={frontmatter.volunteer}
       />
     </Layout>
   )
@@ -47,7 +50,10 @@ export const pageQuery = graphql`
   query SupportPageTemplate {
     markdownRemark(frontmatter: { templateKey: { eq: "support-page" } }) {
       frontmatter {
-        title
+        volunteer {
+          title
+          buttonText
+        }
       }
     }
   }
