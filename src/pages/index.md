@@ -8,7 +8,7 @@ homepageHero:
   subtitle: Here in Manchester, we have had a dramatic increase in numbers, the likes that have never been seen before and it is increasing every day.
   title: Make a huge difference today
 fullWidthImage:
-  image: /img/home-jumbotron.jpg
+  image: /img/hero.png
   alt: feature media alt text
 quote:
   quoteSource: Hendrix Lancaster CEO  
@@ -70,7 +70,7 @@ credits:
         url: "https://www.w3schools.com"
       logo:
         alt: feature media alt text
-        image: /img/coffee.png
+        image: /img/home-jumbotron.jpg
     - link:
         target: _blank
         url: "https://www.w3schools.com"
