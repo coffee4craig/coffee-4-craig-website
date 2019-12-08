@@ -31,37 +31,37 @@ friends:
       name: Friend Name
       profileImage:
         alt: feature media alt text
-        image: /img/placeholders/george_shot.jpg
+        image: /img/home-jumbotron.jpg
     - bio: |
         Friend 2 bio
       name: Friend 2 Name
       profileImage:
         alt: feature media alt text
-        image: /img/placeholders/karen_shot.jpg
+        image: /img/home-jumbotron.jpg
     - bio: |
         Friend 3 bio
       name: Friend 3 Name
       profileImage:
         alt: feature media alt text
-        image: /img/placeholders/dave_shot.jpg
+        image: /img/home-jumbotron.jpg
     - bio: |
         Friend 4 bio
       name: Friend 4 Name
       profileImage:
         alt: feature media alt text
-        image: /img/placeholders/bob_shot.jpg
+        image: /img/home-jumbotron.jpg
     - bio: |
         Friend 5 bio
       name: Friend 5 Name
       profileImage:
         alt: feature media alt text
-        image: /img/placeholders/oldguy_shot.jpg
+        image: /img/home-jumbotron.jpg
     - bio: |
         Friend 6 bio
       name: Friend 6 Name
       profileImage:
         alt: feature media alt text
-        image: /img/placeholders/dan_shot.jpg
+        image: /img/home-jumbotron.jpg
   title: Here are just a few people we now call our friends.
 credits:
   creditList:
