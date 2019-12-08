@@ -10,7 +10,7 @@ const FeatureComponent = ({ title, text, primaryButtonText, secondaryButtonText,
           <h2>{title}</h2>
           <p>{text}</p>
           <div className="feature-component__donate-cta">
-            <button className="btn btn--style-a feature-component__donate-btn">{primaryButtonText}</button>
+            <button className="btn btn--style-f feature-component__donate-btn">{primaryButtonText}</button>
             <button className="btn btn--style-b feature-component__donate-btn">{secondaryButtonText}</button>
           </div>
         </div>
