@@ -62,7 +62,7 @@ export const pageQuery = graphql`
     markdownRemark(frontmatter: { templateKey: { eq: "about-page" } }) {
       frontmatter {
         hero {
-          title
+          title,
           image {
             childImageSharp {
               fluid(maxWidth: 1200, quality: 64) {
