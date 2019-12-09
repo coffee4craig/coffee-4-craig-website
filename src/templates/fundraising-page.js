@@ -13,7 +13,6 @@ export const FundraisingPageTemplate = ({ title }) => (
     <Hero title="Hero" backgroundImage={{}} />
     <LeadText text="Lead Text" />
     <RichText text="Rich Text" />
-    <Cta />
   </div>
 )
 
