@@ -5,25 +5,25 @@ homepageHero:
   donationDescription: |
     Donation description
   donationTitle: Donation Title
-  subtitle: Subtitle
-  title: Title
+  subtitle: Here in Manchester, we have had a dramatic increase in numbers, the likes that have never been seen before and it is increasing every day.
+  title: Make a huge difference today
 fullWidthImage:
   image: /img/home-jumbotron.jpg
   alt: feature media alt text
 quote:
-  quoteSource: Quote Source
-  quoteText: Quote Text
+  quoteSource: Hendrix Lancaster CEO  
+  quoteText: ‘Homelessness is not the problem, it is a symptom of the problem’
 video:
   videoId: 8rn5Yef9OGw
 feature:
   featureImage:
     alt: feature media alt text
     image: /img/home-jumbotron.jpg
-  primaryButtonText: Button One
-  secondaryButtonText: Button Two
+  primaryButtonText: Volunteer with Us
+  secondaryButtonText: Donate Today
   text: |
-    Feature text
-  title: Feature Title
+    Here in Manchester, we have had a dramatic increase in numbers, the likes that have never been seen before and it is increasing every day.
+  title: Make a huge difference today.
 friends:
   friendsList:
     - bio: |
@@ -62,7 +62,7 @@ friends:
       profileImage:
         alt: feature media alt text
         image: /img/home-jumbotron.jpg
-  title: Our friends
+  title: Here are just a few people we now call our friends.
 credits:
   creditList:
     - link:
