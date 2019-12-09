@@ -17,6 +17,12 @@ const Credits = ({ title, creditList }) => {
                             <a href={credit.link.url} target={credit.link.target}>
                                 <PreviewCompatibleImage cName="featured__logo" imageInfo={credit.logo} />
                             </a>
+                            {
+                                credit.description && credit.description.length > 0 &&
+                                    <p className="featured__description">
+                                        {credit.description}
+                                    </p>
+                            }
                         </div>
                     ))
                 }

@@ -1,5 +1,5 @@
 .featured {
-  margin-bottom: 100px;
+  margin-bottom: 200px;
   justify-content: center;
 }
 
@@ -21,6 +21,7 @@
     letter-spacing: 0;
     color: #303E48;
     opacity: 1;
+    padding-bottom: 50px;
   }
 }
 
@@ -35,8 +36,10 @@
     display: inline-block;
     vertical-align: middle;
     width: 25%;
-    height: 100px;
+    height: 200px;
     display: flex;
+    flex-direction: column;
+
 
     a {
       display: flex;
@@ -55,3 +58,8 @@
     height: 200px;
   }
 }
+
+.featured__description {
+  padding: 20px 65px;
+}
+
