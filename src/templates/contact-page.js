@@ -12,16 +12,15 @@ import FeatureInverted from '../components/FeatureInverted'
 import Faq from '../components/Faq'
 
 export const ContactPageTemplate = ({ 
-  emergency
+  credits
  }) => (
   <div>
     <Hero title="Hero" backgroundImage={{}} />
     <LeadText text="Lead Text" />
     <ContactForm />
-    <Credits title="Credits" creditList={[]} />
-    <Emergency 
-     {...emergency}
-    />
+    <Credits 
+      {...credits}
+    />  
     <FeatureInverted title="Feature Inverted" text="" primaryButtonText="" secondaryButtonText="" backgroundImage={{}} />
     <Faq title="FAQ" list={[]} />
   </div>
@@ -33,7 +32,7 @@ const ContactPage = ({ data }) => {
   return (
     <Layout>
       <ContactPageTemplate
-        emergency={frontmatter.emergency}
+        credits={frontmatter.credits}
       />
     </Layout>
   )
@@ -53,10 +52,10 @@ export const pageQuery = graphql`
   query ContactPageTemplate {
     markdownRemark(frontmatter: { templateKey: { eq: "contact-page" } }) {
       frontmatter {
-        emergency {
+        credits {
           title,
-          emergencyContactList {
-            emergencyContactImage {
+          creditList {
+            logo {
               image {
                 childImageSharp {
                   fluid(maxWidth: 1200, quality: 64) {
@@ -66,7 +65,11 @@ export const pageQuery = graphql`
               },
               alt
             }
-            contact
+            link {
+              url,
+              target
+            }
+            description
           }
         }
       }

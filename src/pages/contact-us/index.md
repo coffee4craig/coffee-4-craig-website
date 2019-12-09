@@ -1,26 +1,34 @@
 ---
 templateKey: contact-page
-emergency:
-  emergencyContactList:
-    - contact: |
-        When it’s less Urgent than 999
-      emergencyContactImage:
+credits:
+  creditList:
+    - link:
+        target: _blank
+        url: "https://www.w3schools.com"
+      logo:
         alt: feature media alt text
-        image: /img/home-jumbotron.jpg
-    - contact: |
-        116 123 Call for FREE
-      emergencyContactImage:
+        image: /img/coffee.png
+      description : When it’s less Urgent than 999
+    - link:
+        target: _blank
+        url: "https://www.w3schools.com"
+      logo:
         alt: feature media alt text
-        image: /img/home-jumbotron.jpg
-    - contact: |
-        sequoiasupport.uk Visit Us
-      emergencyContactImage:
+        image: /img/coffee.png
+      description : 116 123 Call for FREE
+    - link:
+        target: _blank
+        url: "https://www.w3schools.com"
+      logo:
         alt: feature media alt text
-        image: /img/home-jumbotron.jpg
-    - contact: |
-        streetsupport.net Visit Us
-      emergencyContactImage:
+        image: /img/coffee.png
+      description : sequoiasupport.uk Visit Us
+    - link:
+        target: _blank
+        url: "https://www.w3schools.com"
+      logo:
         alt: feature media alt text
-        image: /img/home-jumbotron.jpg
-  title: Emergency Contact
+        image: /img/coffee.png
+      description : sequoiasupport.uk Visit Us
+  title: As featured in…
 ---
