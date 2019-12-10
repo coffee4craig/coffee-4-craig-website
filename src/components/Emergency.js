@@ -2,7 +2,6 @@ import React from 'react';
 import PreviewCompatibleImage from './PreviewCompatibleImage';
 
 const Emergency = ({title, emergencyContactList}) => (
-    console.log(emergencyContactList),
   <div className="emergency">
     <div className="emergency__wrapper">
         <h2 className="emergency__title">{title}</h2>

@@ -18,7 +18,6 @@ export const AboutPageTemplate = ({
   services,
   timeline
 }) => {
-  console.log(hero);
   return (
   <div>
     <Hero {...hero} />
@@ -63,14 +62,16 @@ export const pageQuery = graphql`
       frontmatter {
         hero {
           title
-          image {
-            childImageSharp {
-              fluid(maxWidth: 1200, quality: 64) {
-                ...GatsbyImageSharpFluid
+          backgroundImage {
+            image {
+              childImageSharp {
+                fluid(maxWidth: 1200, quality: 64) {
+                  ...GatsbyImageSharpFluid
+                }
               }
-            }
-          },
-          alt
+            },
+            alt
+          }
         }
         leadText
         addressMap {

@@ -1,39 +1,37 @@
-.services-component {
-    background: $primary-color-b;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 680px;
-    margin-bottom: 100px;
-  }
-  
-  .services__wrapper {
-    @include gridWidth;
+.services {
+  background: $primary-color-b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 100px;
+  padding: 60px 0;
+}
 
-    display: flex;
-    width: 100%;   
-    flex-direction: column;
-    align-items: center;
-  }
+.services__wrapper {
+  @include gridWidth;
 
-  .services__col {
-    @include col(12, 12, true, false);
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+}
 
-    display: flex;
-    flex-wrap: wrap; 
-    display: flex;
-    justify-content: center;
-  }
-  
-  .services__col-item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    width: 113px;
-    height: 130px;
-    margin-right: 70px;
-    margin-top: 40px;
-  }
-  
- 
+.services__col {
+  @include col(12, 12, true, false);
+
+  display: flex;
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+}
+
+.services__col-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 113px;
+  height: 130px;
+  margin-right: 70px;
+  margin-top: 40px;
+}

@@ -3,7 +3,6 @@ import React from 'react'
 import PreviewCompatibleImage from './PreviewCompatibleImage';
 
 const Credits = ({ title, creditList }) => {
-    console.log(creditList);
     return (
     <div className="featured">
         <div className="featured__wrapper">

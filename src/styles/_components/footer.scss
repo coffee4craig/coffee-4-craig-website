@@ -11,8 +11,9 @@
 
 .footer__cta-row {
   @include gridWidth;
+
   position: relative;
-  z-index: +1;
+  z-index: 1;
   display: flex;
 }
 
@@ -106,13 +107,15 @@
     width: 100%;
     top: -20px;
     height: 30px;
-    background: url('../img/white-brush-top.svg') center top no-repeat;
+    background: url("../img/brush-home-bottom.svg") center bottom no-repeat;
     background-size: cover;
+    transform: scaleY(-1);
   }
 }
 
 .footer__wrapper {
   @include gridWidth;
+  display: flex;
 }
 
 .footer__column {
@@ -196,24 +199,51 @@
 .footer__list_social_button {
   text-align: center;
   text-decoration: none;
-  padding: 15px 107px;
+  // padding: 15px 107px;
+  padding: 15px 20px;
   border-radius: 5px;
   background: #259FF2 0% 0% no-repeat padding-box;
   margin: 1px 0 14px 0;
   opacity: 1;
   display: flex;
   align-items: center;
+  justify-content: center;
 
   &.social_twitter {
     background-color: #259FF2;
+
+    &:hover {
+      background: darken(#259FF2, 10%);
+    }
   }
 
   &.social_facebook {
     background-color: #3C5799;
+
+    &:hover {
+      background: darken(#3C5799, 10%);
+    }
   }
 
   &.social_instagram {
     background-color: #862391;
+
+    &:hover {
+      background: darken(#862391, 10%);
+    }
+  }
+
+  svg {
+    filter: brightness(1) invert(1);
+    width: 10em;
+    height: 10em;
+    max-height: 1.2em;
+    max-width: 1.2em;
+    margin-right: 8px;
+  }
+
+  > span {
+    display: none;
   }
 }
 

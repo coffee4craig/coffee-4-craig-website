@@ -2,8 +2,7 @@ import React from 'react';
 import Map from '../img/map_location.png';
 
 const AddressMap = ({ title, address, telephone, openingHours }) => (
-  <div className="address-map">
-    <div class="address-map__wrapper">
+    <div class="address-map">
       <div class="address-map__column">
         <img src={Map}></img>
       </div>
@@ -40,7 +39,6 @@ const AddressMap = ({ title, address, telephone, openingHours }) => (
         </div>
       </div>
     </div>
-  </div>
 );
 
 export default AddressMap;
