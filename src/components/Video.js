@@ -12,7 +12,7 @@ class Video extends React.Component {
 
     return (
       <div className="video">
-        <div class="video__wrapper">
+        <div className="video__wrapper">
           <YouTube
             videoId="8rn5Yef9OGw"
             opts={opts}
