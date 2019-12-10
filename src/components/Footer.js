@@ -6,6 +6,10 @@ import BalloonIcon from '../img/icons/balloon.svg';
 import EnvelopeIcon from '../img/icons/envelope.svg';
 import LivingWageLogo from '../img/LW_logo_employer_rgb.svg';
 
+import LogoTwitter from '../img/icons/twitter.svg';
+import LogoFacebook from '../img/icons/facebook.svg';
+import LogoInstagram from '../img/icons/instagram.svg';
+
 const Footer = () => {
   return (
     <footer className="footer">
@@ -82,13 +86,13 @@ const Footer = () => {
           <div className="footer__column">
             <ul className="footer__list_social">
               <li>
-                <a href="https://stackoverflow.blog?blb=1" className="footer__list_social_button"> <DonateIcon /> Follow </a>
+                <a href="https://twitter.com/Coffee4Craig" className="footer__list_social_button social_twitter"><LogoTwitter /> <span>Twitter </span>@Coffee4Craig</a>
               </li>
               <li >
-                <a href="https://stackoverflow.blog?blb=1" className="footer__list_social_button">Like </a>
+                <a href="https://www.facebook.com/Coffee4Craig/" className="footer__list_social_button social_facebook"><LogoFacebook />  <span>Facebook </span>Coffee4Craig</a>
               </li>
               <li > 
-                <a href="https://stackoverflow.blog?blb=1" className="footer__list_social_button">Follow </a>
+                <a href="https://www.instagram.com/coffee4craig/" className="footer__list_social_button social_instagram"><LogoInstagram /> <span>Instagram </span>@coffee4craig</a>
               </li>
             </ul>           
           </div>
