@@ -1,50 +1,57 @@
 .superheroes {
-    background: $primary-color-c;
-    display: flex;
-    justify-content: center;
-    height: 1000px;
-    margin-bottom: 100px;
-  }
-  
-  .superheroes__wrapper {
-    @include gridWidth;
-  
-    display: flex;
-    width: 100%;
-    margin-top: 80px;
-    flex-direction: column;
-    align-items: center;
-  }
+  @include gridWidth;
 
-  .superheroes__section {
-    justify-content: center;
-    display: flex;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 100px;
+}
+
+.superheroes__title {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.superheroes__section {
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+
+  @media only screen and (min-width: 768px) {
     flex-direction: row;
-    margin-top: 40px;
-
-    .superheroes__section-col {
-        @include col(4, 12, true, false);
-    
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-
-        img {
-            max-width: 100%
-        }
-
-        h2 {
-            font-weight: 700;
-            letter-spacing: 0;
-            opacity: 1;
-            margin-top: 10px;
-        }
-
-        p {
-            padding-right: 20px;
-            padding-left: 20px;
-            letter-spacing: 0;
-            opacity: 0.85;
-            line-height: 27px;        }
-    }
+    margin-right: -15px;
+    overflow: hidden;
   }
+}
+
+.superheroes__section-col {
+  @include col(12, 12, true, true);
+
+  max-width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 35px;
+
+  @media only screen and (min-width: 768px) {
+    @include col(4, 12, true, false);
+
+    max-width: 100%;
+    margin-bottom: 0;
+  }
+
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+
+  img {
+    max-width: 100%;
+    margin-bottom: 25px;
+    box-shadow: 0px 0px 30px #72727233;
+    border-radius: 5px;
+  }
+
+  p {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+}

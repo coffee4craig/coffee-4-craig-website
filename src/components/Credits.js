@@ -2,7 +2,8 @@ import React from 'react'
 
 import PreviewCompatibleImage from './PreviewCompatibleImage';
 
-const Credits = ({ title, creditList }) => (
+const Credits = ({ title, creditList }) => {
+    return (
     <div className="featured">
         <div className="featured__wrapper">
             <div className="featured__row_1">
@@ -13,14 +14,21 @@ const Credits = ({ title, creditList }) => (
                     creditList && creditList.length > 0 && creditList.map((credit, i) => (
                         <div key={i} className="featured___column">
                             <a href={credit.link.url} target={credit.link.target}>
-                                <PreviewCompatibleImage cName="" imageInfo={credit.logo} />
+                                <PreviewCompatibleImage cName="featured__logo" imageInfo={credit.logo} />
                             </a>
+                            {
+                                credit.description && credit.description.length > 0 &&
+                                    <p className="featured__description">
+                                        {credit.description}
+                                    </p>
+                            }
                         </div>
                     ))
                 }
             </div>
         </div>   
     </div>
-);
+    )
+};
 
 export default Credits;

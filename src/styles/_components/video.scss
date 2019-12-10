@@ -1,15 +1,27 @@
 .video {
   @include gridWidth;
 
+  text-align: center;
   position: relative;
-  padding: 40px 0;
+  padding: 40px 20px;
   z-index: 2;
   margin-bottom: -70px;
 }
 
 .video__wrapper {
-    @include col(12, 12, true, true);
+	position: relative;
+	padding-bottom: 56.25%;
+	height: 0;
+	overflow: hidden;
+	max-width: 100%;
 
-    display: flex;
-    justify-content: center;
+	iframe,
+	object,
+	embed { 
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+	}
 }

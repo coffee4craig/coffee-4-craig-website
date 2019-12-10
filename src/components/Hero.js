@@ -2,12 +2,7 @@ import React from 'react';
 
 import PreviewCompatibleImage from './PreviewCompatibleImage';
 
-const Hero = ({ title, image, alt }) => {
-  const backgroundImage = {};
-
-  backgroundImage['image'] = image;
-  backgroundImage['alt'] = alt;
-
+const Hero = ({ title, backgroundImage }) => {
   return (
     <div className="hero">
       <div className="hero__image-wrapper">
