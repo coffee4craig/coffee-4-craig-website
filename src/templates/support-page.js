@@ -11,15 +11,15 @@ import Superheroes from '../components/SuperHeroes'
 import CtaBlock from '../components/CtaBlock'
 
 export const SupportPageTemplate = ({ 
-  volunteer
+  ctaBlock
  }) => (
   <div>
     <Hero title="Hero" backgroundImage={{}} />
     <LeadText text="Lead Text" />
-    <DonateItems title="Donate Items" text="" list={[]} button={{}} />
+    <Volunteer />
+    <DonateItems title="Donate Items" text="" list={[]} cta={{}} />
     <Superheroes title="Superheros" list={[]} />
-    <Volunteer {...volunteer}/>
-    <CtaBlock title="CTA Block" button={{}} />
+    <CtaBlock {...ctaBlock} />
   </div>
 )
 
@@ -30,7 +30,7 @@ const SupportPage = ({ data }) => {
     <Layout>
       <SupportPageTemplate
         title={frontmatter.title}
-        volunteer={frontmatter.volunteer}
+        ctaBlock={frontmatter.ctaBlock}
       />
     </Layout>
   )
@@ -50,9 +50,47 @@ export const pageQuery = graphql`
   query SupportPageTemplate {
     markdownRemark(frontmatter: { templateKey: { eq: "support-page" } }) {
       frontmatter {
-        volunteer {
+        hero {
           title
-          buttonText
+          backgroundImage {
+            image {
+              childImageSharp {
+                fluid(maxWidth: 1200, quality: 64) {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            },
+            alt
+          }
+        }
+        leadText
+        donateItems {
+          title
+          text
+          list {
+            label
+            image {
+              image {
+                childImageSharp {
+                  fluid(maxWidth: 1200, quality: 64) {
+                    ...GatsbyImageSharpFluid
+                  }
+                }
+              },
+              alt
+            }
+            cta {
+              url
+              label
+            }
+          }
+        }
+        ctaBlock {
+          title
+          link {
+            url
+            label
+          }
         }
       }
     }
