@@ -22,6 +22,16 @@ collections:
           preview: false
         fields:
           - { label: "Site Title", name: siteTitle, widget: string }
+  - name: "donate"
+    label: "Donate"
+    files:
+      - name: "donateWidget"
+        label: "Donate Widget"
+        file: "src/pages/donateWidget.md"
+        editor:
+          preview: false
+        fields:
+          - { label: "Donate Title", name: donateTitle, widget: string }
 
   - name: "pages"
     label: "Pages"
