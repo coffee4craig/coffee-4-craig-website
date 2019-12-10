@@ -94,3 +94,20 @@
     font-style: normal;
   }
 }
+
+.btn--amazon {
+  background: $color-amazon-yellow;
+  text-decoration: none;
+  color: black;
+
+  &:hover {
+    background: darken($color-amazon-yellow, 10%);
+  }
+
+  em {
+    background: url("../img/amazon-icon.svg") left center no-repeat;
+    background-size: contain;
+    padding-left: 30px;
+    font-style: normal;
+  }
+}

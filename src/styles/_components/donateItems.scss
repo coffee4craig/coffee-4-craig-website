@@ -1,0 +1,143 @@
+.donate-items {
+    background: $primary-color-c;
+}
+
+.donate-items__wrapper {
+    @include gridWidth;
+}
+
+.donate-items__row_1 {
+    @include col(12, 12);
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 50px 0;
+
+    .donate-items-title {
+        text-align: center;
+        font:  45px/55px Lato;
+        letter-spacing: 0;
+        color: #181F27;
+        opacity: 1;
+    }
+
+    .donate-items-subtitle {
+        text-align: center;
+        font: 20px/36px Lato;
+        letter-spacing: 0;
+        color: #181F27;
+        opacity: 1;
+        padding: 0 250px;
+
+        @media only screen and (max-width: 768px) {
+            padding: 0 50px;
+          }
+    }
+}
+
+.donate-items__row_2 {
+    @include col(12, 12);
+    
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    
+    @media only screen and (max-width: 768px) {
+        flex-direction: column;
+        margin-right: -15px;
+        overflow: hidden;
+      }
+
+    .donate-items__column {
+        position: relative;
+        vertical-align: middle;
+        width: 25%;
+        height: 261px;
+        display: flex;
+        flex-direction: column;
+        background: white;
+        margin-right: 10px;
+        align-items: center;
+        justify-content: center;
+
+        @media only screen and (max-width: 768px) {        
+            width: 100%;
+            margin-bottom: 15px;
+        }
+
+        .donate-items-label {
+            opacity: 0;
+            height: 0;
+            position: absolute;
+            text-align: center;
+            font: 24px/30px Lato;
+            font-weight: 700;
+            letter-spacing: 0;
+            color: #FFFFFF;
+        }
+
+        .donate-items-button{
+            opacity: 0;
+            height: 0;
+            padding: 15px 80px;
+            position: absolute;
+            bottom: 15px;
+            text-align: center;
+
+            em {
+                font-weight: 700;
+            }
+        }
+
+        &:hover {
+            opacity: 0.9;
+            background-color: $secondary-color-a;
+            color: $secondary-color-b;
+
+            .donate-items-label {
+                opacity: 1;
+                height: auto;
+
+            }
+
+            .donate-items-button{
+                opacity: 1;
+                height: auto;
+
+            }
+        }
+    }
+
+    .donate-item__image {
+        height: 183px;
+        width: 183px;
+    }
+}
+
+.donate-items__row_3 {
+    @include col(12, 12);
+
+    display: flex;
+    justify-content: center;
+    padding: 50px 0;
+
+    .donate-items-wishlist-button {
+        text-align: center;
+        background: #FFB036;
+        width: 30%;
+        height: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        em {
+            font-weight: 700;
+        }
+
+        @media only screen and (max-width: 768px) {        
+            width: 100%;
+            margin-bottom: 15px;
+        }
+    }
+}
