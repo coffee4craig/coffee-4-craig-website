@@ -1,11 +1,11 @@
 import React from 'react';
 
-const Volunteer = ({ title, buttonText}) => (
+const Volunteer = ({ title, text, ctaOne, ctaTwo}) => (
   <div className="volunteer">
-    <div className="volunteer__wrapper">
-      <h4 className="volunteer__title">{title}</h4>
-      <button className="btn btn--style-f volunteer__button">{buttonText}</button>
-    </div>
+    <h2>{title}</h2>
+    <p>{text}</p>
+    <a href={ctaOne.url}>{ctaOne.label}</a>
+    <a href={ctaOne.url}>{ctaOne.label}</a>
   </div>
 );
 

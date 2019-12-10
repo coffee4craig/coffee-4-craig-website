@@ -1,7 +1,7 @@
 import React from 'react';
 
 const ServicesComponent = ({ title, serviceList }) => (
-  <div className="services-component">
+  <div className="services">
     <div className="services__wrapper">
       <h2 class="services__title">{title}</h2>
       <div class="services__col">

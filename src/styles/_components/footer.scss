@@ -11,8 +11,9 @@
 
 .footer__cta-row {
   @include gridWidth;
+
   position: relative;
-  z-index: +1;
+  z-index: 1;
   display: flex;
 }
 
@@ -106,8 +107,9 @@
     width: 100%;
     top: -20px;
     height: 30px;
-    background: url('../img/white-brush-top.svg') center top no-repeat;
+    background: url("../img/brush-home-bottom.svg") center bottom no-repeat;
     background-size: cover;
+    transform: scaleY(-1);
   }
 }
 
