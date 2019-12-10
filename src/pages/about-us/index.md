@@ -57,7 +57,7 @@ history:
       year: 2013
     - featuredImage:
         alt: feature media alt text
-        image: /img/home-jumbotron.jpg
+        image: /img/chemex.jpg
       text: >-
         Here in Manchester, we have had a dramatic increase in numbers, the
         likes that have never been seen before and it is increasing every
