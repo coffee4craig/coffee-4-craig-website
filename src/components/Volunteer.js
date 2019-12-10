@@ -7,6 +7,6 @@ const Volunteer = ({ title, buttonText}) => (
       <button className="btn btn--style-f volunteer__button">{buttonText}</button>
     </div>
   </div>
-);
+); 
 
 export default Volunteer;
