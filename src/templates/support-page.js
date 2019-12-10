@@ -10,15 +10,20 @@ import DonateItems from '../components/DonateItems'
 import Superheroes from '../components/SuperHeroes'
 import CtaBlock from '../components/CtaBlock'
 
-export const SupportPageTemplate = ({ 
+export const SupportPageTemplate = ({
+  hero,
+  leadText,
+  volunteer,
+  donateItems,
+  superheroes,
   ctaBlock
  }) => (
   <div>
-    <Hero title="Hero" backgroundImage={{}} />
-    <LeadText text="Lead Text" />
-    <Volunteer />
-    <DonateItems title="Donate Items" text="" list={[]} cta={{}} />
-    <Superheroes title="Superheros" list={[]} />
+    <Hero {...hero} />
+    <LeadText text={leadText} />
+    <Volunteer {...volunteer} />
+    <DonateItems {...donateItems} />
+    <Superheroes {...superheroes} />
     <CtaBlock {...ctaBlock} />
   </div>
 )
@@ -30,6 +35,11 @@ const SupportPage = ({ data }) => {
     <Layout>
       <SupportPageTemplate
         title={frontmatter.title}
+        hero={frontmatter.hero}
+        leadText={frontmatter.leadText}
+        volunteer={frontmatter.volunteer}
+        donateItems={frontmatter.donateItems}
+        superheroes={frontmatter.superheroes}
         ctaBlock={frontmatter.ctaBlock}
       />
     </Layout>
@@ -64,6 +74,18 @@ export const pageQuery = graphql`
           }
         }
         leadText
+        volunteer {
+          title
+          text
+          ctaOne {
+            url
+            label
+          }
+          ctaTwo {
+            url
+            label
+          }
+        }
         donateItems {
           title
           text
@@ -72,7 +94,7 @@ export const pageQuery = graphql`
             image {
               image {
                 childImageSharp {
-                  fluid(maxWidth: 1200, quality: 64) {
+                  fluid(maxWidth: 400, quality: 64) {
                     ...GatsbyImageSharpFluid
                   }
                 }
@@ -83,6 +105,10 @@ export const pageQuery = graphql`
               url
               label
             }
+          }
+          cta {
+            url
+            label
           }
         }
         ctaBlock {

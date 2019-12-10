@@ -2,13 +2,21 @@
 templateKey: support-page
 hero:
   backgroundImage:
-    alt: about us
-    image: /img/hero.png
-  title: About Us
+    alt: support us
+    image: /img/support-hero.png
+  title: Support Us
 leadText: >
-  The Manchester drop-in is an evening and weekend service, working in
-  partnership with Centre Point, this service is supported by a grant from
-  Manchester City Council
+  A smile can go a long way, if you pass anyone in the city, whoever they are, smile and say hello. You never know what kind of day someone is having and it might make a difference.
+volunteer:
+  title: Volunteer
+  text: >
+    We need a team of volunteers every day at our drop-in centre on Oldham Street in Manchester. The roles include; cooking, sorting collections, giving out hot drinks and food, keeping the kitchen clean and tidy, greeting at reception, monitoring the shower list, and sitting down with guests for a brew and a chat! We also need help behind the scenes with lots of different things like sorting through donations, keeping the food bank organised, sending newsletters and thank yous. Maybe you have a skill that we could use?
+  ctaOne:
+    url: https://www.google.com/
+    label: Volunteer with Us
+  ctaTwo:
+    url: https://www.google.com/
+    label: Donate Today
 donateItems:
   title: Donate Items
   text: >
@@ -17,28 +25,28 @@ donateItems:
     - label: Backpack
       image: 
         alt: about us
-        image: /img/hero.png
+        image: /img/donate__backpack.png
       cta:
         url: https://www.google.com/
         label: Buy Now
     - label: 3 pack of razors
       image: 
         alt: about us
-        image: /img/hero.png
+        image: /img/donate__backpack.png
       cta:
         url: https://www.google.com/
         label: Buy Now
     - label: Sleeping bag
       image: 
         alt: about us
-        image: /img/hero.png
+        image: /img/donate__sleeping-bag.png
       cta:
         url: https://www.google.com/
         label: Buy Now
     - label: Gloves
       image: 
         alt: about us
-        image: /img/hero.png
+        image: /img/donate__gloves.png
       cta:
         url: https://www.google.com/
         label: Buy Now
