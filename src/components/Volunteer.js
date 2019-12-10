@@ -7,6 +7,6 @@ const Volunteer = ({ title, text, ctaOne, ctaTwo}) => (
     <a href={ctaOne.url}>{ctaOne.label}</a>
     <a href={ctaOne.url}>{ctaOne.label}</a>
   </div>
-);
+); 
 
 export default Volunteer;
