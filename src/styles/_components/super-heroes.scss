@@ -5,6 +5,7 @@
   flex-direction: column;
   justify-content: center;
   margin-bottom: 100px;
+  position: relative;
 }
 
 .superheroes__title {
@@ -15,7 +16,20 @@
 .superheroes__section {
   justify-content: center;
   display: flex;
-  flex-direction: column;
+  flex-direction: column;  
+
+  &:before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: -25px;
+    right: -122px;
+    height: 316px;
+    z-index: 1;
+    width: 345px;
+    background: url('../img/coffee-stain-support.svg') center right no-repeat;
+    background-size: cover;
+  }
 
   @media only screen and (min-width: 768px) {
     flex-direction: row;
@@ -27,6 +41,7 @@
 .superheroes__section-col {
   @include col(12, 12, true, true);
 
+  z-index: 2;
   max-width: 300px;
   margin-left: auto;
   margin-right: auto;
