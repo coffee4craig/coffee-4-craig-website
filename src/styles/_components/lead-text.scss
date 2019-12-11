@@ -1,9 +1,26 @@
 .lead-text {
+  position: relative;
+
+  &:before {
+    content: "";
+    display: block;
+    position: absolute;
+    z-index: 1;
+    top: -15px;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    background: url("../img/bottom-brush-white.svg") center top no-repeat;
+    background-size: contain;
+  }
+}
+
+.lead-text__wrapper {
   @include gridWidth;
 
   display: flex;
   justify-content: center;
-  padding: $spacing-double *1.5 $spacing;
+  padding: $spacing-double * 1.5 $spacing;
 
   @media only screen and (min-width: 768px) {
     padding: 95px 0 40px 0;
@@ -26,8 +43,7 @@
     line-height: 55px;
     text-align: center;
   }
-    .leadText__color {
-      color: $primary-color-b;
-    }
+  .leadText__color {
+    color: $primary-color-b;
   }
-
+}

@@ -1,40 +1,48 @@
 ---
 templateKey: contact-page
-featureInverted: 
+hero:
+  backgroundImage:
+    alt: about us
+    image: /img/contact-hero.jpg
+  title: Contact Us
+featureInverted:
   title: Press and Media
-  text: For any press and media enquiries, please contact the Coffee4Craig press team on XXXX XXXX XXX or alternatively email email@emailaddress.com Follow the link below to download our press pack for logo, information and photos.
-  primaryButtonText: Donate 10£ Now!
-  image: /img/home-jumbotron.jpg
-  alt: feature media alt text
+  text: >
+    For any press and media enquiries, please contact the Coffee4Craig press team on XXXX XXXX XXX or alternatively email email@emailaddress.com.
+    Follow the link below to download our press pack for logo, information and photos.
+  primaryButtonText: Donate Now!
+  backgroundImage:
+    image: /img/contactus-image.jpg
+    alt: feature media alt text
 credits:
   creditList:
     - link:
         target: _blank
-        url: "https://www.w3schools.com"
+        url: "https://111.nhs.uk/"
       logo:
-        alt: feature media alt text
-        image: /img/coffee.png
-      description : When it’s less Urgent than 999
+        alt: NHS 111 Logo
+        image: /img/emergency_111.png
+      description: When it’s less Urgent than 999
     - link:
         target: _blank
-        url: "https://www.w3schools.com"
+        url: "https://www.samaritans.org/how-we-can-help/contact-samaritan/"
       logo:
-        alt: feature media alt text
-        image: /img/coffee.png
-      description : 116 123 Call for FREE
+        alt: Samaritans Logo
+        image: /img/emergency_samaritans.png
+      description: Call for FREE
     - link:
         target: _blank
-        url: "https://www.w3schools.com"
+        url: "https://www.totalgiving.co.uk/charity/the-sequoia-trust-1163457"
       logo:
-        alt: feature media alt text
-        image: /img/coffee.png
-      description : sequoiasupport.uk Visit Us
+        alt: Sequoia Logo
+        image: /img/emergency_sequoia.png
+      description: Visit Us
     - link:
         target: _blank
-        url: "https://www.w3schools.com"
+        url: "https://www.mind.org.uk/"
       logo:
-        alt: feature media alt text
-        image: /img/coffee.png
-      description : sequoiasupport.uk Visit Us
-  title: As featured in…
+        alt: Mind logo
+        image: /img/emergency_mind.png
+      description: Visit Us
+  title: Emergency Contact Information
 ---

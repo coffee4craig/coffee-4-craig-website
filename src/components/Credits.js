@@ -14,7 +14,7 @@ const Credits = ({ title, creditList }) => {
                     creditList && creditList.length > 0 && creditList.map((credit, i) => (
                         <div key={i} className="featured___column">
                             <a href={credit.link.url} target={credit.link.target}>
-                                <PreviewCompatibleImage cName="featured__logo" imageInfo={credit.logo} />
+                                <PreviewCompatibleImage cName="featured__logo" isContained imageInfo={credit.logo} />
                             </a>
                             {
                                 credit.description && credit.description.length > 0 &&
