@@ -19,10 +19,10 @@ const Timeline = ({ title, timeline}) => {
   }
 
   return (
-    <>
-      <h2>{title}</h2>
+    <div class="timeline">
+      <h2 class="timeline__title">{title}</h2>
       <Tab tabList={tabButtons} content={tabContent} />
-    </>
+    </div>
   )
 };
 

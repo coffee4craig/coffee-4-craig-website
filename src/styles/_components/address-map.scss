@@ -1,5 +1,11 @@
 .address-map {
   @include gridWidth;
+  display: flex;
+  flex-direction: column;
+
+  @media only screen and (min-width: 768px) {
+    flex-direction: row;
+  }
 }
 
 .address-map__column {
@@ -24,6 +30,10 @@
     }
   }
 
+  & .title {
+    margin-top: $spacing * 0.75;
+  }
+
   img {
     width: 100%;
     height: auto;
@@ -31,14 +41,11 @@
 
   .address-map__row {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: space-between;
 
-    @media only screen and (min-width: 768px) {
-      flex-direction: row;
-    }
-
     .address-map__column-address {
+      width: 50%;
       line-height: 25px;
       text-align: left;
       letter-spacing: 0;

@@ -3,21 +3,31 @@
 
   display: flex;
   justify-content: center;
-  padding: 95px 0 40px 0;
+  padding: $spacing-double *1.5 $spacing;
+
+  @media only screen and (min-width: 768px) {
+    padding: 95px 0 40px 0;
+  }
 }
 
 .lead-text__col {
-  @include col(8, 12, true, true);
-
   text-align: center;
+  width: 100%;
+
+  @media only screen and (min-width: 768px) {
+    @include col(8, 12, true, true);
+  }
 }
 
 .lead-text__text {
-  font-size: 36px;
-  line-height: 55px;
-  text-align: center;
-
-  .leadText__color {
-    color: $primary-color-b;
+  font-size: $text-xl;
+  @media only screen and (min-width: 768px) {
+    font-size: 36px;
+    line-height: 55px;
+    text-align: center;
   }
-}
+    .leadText__color {
+      color: $primary-color-b;
+    }
+  }
+

@@ -1,27 +1,45 @@
 .partners {
-    @include gridWidth;
-  
-    display: flex;
-    justify-content: center;
-    padding: 40px 0;
+  @include gridWidth;
+
+  display: flex;
+  justify-content: center;
+  padding: $spacing;
+
+  @media only screen and (min-width: 768px) {
+  padding: $spacing-double 0;
   }
-  
+}
+
 .partners__wrapper {
+  width: 100%;
+
+
+  text-align: center;
+  letter-spacing: 0;
+
+  h3 {
+    font-size: $text-xl;
+    color: $text-grey-dark;
+    font-weight: normal;
+  }
+
+  p {
+    font-size: $text-base;
+    color: $text-grey-dark;
+  }
+
+  @media only screen and (min-width: 768px) {
     @include col(8, 12, true, true);
 
-    text-align: center;
-    letter-spacing: 0;
-    
-    h3 {
-        font-size:  36px;
-        color: #181F27;
-    }
-    
     p {
-        padding: 20px;
-        font-size:  22px;
-        color: #181F27;
+      padding: 20px;
+      font-size: 22px;
     }
+
+    h3 {
+      font-size: 36px;
+    }
+  }
 }
 
 
