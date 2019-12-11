@@ -1,4 +1,8 @@
-export const matchHeight = className => {
+export const matchHeight = (className, disableOnMobile) => {
+	if (disableOnMobile && window.innerWidth < 768) {
+		return;
+	}
+
 	const selector = document.getElementsByClassName(className);
 	let tallest = 0;
 	let i;

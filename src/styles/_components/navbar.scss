@@ -4,8 +4,12 @@
   width: 100%;
   top: 0;
   left: 0;
-  transition: background-color 0.5s ease;
+  transition: background-color 0.2s ease;
   z-index: 100;
+
+  @media only screen and (min-width: 768px) {
+    transition: background-color 0.5s ease;
+  }
 }
 
 .navbar__wrapper {
@@ -13,6 +17,11 @@
 
   display: flex;
   height: 100%;
+  padding-right: 8px;
+
+  @media only screen and (min-width: 768px) {
+    padding-right: 24px;
+  }
 }
 
 .navbar--has-background {
@@ -60,8 +69,8 @@
   @include list-unstyled;
 
   li {
-    display: inline-block;
-    margin: 0 10px;
+    display: block;
+    margin: 10px 0;
 
     a {
       text-decoration: none;
@@ -71,6 +80,11 @@
       &:hover {
         color: $secondary-color-a;
       }
+    }
+
+    @media only screen and (min-width: 768px) {
+      display: inline-block;
+      margin: 0 10px;
     }
   }
 }

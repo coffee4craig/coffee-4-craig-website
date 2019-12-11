@@ -10,7 +10,7 @@ class Tab extends React.Component {
   };
 
   componentDidMount() {
-    matchHeight("tab__content");
+    matchHeight("tab__content", true);
 
     this.setState({
       activeTab: 0

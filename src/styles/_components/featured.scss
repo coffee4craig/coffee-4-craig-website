@@ -13,15 +13,27 @@
   justify-content: center;
   display: flex;
   border-top: 1px solid $color-grey-1;
-  padding-top: 70px;
+  padding-top: 40px;
+
+  @media only screen and (min-width: 768px) {
+    padding-top: 70px;
+  }
 
   .featured__row_1_text {
     text-align: center;
-    font: 38px/50px Lato;
+    font-family: Lato, Arial, Helvetica, sans-serif;
+    line-height: 1.2;
+    font-size: 28px;
     letter-spacing: 0;
     color: #303E48;
     opacity: 1;
-    padding-bottom: 50px;
+    margin-bottom: 40px;
+    
+    @media only screen and (min-width: 768px) {
+      flex-direction: row;
+      font-size: 38px;
+      margin-bottom: 50px;
+    }
   }
 }
 
@@ -31,15 +43,25 @@
   display: flex;
   justify-content: center;
   text-align: center;
+  flex-direction: column;
+
+  @media only screen and (min-width: 768px) {
+    flex-direction: row;
+  }
 
   .featured___column {
     display: inline-block;
     vertical-align: middle;
-    width: 25%;
-    height: 200px;
     display: flex;
+    height: 150px;
     flex-direction: column;
+    margin-bottom: 12px;
 
+    @media only screen and (min-width: 768px) {
+      width: 25%;
+      margin-bottom: 0;
+      height: 200px;
+    }
 
     a {
       display: flex;
@@ -55,7 +77,12 @@
   width: 100%;
 
   img {
-    height: 200px;
+    width: auto;
+    height: 150px;
+
+    @media only screen and (min-width: 768px) {
+      height: 200px;
+    }
   }
 }
 

@@ -12,13 +12,13 @@ class Video extends React.Component {
 
     return (
       <div className="video">
-        <div className="video__wrapper">
           <YouTube
             videoId="8rn5Yef9OGw"
             opts={opts}
             onReady={this._onReady} 
+            containerClassName="video__wrapper"
+            className="video__iframe"
           />
-        </div>
       </div>
     );
   }
