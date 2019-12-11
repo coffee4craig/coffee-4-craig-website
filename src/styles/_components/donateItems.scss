@@ -1,9 +1,39 @@
 .donate-items {
     background: $primary-color-c;
+    position: relative;
+    margin-bottom: 115px;
 }
 
 .donate-items__wrapper {
     @include gridWidth;
+
+    &:after {
+        content: "";
+        display: block;
+        position: absolute;
+        z-index: 1;
+        bottom: -60px;
+        left: 0;
+        width: 100%;
+        height: 70px;
+        background: url("../img/brown-brush.svg") center top no-repeat;
+        background-size: contain;
+        transform: scaleX(6);
+      }
+
+      &::before {
+        content: "";
+        display: block;
+        position: absolute;
+        z-index: 0;
+        top: -60px;
+        left: 0;
+        width: 100%;
+        height: 70px;
+        background: url("../img/brown-brush.svg") center top no-repeat;
+        background-size: contain;
+        transform: scaleX(6);
+      }
 }
 
 .donate-items__row_1 {
@@ -80,7 +110,7 @@
         .donate-items-button{
             opacity: 0;
             height: 0;
-            padding: 15px 80px;
+            padding: 16px 60px;
             position: absolute;
             bottom: 15px;
             text-align: center;
@@ -126,7 +156,7 @@
         text-align: center;
         background: #FFB036;
         width: 30%;
-        height: 30px;
+        padding: 20px 16px;
         display: flex;
         justify-content: center;
         align-items: center;

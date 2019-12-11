@@ -12,7 +12,7 @@ volunteer:
   text: >
     We need a team of volunteers every day at our drop-in centre on Oldham Street in Manchester. The roles include; cooking, sorting collections, giving out hot drinks and food, keeping the kitchen clean and tidy, greeting at reception, monitoring the shower list, and sitting down with guests for a brew and a chat! We also need help behind the scenes with lots of different things like sorting through donations, keeping the food bank organised, sending newsletters and thank yous. Maybe you have a skill that we could use?
   ctaOne:
-    url: https://www.google.com/
+    url: https://docs.google.com/forms/d/e/1FAIpQLSemNku8dsK6_JD9ciOud2plvPN3wxKdMihiAaUvB3pOaoXwMA/viewform
     label: Volunteer with Us
   ctaTwo:
     url: https://www.google.com/
@@ -57,6 +57,6 @@ donateItems:
 ctaBlock:
   title: Become a super hero in just 5 mins...
   link:
-    url: https://www.google.com/
+    url: https://docs.google.com/forms/d/e/1FAIpQLSemNku8dsK6_JD9ciOud2plvPN3wxKdMihiAaUvB3pOaoXwMA/viewform
     label: Fill out our volunteer form
 ---
