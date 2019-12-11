@@ -3,10 +3,15 @@
 }
 
 .footer__cta-block {
-  position: absolute;
+  position: relative;
   z-index: 2;
   width: 100%;
-  top: -100px;
+  top: -50px;
+
+  @media only screen and (min-width: 768px) {
+    position: absolute;
+    top: -100px;
+  }
 }
 
 .footer__cta-row {
@@ -23,39 +28,55 @@
 }
 
 .footer__cta-col {
-  @include col(3, 12);
-
-  margin-right: 7.5px;
-  margin-left: 7.5px;
-
-  &:first-child {
-    @include col(3, 12, true, false);
-
-    margin-right: 7.5px;
-    margin-left: 0;
-  }
-
-  &:last-child {
-    @include col(3, 12, false, true);
-
-    margin-right: 0;
-    margin-left: 7.5px;
-  }
-
-  padding-bottom: 25%;
-  background-color: $secondary-color-b;
+  @include col(12, 12);
+  background-color: $secondary-color-a;
+  color: $secondary-color-b;
+  min-height: 250px;
+  position: relative;
+  width: calc(100% - 50px);
+  margin: 15px auto;
+  padding: 0;
   cursor: pointer;
   border-radius: 5px;
-  box-shadow: 0px 0px 20px #0000000B;
-  transition: color 0.3s ease;
+  box-shadow: 0px 0px 20px #0000000b;
+  transform: translateY(0);
+  transition: transform 0.2s ease-in-out;
+
+  @media only screen and (min-width: 768px) {
+    padding-bottom: 25%;
+    background-color: $secondary-color-b;
+    color: inherit;
+    margin-right: 7.5px;
+    margin-left: 7.5px;
+
+    @include col(3, 12);
+
+    &:first-child {
+      @include col(3, 12, true, false);
+
+      margin-right: 7.5px;
+      margin-left: 0;
+    }
+
+    &:last-child {
+      @include col(3, 12, false, true);
+
+      margin-right: 0;
+      margin-left: 7.5px;
+    }
+  }
 
   svg {
-    fill: $secondary-color-a;
+    fill: $primary-color-a;
+    @media only screen and (min-width: 768px) {
+      fill: $secondary-color-a;
+    }
   }
 
   &:hover {
     background-color: $secondary-color-a;
     color: $secondary-color-b;
+    transform: translateY(-15px);
 
     svg {
       fill: $primary-color-a;
@@ -75,15 +96,17 @@
   top: 0;
   left: 0;
   height: 100%;
-  width: calc(100% - 20px);
+  width: 100%;
   padding: 10px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
+  // transition: 0.3s ease-in-out;
 
   svg {
+    height: 90px;
     padding-bottom: 25px;
   }
 }
@@ -93,18 +116,28 @@
 }
 
 .footer__cta-subtitle {
-  opacity: 0;
-  height: 0;
+  opacity: 1;
+  height: auto;
+  margin: 0;
+
+  @media only screen and (min-width: 768px) {
+    opacity: 0;
+    height: 0;
+  }
 }
 
 .footer__main {
   background: $primary-color-c;
-  padding-top: 300px;
+  padding-top: 30px;
+  padding-bottom: 50px;
   position: relative;
   z-index: 1;
+  @media only screen and (min-width: 768px) {
+    padding-top: 280px;
+  }
 
   &:before {
-    content: '';
+    content: "";
     display: block;
     position: absolute;
     z-index: 1;
@@ -129,14 +162,20 @@
 }
 
 .footer__column {
-  @include col(3, 12);
+  margin: 15px 0;
+  @include col(12, 12);
 
-  &:first-child {
-    @include col(3, 12, true, false);
-  }
+  @media only screen and (min-width: 768px) {
+    margin: 0;
+    @include col(3, 12);
 
-  &:last-child {
-    @include col(3, 12, false, true);
+    &:first-child {
+      @include col(3, 12, true, false);
+    }
+
+    &:last-child {
+      @include col(3, 12, false, true);
+    }
   }
 }
 
@@ -146,7 +185,7 @@
   letter-spacing: 0;
   opacity: 1;
   font: Bold 24px/31px Lato;
-  color: #181F27;
+  color: #181f27;
 }
 
 .footer__text {
@@ -161,7 +200,10 @@
   letter-spacing: 0;
   color: #222222;
   opacity: 0.6;
-  margin-top: 65px;
+  margin-top: 30px;
+  @media only screen and (min-width: 768px) {
+    margin-top: 65px;
+  }
 }
 
 .footer__list {
@@ -192,7 +234,7 @@
 
   a {
     letter-spacing: 0;
-    color: #FFFFFF;
+    color: #ffffff;
     opacity: 0.9;
 
     .fa {
@@ -212,7 +254,7 @@
   // padding: 15px 107px;
   padding: 15px 20px;
   border-radius: 5px;
-  background: #259FF2 0% 0% no-repeat padding-box;
+  background: #259ff2 0% 0% no-repeat padding-box;
   margin: 1px 0 14px 0;
   opacity: 1;
   display: flex;
@@ -220,18 +262,18 @@
   justify-content: center;
 
   &.social_twitter {
-    background-color: #259FF2;
+    background-color: #259ff2;
 
     &:hover {
-      background: darken(#259FF2, 10%);
+      background: darken(#259ff2, 10%);
     }
   }
 
   &.social_facebook {
-    background-color: #3C5799;
+    background-color: #3c5799;
 
     &:hover {
-      background: darken(#3C5799, 10%);
+      background: darken(#3c5799, 10%);
     }
   }
 
