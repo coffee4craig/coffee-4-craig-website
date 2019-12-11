@@ -8,7 +8,7 @@
   width: 100%;
   top: -50px;
 
-  @media only screen and (min-width: 768px) {
+  @media only screen and (min-width: 1024px) {
     position: absolute;
     top: -100px;
   }
@@ -24,6 +24,10 @@
 
   @media only screen and (min-width: 768px) {
     flex-direction: row;
+    flex-wrap: wrap;
+  }
+  @media only screen and (min-width: 1024px) {
+    flex-wrap: unset;
   }
 }
 
@@ -46,15 +50,29 @@
     padding-bottom: 25%;
     background-color: $secondary-color-b;
     color: inherit;
-    margin-right: 7.5px;
-    margin-left: 7.5px;
+    margin: 10px;
 
+    @include col(6, 12);
+    width: calc(50% - 30px);
+
+    &:first-child {
+      @include col(6, 12, true, false);
+      width: calc(50% - 30px);
+    }
+
+    &:last-child {
+      @include col(6, 12, false, true);
+      width: calc(50% - 30px);
+    }
+  }
+
+  @media only screen and (min-width: 1024px) {
     @include col(3, 12);
 
     &:first-child {
       @include col(3, 12, true, false);
 
-      margin-right: 7.5px;
+      margin-right: 10px;
       margin-left: 0;
     }
 
@@ -62,7 +80,7 @@
       @include col(3, 12, false, true);
 
       margin-right: 0;
-      margin-left: 7.5px;
+      margin-left: 10px;
     }
   }
 
@@ -103,7 +121,6 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-  // transition: 0.3s ease-in-out;
 
   svg {
     height: 90px;
@@ -133,6 +150,11 @@
   position: relative;
   z-index: 1;
   @media only screen and (min-width: 768px) {
+    padding-top: 280px;
+    padding-top: 60px;
+  }
+
+  @media only screen and (min-width: 1024px) {
     padding-top: 280px;
   }
 
