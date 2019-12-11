@@ -4,7 +4,7 @@ const CtaBlock = ({ title, link }) => (
 <div className="cta-block">
   <div className="cta-block__wrapper">
     <h2 className="cta-block__title">{title}</h2>
-    <a href={link.url} className="btn btn--style-f cta-block__button">{link.label}</a>
+    <a href={link.url} className="btn btn--style-f cta-block__button"><em>{link.label}</em></a>
   </div>
 </div>
 );

@@ -44,7 +44,7 @@ const Donate = ({ description, buttonText }) => {
     <div className="donate">
       <Tab tabList={tabButtons} content={tabContent} isInverted />
       <div className="donate__cta">
-        <button className="btn btn--style-g donate__btn">Donate £10 Now</button>
+        <button className="btn btn--style-g donate__btn"><em>Donate £10 Now</em></button>
       </div>
     </div>
   )

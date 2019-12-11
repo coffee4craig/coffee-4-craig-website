@@ -5,6 +5,7 @@
   flex-direction: column;
   justify-content: center;
   margin-bottom: 100px;
+  margin-top: 60px;
 }
 
 .superheroes__title {
@@ -16,6 +17,7 @@
   justify-content: center;
   display: flex;
   flex-direction: column;
+  
 
   @media only screen and (min-width: 768px) {
     flex-direction: row;
