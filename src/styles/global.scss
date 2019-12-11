@@ -1,5 +1,13 @@
 body {
   font-family: $font-family-sans-serif;
-  font-size: $body-text-size;
+  font-size: $body-text-size-mobile;
   color: $body-text-color;
+
+  @media only screen and (min-width: 768px) {
+    font-size: $body-text-size;
+  }
+}
+
+* {
+  box-sizing: border-box;
 }

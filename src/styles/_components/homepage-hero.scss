@@ -1,9 +1,5 @@
 .homepage-hero {
   background: $primary-color-c;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 400px;
   position: relative;
 
   &:after {
@@ -18,43 +14,63 @@
     background: url("../img/brush-home-bottom.svg") center bottom no-repeat;
     background-size: contain;
   }
+
+  @media only screen and (min-width: 768px) {
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
-.homepage-hero__wrapper {
-  @include gridWidth;
-
-  display: flex;
+.homepage-hero__wrapper {  
   width: 100%;
-  height: calc(100% - 80px);
-  margin-top: 80px;
+  padding-top: 80px;
+  
+  @media only screen and (min-width: 768px) {
+    @include gridWidth;
+    height: calc(100% - 80px);
+    display: flex;
+  }
 }
 
 .homepage-hero__col {
   &:first-child {
-    @include col(6, 12, true, false);
-
-    justify-content: center;
-    display: flex;
-    flex-direction: column;
+    padding: 24px;
   }
 
-  &:last-child {
-    @include col(6, 12, false, true);
+  @media only screen and (min-width: 768px) {
+    &:first-child {
+      @include col(6, 12, true, false);
 
-    justify-content: center;
-    display: flex;
-    flex-direction: column;
-    position: relative;
+      justify-content: center;
+      display: flex;
+      flex-direction: column;
+    }
+
+    &:last-child {
+      @include col(6, 12, false, true);
+
+      justify-content: center;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+    }
   }
 }
 
 .homepage-hero__title {
-  font-size: 60px;
-  line-height: 72px;
-  padding-bottom: 15px;
+  font-size: 32px;
+  line-height: 1.2;
+  margin-bottom: 12px;
+
+  @media only screen and (min-width: 768px) {
+    font-size: 60px;
+    margin-bottom: 15px;
+  }
 }
 
 .homepage-hero__subtitle {
   max-width: 390px;
-  line-height: 26px;
+  line-height: 1.6;
 }

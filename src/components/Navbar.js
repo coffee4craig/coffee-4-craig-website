@@ -56,7 +56,10 @@ class Navbar extends React.Component {
     }
   }
 
-  toggleMenu = () => {
+  toggleMenu = (event) => {
+    event.preventDefault();
+    event.stopPropagation();
+    console.log('HELLO')
     const { isOpen } = this.state;
 
     this.setState({
@@ -75,6 +78,8 @@ class Navbar extends React.Component {
     } else {
       enableBodyScroll(this.targetElement);
     }
+
+    console.log('RERENDER')
 
     return (
       <nav
@@ -113,7 +118,7 @@ class Navbar extends React.Component {
             <a href="https://www.paypal.com/donate/?token=MwPuhqvKgesyUc3QiOoSrR3JAqf8fqxDUQuvY-CeQJvVkUAPM7pK1Tbb_vJHMxf5oTdSK0&country.x=GB&locale.x=GB" className="btn btn--paypal" type="button"><em>Donate Now</em></a>
             {
               isMobile && 
-                <a href="https://www.paypal.com/donate/?token=MwPuhqvKgesyUc3QiOoSrR3JAqf8fqxDUQuvY-CeQJvVkUAPM7pK1Tbb_vJHMxf5oTdSK0&country.x=GB&locale.x=GB" className="btn" type="button" onClick={this.toggleMenu}>{ isOpen ? <CloseIcon/> : <MenuIcon/>}</a>
+                <a href="#" className="btn" type="button" onClick={this.toggleMenu}>{ isOpen ? <CloseIcon/> : <MenuIcon/>}</a>
             }
           </div>
         </div>
