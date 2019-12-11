@@ -3,7 +3,7 @@ templateKey: about-page
 hero:
   backgroundImage:
     alt: about us
-    image: /img/hero.png
+    image: /img/about-hero.jpg
   title: About Us
 leadText: >
   The Manchester drop-in is an evening and weekend service, working in
@@ -57,7 +57,7 @@ history:
       year: 2013
     - featuredImage:
         alt: feature media alt text
-        image: /img/chemex.jpg
+        image: /img/home-jumbotron.jpg
       text: >-
         Here in Manchester, we have had a dramatic increase in numbers, the
         likes that have never been seen before and it is increasing every
