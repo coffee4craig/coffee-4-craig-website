@@ -9,6 +9,11 @@
   line-height: 16px;
   text-decoration: none;
 
+  em {
+    font-weight: 700;
+    font-style: normal;
+  }
+
   &:hover {
     transition: background-color 0.5s ease;
   }
