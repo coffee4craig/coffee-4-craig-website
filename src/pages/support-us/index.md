@@ -19,6 +19,7 @@ volunteer:
     label: Donate Today
 donateItems:
   title: Donate Items
+  primaryButton: View our full Amazon wish list
   text: >
     Please look at our Amazon Wish List to see a list of the things we currently need. There are also some items that we will always use; boxer shorts, socks, coffee, tea, milk, sugar, toiletries and sanitary products.
   list: 

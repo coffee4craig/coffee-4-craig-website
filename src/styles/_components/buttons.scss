@@ -9,6 +9,11 @@
   line-height: 16px;
   text-decoration: none;
 
+  em {
+    font-weight: 700;
+    font-style: normal;
+  }
+
   &:hover {
     transition: background-color 0.5s ease;
   }
@@ -91,6 +96,23 @@
     background: url("../img/pp-white.svg") left center no-repeat;
     background-size: contain;
     padding-left: 24px;
+    font-style: normal;
+  }
+}
+
+.btn--amazon {
+  background: $color-amazon-yellow;
+  text-decoration: none;
+  color: black;
+
+  &:hover {
+    background: darken($color-amazon-yellow, 10%);
+  }
+
+  em {
+    background: url("../img/amazon-icon.svg") left center no-repeat;
+    background-size: contain;
+    padding-left: 30px;
     font-style: normal;
   }
 }
