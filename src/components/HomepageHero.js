@@ -1,4 +1,5 @@
 import React from 'react';
+
 import Donate from './Donate';
 
 const HomepageHero = ({ title, subtitle, donationTitle, donationDescription, donateButtonText }) => (
@@ -9,7 +10,7 @@ const HomepageHero = ({ title, subtitle, donationTitle, donationDescription, don
         <p className="homepage-hero__subtitle">{subtitle}</p>
       </div>
       <div className="homepage-hero__col">
-        <Donate title={donationTitle} description={donationDescription} buttonText={donateButtonText} />
+        <Donate />
       </div>
     </div>
   </div>

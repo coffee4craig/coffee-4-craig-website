@@ -1,53 +1,57 @@
 import React from 'react';
 
+import { StaticQuery, graphql } from 'gatsby';
 import Tab from './Tab';
 
-const donate = [
-      {
-        amount: "£5",
-        description: "By donating just £5, you can provide a hot drink",
-      },
-      {
-        amount: "£10",
-        description: "By donating just £10, you can provide a meal",
-      },
-      {
-        amount: "£20",
-        description: "By donating just £20, you can provide two pairs of thermal gloves for those sleeping rough in the winter months.",
-      },
-      {
-        amount: "£50",
-        description: "By donating just £50, you can provide two pairs of thermal gloves for those sleeping rough in the winter months.",
-      },
-      {
-        amount: "£100",
-        description: "By donating just £100, you can provide two pairs of thermal gloves for those sleeping rough in the winter months.",
-      }
-    ];
-
-const Donate = ({ description, buttonText }) => {
-  const donateDate = donate.values();
-
+const Donate = ({ list, buttonText, paypalLink }) => {
   const tabButtons = [];
   const tabContent = [];
 
-  for (const value of donateDate) {
-    const contentObj = {};
+  if (list) {
+    const donateData = list.values();
 
-    contentObj['text'] = value.description;
+    for (const value of donateData) {
+      const contentObj = {};
 
-    tabButtons.push(value.amount)
-    tabContent.push(contentObj);
+      contentObj['text'] = value.description;
+
+      tabButtons.push(value.amount)
+      tabContent.push(contentObj);
+    }
   }
 
   return(
     <div className="donate">
       <Tab tabList={tabButtons} content={tabContent} isInverted />
       <div className="donate__cta">
-        <button className="btn btn--style-g donate__btn">Donate £10 Now</button>
+        <a href={paypalLink} className="btn btn--style-g donate__btn">{buttonText}</a>
       </div>
     </div>
   )
 };
 
-export default Donate;
+export default () => (
+  <StaticQuery
+    query={
+      graphql`
+  query DonateWidget {
+    markdownRemark(frontmatter: { templateKey: { eq: "donate-widget" } }) {
+      frontmatter {
+        list {
+          amount
+          description
+        }
+        buttonText
+        paypalLink
+      }
+    }
+  }
+`
+    }
+    render={data => {
+      const { frontmatter } = data.markdownRemark
+      return (
+      <Donate {...frontmatter}/>
+    )}}
+  />
+);

@@ -1,45 +1,13 @@
 import React from 'react'
-import PropTypes from 'prop-types'
-import { graphql } from 'gatsby'
 
-import Layout from '../components/Layout'
+// This is here as a placeholder for now.
+// Need to update the gatsby config so that it doesn't try and create a page
+// for every markdown file which means we can have global components each with a dedicated markdown file
 
-export const DonateWidgetTemplate = ({
-  title
-}) => (
-  <div>
-    {title}
-  </div>
-)
-
-const DonateWidget = ({ data }) => {
-  const { frontmatter } = data.markdownRemark
-
+const DonateWidget = () => {
   return (
-    <Layout>
-      <DonateWidgetTemplate
-        title={frontmatter.title}
-      />
-    </Layout>
+    <></>
   )
 }
 
-DonateWidget.propTypes = {
-  data: PropTypes.shape({
-    markdownRemark: PropTypes.shape({
-      frontmatter: PropTypes.object,
-    }),
-  }),
-}
-
-export default DonateWidget
-
-export const pageQuery = graphql`
-  query DonateWidget {
-    markdownRemark(frontmatter: { templateKey: { eq: "donate-widget" } }) {
-      frontmatter {
-        title
-      }
-    }
-  }
-`
+export default DonateWidget;

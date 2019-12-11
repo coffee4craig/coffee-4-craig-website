@@ -12,16 +12,16 @@ media_folder: static/img
 public_folder: /img
 
 collections:
-  - name: "settings"
-    label: "Settings"
-    files:
-      - name: "siteSettings"
-        label: "Site Settings"
-        file: "src/pages/siteSettings.md"
-        editor:
-          preview: false
-        fields:
-          - { label: "Site Title", name: siteTitle, widget: string }
+  # - name: "settings"
+  #   label: "Settings"
+  #   files:
+  #     - name: "siteSettings"
+  #       label: "Site Settings"
+  #       file: "src/pages/siteSettings.md"
+  #       editor:
+  #         preview: false
+  #       fields:
+  #         - { label: "Site Title", name: siteTitle, widget: string }
   - name: "donate"
     label: "Donate"
     files:
@@ -31,7 +31,22 @@ collections:
         editor:
           preview: false
         fields:
-          - { label: "Donate Title", name: donateTitle, widget: string }
+          - label: "List"
+            name: list
+            widget: list
+            fields:
+              - label: "Amount"
+                name: amount
+                widget: string
+              - label: "Description"
+                name: description
+                widget: string
+          - label: "Button Text"
+            name: buttonText
+            widget: string
+          - label: "PayPal Link"
+            name: paypalLink
+            widget: string
 
   - name: "pages"
     label: "Pages"
