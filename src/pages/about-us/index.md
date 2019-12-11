@@ -17,9 +17,9 @@ addressMap:
     title: Address
   openingHours:
     monFriLabel: Monday to Friday
-    monFriTime: '19:00 - 21:00'
+    monFriTime: "19:00 - 21:00"
     satSunLabel: Saturday to Sunday
-    satSunTime: '17:00 - 19:00'
+    satSunTime: "17:00 - 19:00"
     title: Opening hours
   telephone:
     phoneNumberOne: +44 1111 111111
@@ -49,7 +49,7 @@ history:
     - featuredImage:
         alt: feature media alt text
         image: /img/home-jumbotron.jpg
-      text: >-
+      text: >
         Here in Manchester, we have had a dramatic increase in numbers, the
         likes that have never been seen before and it is increasing every
         day.Here in Manchester, we have had a dramatic increase in numbers, the
@@ -79,4 +79,3 @@ history:
       year: 2015
   title: Our History
 ---
-

@@ -1,5 +1,7 @@
 import React from 'react';
 
+import Donate from './Donate';
+
 const Volunteer = ({ title, text, ctaOne, ctaTwo}) => (
   <div className="volunteer">
     <div className="volunteer__wrapper">
@@ -12,7 +14,7 @@ const Volunteer = ({ title, text, ctaOne, ctaTwo}) => (
         </div>
       </div>
       <div className="volunteer__col">
-      <h2>TO BE REPLACED WITH DONATE CTA</h2>
+        <Donate />
       </div>
     </div>
   </div>
