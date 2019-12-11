@@ -2,17 +2,19 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Img from 'gatsby-image'
 
-const PreviewCompatibleImage = ({ imageInfo, cName }) => {
+const PreviewCompatibleImage = ({ imageInfo, cName, isContained }) => {
   const { alt = '', childImageSharp, image } = imageInfo
+
+  const imageStyle = isContained ? { objectFit: 'contain' } : '';
 
   if (!!image && !!image.childImageSharp) {
     return (
-      <Img className={cName} fluid={image.childImageSharp.fluid} alt={alt} />
+      <Img imgStyle={imageStyle} className={cName} fluid={image.childImageSharp.fluid} alt={alt} />
     )
   }
 
   if (!!childImageSharp) {
-    return <Img className={cName} fluid={childImageSharp.fluid} alt={alt} />
+    return <Img imgStyle={imageStyle} className={cName} fluid={childImageSharp.fluid} alt={alt} />
   }
 
   if (!!image && typeof image === 'string')

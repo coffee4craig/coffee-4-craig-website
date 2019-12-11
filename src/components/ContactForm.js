@@ -1,62 +1,40 @@
 import React from 'react';
 
 class ContactForm extends React.Component {
-  state = {
-    fullName: "",
-    emailAddress: "",
-    message: "",
-  }
-
-  handleinputChange = event => {
-    const target = event.target
-    const value = target.value
-    const name = target.name
-    this.setState({
-        [name]: value,
-    })
-  }
-
-  handleSubmit = event => {
-    event.preventDefault()
-    alert(`Welcome ${this.state.fullName} ${this.state.emailAddress}!`)
-  }
-
   render() {
     return (
       <div className="contact-form">
         <div className="contact-form__wrapper">
-          <h3>Speak with our support team</h3>
-          <form>
-            <div className="contact-form__wrapper-label">
+          <h2 className="contact-form__title">Speak with our support team</h2>
+          <form className="contact-form__form" name="contact" method="POST" data-netlify="true">
+            <div className="contact-form__form-group">
               <label>
                 Full name
                 <input type="text"
                 name="fullName" 
-                value={this.state.fullName}
-                onChange={this.handleinputChange}
                 />
               </label>
               <label>
                 Email Address
-                <input type="text" 
+                <input type="email" 
                 name="emailAddress" 
-                value={this.state.emailAddress}
-                onChange={this.handleinputChange}
                 />
               </label>
             </div>
-            <div className="contact-form__wrapper-label-message">
-            <label>
+            <div className="contact-form__form-group">
+              <label>
                 Message
-                <input type="text" 
+                <textarea rows="5" 
                 name="message" 
-                value={this.state.message}
-                onChange={this.handleinputChange}
                 />
               </label>
             </div>
-            <button className="btn btn--style-b" type="submit">Submit</button>
-            <p>We’ll aim to get back to you within 48 hrs</p>
+            <div className="contact-form__form-group">
+              <button className="btn btn--style-b" type="submit">Submit Message</button>
+            </div>
+            <div className="contact-form__form-group">
+              <p>We’ll aim to get back to you within 48 hrs</p>
+            </div>
           </form>
         </div>
       </div>
@@ -64,14 +42,4 @@ class ContactForm extends React.Component {
   }
 }
     
-  
-
-// const ContactForm = () => (
-//   <div className="contact-form">
-//     <div className="contact-form__wrapper">
-//     <h2 className="contact-form__text">Speak with our support team</h2>
-//     </div>
-//   </div>
-// );
-
 export default ContactForm;

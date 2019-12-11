@@ -3,19 +3,6 @@
   background: $primary-color-c;
   height: 500px;
   padding-top: 80px;
-
-  &:after {
-    content: "";
-    display: block;
-    position: absolute;
-    z-index: 1;
-    bottom: -55px;
-    left: 0;
-    width: 100%;
-    height: 70px;
-    background: url("../img/bottom-brush-white.svg") center bottom no-repeat;
-    background-size: contain;
-  }
 }
 
 .hero__image-wrapper {

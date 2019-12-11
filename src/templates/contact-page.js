@@ -9,23 +9,21 @@ import ContactForm from '../components/ContactForm'
 import Credits from '../components/Credits'
 import Emergency from '../components/Emergency'
 import FeatureInverted from '../components/FeatureInverted'
-import Faq from '../components/Faq'
 
 export const ContactPageTemplate = ({ 
+  hero,
   featureInverted,
   credits
  }) => (
   <div>
-    <Hero title="Hero" backgroundImage={{}} />
-    <LeadText text="Lead Text" />
+    <Hero {...hero} />
     <ContactForm />
+    <Credits 
+      {...credits}
+    />
     <FeatureInverted 
       {...featureInverted}
     />
-    <Credits 
-      {...credits}
-    />  
-    <Faq title="FAQ" list={[]} />
   </div>
 )
 
@@ -35,6 +33,7 @@ const ContactPage = ({ data }) => {
   return (
     <Layout>
       <ContactPageTemplate
+        hero={frontmatter.hero}
         featureInverted={frontmatter.featureInverted}
         credits={frontmatter.credits}
       />
@@ -56,18 +55,33 @@ export const pageQuery = graphql`
   query ContactPageTemplate {
     markdownRemark(frontmatter: { templateKey: { eq: "contact-page" } }) {
       frontmatter {
+        hero {
+          backgroundImage {
+            image {
+              childImageSharp {
+                fluid(maxWidth: 1200, quality: 64) {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            },
+            alt
+          }
+          title
+        }
         featureInverted {
           title,
           text,
           primaryButtonText,
-          image {
-            childImageSharp {
-              fluid(maxWidth: 1200, quality: 64) {
-                ...GatsbyImageSharpFluid
+          backgroundImage {
+            image {
+              childImageSharp {
+                fluid(maxWidth: 1200, quality: 64) {
+                  ...GatsbyImageSharpFluid
+                }
               }
-            }
-          },
-          alt
+            },
+            alt
+          }
         }        
         credits {
           title,
@@ -75,7 +89,7 @@ export const pageQuery = graphql`
             logo {
               image {
                 childImageSharp {
-                  fluid(maxWidth: 1200, quality: 64) {
+                  fluid(maxWidth: 200, fit: CONTAIN, quality: 64) {
                     ...GatsbyImageSharpFluid
                   }
                 }
