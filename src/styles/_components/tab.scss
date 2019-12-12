@@ -1,7 +1,11 @@
 .tab {
+  @include gridWidth;
+
+
   display: flex;
   flex-direction: column;
   flex: 1;
+  
 }
 
 .tab.is-inverted {
@@ -9,6 +13,7 @@
 }
 
 .tab__button-wrapper {
+
   position: relative;
   display: flex;
   margin: 30px 0;
@@ -45,6 +50,10 @@
 .tab__content-wrapper {
   position: relative;
   flex: 1;
+
+  
+
+
 }
 
 .tab__content {
@@ -78,4 +87,9 @@
 
 .tab__content-col {
   flex: 1;
+
+  .tab__content-col-text {
+    height: 350px;
+  }
+
 }
