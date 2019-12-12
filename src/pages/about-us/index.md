@@ -8,7 +8,7 @@ hero:
 leadText: >
   The Manchester drop-in is an evening and weekend service, working in
   partnership with Centre Point, this service is supported by a grant from
-  Manchester City Council.a
+  Manchester City Council.
 addressMap:
   address:
     addressLine1: Address Line One
