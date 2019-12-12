@@ -55,7 +55,10 @@ class Tab extends React.Component {
               >
                 {item.text &&
                   <div class="tab__content-col ">
+                    <h2 className="tab__content-col-title">{tabList[i]}</h2>
+                    <div className="tab__content-col-text">
                     <p>{item.text}</p>
+                    </div>
                   </div>
                 }
                 {item.featuredImage &&

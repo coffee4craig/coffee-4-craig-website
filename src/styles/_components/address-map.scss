@@ -1,12 +1,16 @@
 .address-map {
-  @include gridWidth;
-  display: flex;
-  flex-direction: column;
+
   
   @media only screen and (min-width: 768px) {
     flex-direction: row;
     margin: 24px 80px 24px;
   }
+}
+
+.address-map__wrapper {
+  @include gridWidth;
+
+  display: flex;
 }
 
 .address-map__column {

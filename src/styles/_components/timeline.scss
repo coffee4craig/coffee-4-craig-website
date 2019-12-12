@@ -7,7 +7,15 @@
 
   &__title {
     text-align: center;
-    font-size: $text-2xl;
+    text-align: center;
+    font:  55px/62px Lato;
+    letter-spacing: 0;
+    position: relative;
+
+  }
+
+  .tab__content-col-text {
+    height: 350px;
   }
 
   .tab__content-col {
