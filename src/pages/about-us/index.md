@@ -17,9 +17,9 @@ addressMap:
     title: Address
   openingHours:
     monFriLabel: Monday to Friday
-    monFriTime: "19:00 - 21:00"
+    monFriTime: '19:00 - 21:00'
     satSunLabel: Saturday to Sunday
-    satSunTime: "17:00 - 19:00"
+    satSunTime: '17:00 - 19:00'
     title: Opening hours
   telephone:
     phoneNumberOne: +44 1111 111111
@@ -39,7 +39,7 @@ services:
       text: Showers
     - icon: laptop
       text: Computer and phone access
-    - icon: speech
+    - icon: chat
       text: One-to-one advice
     - icon: arrow
       text: Signposting & referrals
@@ -79,3 +79,4 @@ history:
       year: 2015
   title: Our History
 ---
+
