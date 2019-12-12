@@ -119,6 +119,23 @@ export const pageQuery = graphql`
             label
           }
         }
+        superheroes {
+          title
+          superheroesList {
+            name,
+            description
+            image {
+              image {
+                childImageSharp {
+                  fluid(maxWidth: 400, quality: 64) {
+                    ...GatsbyImageSharpFluid
+                  }
+                }
+              },
+              alt
+            }
+          }
+        }
       }
     }
   }

@@ -19,8 +19,12 @@ feature:
   featureImage:
     alt: feature media alt text
     image: /img/home-volunteer-image.png
-  primaryButtonText: Volunteer with Us
-  secondaryButtonText: Donate Today
+  ctaOne:
+    url: https://docs.google.com/forms/d/e/1FAIpQLSemNku8dsK6_JD9ciOud2plvPN3wxKdMihiAaUvB3pOaoXwMA/viewform
+    label: Volunteer with Us
+  ctaTwo:
+    url: https://www.google.com/
+    label: Donate Today
   text: |
     Here in Manchester, we have had a dramatic increase in numbers, the likes that have never been seen before and it is increasing every day.
   title: Make a huge difference today.
@@ -28,37 +32,37 @@ friends:
   friendsList:
     - bio: |
         Friend bio
-      name: Friend Name
+      name: Joe
       profileImage:
         alt: feature media alt text
         image: /img/friends-image-one.png
     - bio: |
         Friend 2 bio
-      name: Friend 2 Name
+      name: Kate
       profileImage:
         alt: feature media alt text
         image: /img/friends-image-two.png
     - bio: |
         Friend 3 bio
-      name: Friend 3 Name
+      name: Dan
       profileImage:
         alt: feature media alt text
         image: /img/friends-image-three.png
     - bio: |
         Friend 4 bio
-      name: Friend 4 Name
+      name: Michael
       profileImage:
         alt: feature media alt text
         image: /img/friends-image-four.png
     - bio: |
         Friend 5 bio
-      name: Friend 5 Name
+      name: George
       profileImage:
         alt: feature media alt text
         image: /img/friends-image-five.png
     - bio: |
         Friend 6 bio
-      name: Friend 6 Name
+      name: David
       profileImage:
         alt: feature media alt text
         image: /img/friends-image-six.png

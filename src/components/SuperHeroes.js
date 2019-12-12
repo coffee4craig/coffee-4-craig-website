@@ -2,32 +2,21 @@ import React from 'react';
 import SuperHero1 from '../img/placeholders/hero1.jpg';
 import SuperHero2 from '../img/placeholders/hero2.jpg';
 import SuperHero3 from '../img/placeholders/hero3.jpg';
+import PreviewCompatibleImage from './PreviewCompatibleImage';
 
-const Superheroes = ({ title, list }) => (
+const Superheroes = ({ title, superheroesList }) => (  
   <div className="superheroes">
-    <h2 className="superheroes__title">Our Super Heroes</h2>
+    <h2 className="superheroes__title">{title}</h2>
     <div class="superheroes__section">
-      <div class="superheroes__section-col">
-        <img src={SuperHero1}></img>
-        <h2>Peter</h2>
-        <p>‘I enjoy the support we give the homeless, it is such a good feeling when I pass a homeless person and they
-                 say “I know you” and it’s because I have helped them at street kitchens with Coffee4Craig.’</p>
-
-      </div>
-      <div class="superheroes__section-col">
-        <img src={SuperHero2}></img>
-        <h2>Michelle</h2>
-        <p>Watching how passionate they are about helping people in need is heartwarming. The whole team do more than
-                just provide food to the vulnerable they give hope and try to build a future.’</p>
-
-      </div>
-      <div class="superheroes__section-col">
-        <img src={SuperHero3}></img>
-        <h2>Thomas</h2>
-        <p>‘Starting Coffee4Craig with Hendrix was the only way I could deal with the loss of my younger brother Craig. I couldn’t watch other people in this situation without help.
-                 I couldn’t walk past blindly anymore, neither of us could.’</p>
-
-      </div>
+    {
+      superheroesList && superheroesList.length > 0 && superheroesList.map((superhero, i) => (
+        <div key={i} className="superheroes__section-col">
+          <PreviewCompatibleImage cName="" isContained imageInfo={superhero.image} />
+          <h2>{superhero.name}</h2>
+          <p>{superhero.description}</p>
+        </div>       
+      ))
+    }
     </div>
   </div>
 )

@@ -104,8 +104,14 @@ export const pageQuery = graphql`
         feature {
           title,
           text,
-          primaryButtonText,
-          secondaryButtonText,
+          ctaOne {
+            url
+            label
+          }
+          ctaTwo {
+            url
+            label
+          }
           featureImage {
             image {
               childImageSharp {

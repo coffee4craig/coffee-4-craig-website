@@ -8,10 +8,14 @@ import LeadText from '../components/LeadText'
 import RichText from '../components/RichText'
 import Cta from '../components/Cta'
 
-export const FundraisingPageTemplate = ({ title }) => (
+export const FundraisingPageTemplate = ({ 
+  hero
+ }) => (
   <div className="fundraising">
-    <Hero title="Hero" backgroundImage={{}} />
-    <LeadText text="Lead Text" />
+    <Hero
+     {...hero}
+    />
+    <LeadText text="Join 298 Supporters Who’ve Raised £8,749.74" />
     <RichText text="Rich Text" />
   </div>
 )
@@ -22,7 +26,7 @@ const FundraisingPage = ({ data }) => {
   return (
     <Layout>
       <FundraisingPageTemplate
-        title={frontmatter.title}
+        hero={frontmatter.hero}
       />
     </Layout>
   )
@@ -42,7 +46,19 @@ export const pageQuery = graphql`
   query FundraisingPageTemplate {
     markdownRemark(frontmatter: { templateKey: { eq: "fundraising-page" } }) {
       frontmatter {
-        title
+        hero {
+          title
+          backgroundImage {
+            image {
+              childImageSharp {
+                fluid(maxWidth: 1200, quality: 64) {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            },
+            alt
+          }
+        }
       }
     }
   }
