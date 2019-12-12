@@ -9,7 +9,7 @@ import RichText from '../components/RichText'
 import Cta from '../components/Cta'
 
 export const FundraisingPageTemplate = ({ title }) => (
-  <div>
+  <div className="fundraising">
     <Hero title="Hero" backgroundImage={{}} />
     <LeadText text="Lead Text" />
     <RichText text="Rich Text" />

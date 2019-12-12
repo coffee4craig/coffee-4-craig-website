@@ -1,6 +1,10 @@
 .featured {
   margin-bottom: 100px;
   justify-content: center;
+
+  @media only screen and (min-width: 768px) {
+    margin-bottom: 160px;
+  }
 }
 
 .featured__wrapper {
@@ -52,7 +56,7 @@
   .featured___column {
     display: flex;
     flex-direction: column;
-    margin-bottom: 12px;
+    margin-bottom: 24px;
 
     @media only screen and (min-width: 768px) {
       width: 25%;

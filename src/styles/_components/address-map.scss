@@ -2,18 +2,20 @@
   @include gridWidth;
   display: flex;
   flex-direction: column;
-
+  
   @media only screen and (min-width: 768px) {
     flex-direction: row;
+    margin: 0 80px 20px;
   }
 }
 
 .address-map__column {
   @include col(12, 12, true, true);
+  font-size: 14px;
 
   @media only screen and (min-width: 768px) {
     &:first-child {
-      @include col(8, 12, true, false);
+      @include col(7, 12, true, false);
 
       justify-content: center;
       display: flex;
@@ -21,17 +23,22 @@
     }
 
     &:last-child {
-      @include col(4, 12, false, true);
+      @include col(5, 12, false, true);
 
       justify-content: center;
       display: flex;
       flex-direction: column;
       position: relative;
+      padding-left: 40px !important;
     }
   }
 
   & .title {
-    margin-top: $spacing * 0.75;
+    margin-top: $spacing;
+
+    @media only screen and (min-width: 768px) {
+      margin-top: $spacing * 0.75;
+    }
   }
 
   img {
@@ -63,6 +70,7 @@
 
     p {
       font-weight: 400;
+      margin-bottom: 10px;
     }
 
     .address-map__row-title {

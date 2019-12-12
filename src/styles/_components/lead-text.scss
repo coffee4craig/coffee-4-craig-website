@@ -23,7 +23,7 @@
   padding: $spacing-double * 1.5 $spacing;
 
   @media only screen and (min-width: 768px) {
-    padding: 95px 0 40px 0;
+    padding: 48px 0 24px 0;
   }
 }
 
@@ -32,15 +32,16 @@
   width: 100%;
 
   @media only screen and (min-width: 768px) {
-    @include col(8, 12, true, true);
+    @include col(7, 12, true, true);
   }
 }
 
 .lead-text__text {
   font-size: $text-xl;
+  line-height: 1.4;
+  
   @media only screen and (min-width: 768px) {
-    font-size: 36px;
-    line-height: 55px;
+    font-size: 32px;
     text-align: center;
   }
   .leadText__color {
