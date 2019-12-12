@@ -1,51 +1,95 @@
 .services {
-  background: $primary-color-b;
+  position: relative;
+  background: #56B799;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 30px;
   margin-bottom: 100px;
-  padding: 60px 0;
+  padding: 40px 0 20px;
+
+  @media (min-width: 768px) {
+    padding: 60px 0 30px;
+  }
+
+  &:before,
+  &:after {
+    content: '';
+    display: block;
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    width: 100%;
+  }
+
+  &:before {
+    top: -20px;
+    height: 30px;
+    background: url('../img/green-brush-top.svg') center top no-repeat;
+    background-size: cover;
+  }
+
+  &:after {
+    bottom: -30px;
+    height: 40px;
+    background: url('../img/green-brush-bottom.svg') center top no-repeat;
+    background-size: cover;
+  }
 
   &__title {
     text-align: center;
     font-size: $text-2xl;
+    margin-bottom: 40px;
+    
+    @media (min-width: 768px) {
+      margin-bottom: 80px;
+      font-size: $text-2xl * 1.7;
+    }
   }
 }
 
 .services__wrapper {
-  @include gridWidth;
-
   display: flex;
   width: 100%;
+  max-width: 1060px;
   flex-direction: column;
   align-items: center;
 }
 
 .services__col {
-  @include col(12, 12, true, false);
-
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
   justify-content: center;
-
-  @media only screen and (min-width: 768px) {
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
 }
 
 .services__col-item {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   text-align: center;
-  width: 113px;
-  height: 130px;
+  max-width: 165px;
+  padding: 0 40px;
+  margin-bottom: 20px;
 
-  @media only screen and (min-width: 768px) {
-    margin-right: 70px;
-    margin-top: 40px;
+  @media (min-width: 768px) {
+    margin-bottom: 60px;
+  }
+
+  &-text {
+    line-height: 24px;
+    margin-top: 10px;
+  }
+
+  &-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 82px;
+    width: 90px;
+
+    svg {
+      fill: #fff;
+    }
   }
 }
