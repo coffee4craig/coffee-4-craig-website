@@ -1,4 +1,5 @@
 import React from 'react';
+import { Icon } from './Icon';
 
 const ServicesComponent = ({ title, serviceList }) => (
   <div className="services">
@@ -8,8 +9,10 @@ const ServicesComponent = ({ title, serviceList }) => (
         {
           serviceList && serviceList.length > 0 && serviceList.map((service, i) => 
               <div key={i} class="services__col-item">
-                {service.icon}
-                <p>{service.text}</p>
+                <div class="services__col-item-icon">
+                  <Icon icon={service.icon} />
+                </div>
+                <p class="services__col-item-text">{service.text}</p>
               </div>
           )
         }
