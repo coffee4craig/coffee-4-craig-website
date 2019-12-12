@@ -43,6 +43,8 @@ services:
       text: One-to-one advice
     - icon: arrow
       text: Signposting & referrals
+    - icon: signpost
+      text: Signposting  & referrals
   title: This service provides
 history:
   timeline:
