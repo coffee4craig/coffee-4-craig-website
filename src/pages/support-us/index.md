@@ -59,4 +59,28 @@ ctaBlock:
   link:
     url: https://docs.google.com/forms/d/e/1FAIpQLSemNku8dsK6_JD9ciOud2plvPN3wxKdMihiAaUvB3pOaoXwMA/viewform
     label: Fill out our volunteer form
+superheroes:
+  title: Our Super Heroes
+  superheroesList:
+    - name: Peter
+      description: > 
+        ‘I enjoy the support we give the homeless, it is such a good feeling when I pass a homeless person and they
+        say “I know you” and it’s because I have helped them at street kitchens with Coffee4Craig.’
+      image: 
+        alt: about us
+        image: /img/peter.png
+    - name: Michelle
+      description: > 
+        ‘Watching how passionate they are about helping people in need is heartwarming. The whole team do more than
+        just provide food to the vulnerable they give hope and try to build a future.’
+      image: 
+        alt: about us
+        image: /img/michelle.png
+    - name: Thomas
+      description: > 
+        ‘Starting Coffee4Craig with Hendrix was the only way I could deal with the loss of my younger brother Craig. I couldn’t watch other people in this situation without help.
+        I couldn’t walk past blindly anymore, neither of us could.’
+      image: 
+        alt: about us
+        image: /img/thomas.png
 ---

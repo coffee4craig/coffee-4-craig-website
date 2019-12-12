@@ -6,7 +6,7 @@
     margin-bottom: 50px;
 
     @media only screen and (max-width: 768px) {
-        height: 1500px;
+        height: 1200px;
     }
 }
 
@@ -18,20 +18,6 @@
     justify-content: center;
     align-items: center;
     position: relative;
-
-    &:after {
-        content: "";
-        display: block;
-        position: absolute;
-        z-index: 1;
-        left: -457px;
-        width: 100%;
-        height: 50px;
-        background: url("../img/yellow-underline.svg") center top no-repeat;
-        background-size: contain;
-        transform: scaleX(2);
-        top: 132px;
-      }
 
     .volunteer-title {
         text-align: left;
@@ -47,10 +33,11 @@
         letter-spacing: 0;
         color: #181F27;
         opacity: 1;
-        font-weight: 600;
+        font-weight: 500;
         font-size: 20px;
         padding-bottom: 40px;
         padding-right: 65px;
+
     }
 
     
@@ -65,8 +52,10 @@
         .volunteer-text {
             text-align: center;
             padding-right: 0;
-
+            font-size: 14px;
+            font-weight: 400;
         }
+
       }
 }
 
