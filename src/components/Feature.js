@@ -2,7 +2,7 @@ import React from 'react';
 
 import PreviewCompatibleImage from './PreviewCompatibleImage';
 
-const FeatureComponent = ({ title, text, primaryButtonText, secondaryButtonText, featureImage }) => (
+const FeatureComponent = ({ title, text, ctaOne, ctaTwo, featureImage }) => (
   <div className="feature-component">
     <div className="feature-component__wrapper">
       <div className="feature-component__col">
@@ -10,8 +10,8 @@ const FeatureComponent = ({ title, text, primaryButtonText, secondaryButtonText,
           <h2 className="feature-component__title">{title}</h2>
           <p className="feature-component__text">{text}</p>
           <div className="feature-component__donate-cta">
-            <button className="btn btn--style-f feature-component__donate-btn">{primaryButtonText}</button>
-            <button className="btn btn--style-b feature-component__donate-btn">{secondaryButtonText}</button>
+            <a className="btn btn--style-f feature-component__donate-btn" href={ctaOne.url}><em>{ctaOne.label}</em></a>
+            <a className="btn btn--style-e feature-component__donate-btn" href={ctaOne.url}><em>{ctaTwo.label}</em></a>
           </div>
         </div>
       </div>
