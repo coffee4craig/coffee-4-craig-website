@@ -3,20 +3,24 @@
   
     display: flex;
     justify-content: center;
-    padding: 40px 0;
-    margin-bottom: 125px;
+
+    @media only screen and (min-width: 768px) {
+        padding: 24px 0;
+        margin-bottom: 125px;
+    }
   }
 
 .richtext__wrapper {
-    @include col(8, 12, true, true);
-    width: 684px;
+    @media only screen and (min-width: 768px) {
+        @include col(8, 12, true, true);
+        width: 684px;
+    }
  }
 
 .richtext__source {
     font-weight: 400;
     line-height: 26px;
     color: $primary-color-a;
-    padding: 0 30px;
     letter-spacing: 0;
     color: #181F27;
     opacity: 1;
@@ -27,8 +31,8 @@
 }
 
 .richtext__donate-btn {
-    margin-bottom: 20px;
-    padding: 20px 282px;
+    margin: 20px 0;
+    width: 100%;
 }
 
 .richtext__image__wrapper {

@@ -1,7 +1,26 @@
 .timeline {
+  margin: 0 24px 120px;
+
+  @media only screen and (min-width: 768px) {
+    margin: 0 80px 180px;
+  }
 
   &__title {
     text-align: center;
     font-size: $text-2xl;
+  }
+
+  .tab__content-col {
+    &:first-child {
+      padding-right: 24px;
+    }
+
+    &:last-child {
+      padding-left: 24px;
+    }
+
+    img {
+      border-radius: 5px;
+    }
   }
 }

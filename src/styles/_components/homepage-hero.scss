@@ -16,7 +16,7 @@
   }
 
   @media only screen and (min-width: 768px) {
-    height: 400px;
+    height: 420px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -37,11 +37,15 @@
 .homepage-hero__col {
   &:first-child {
     padding: 24px;
+
+    @media only screen and (min-width: 768px) {
+      padding: 80px 24px 24px;
+    }
   }
 
   @media only screen and (min-width: 768px) {
     &:first-child {
-      @include col(6, 12, true, false);
+      @include col(7, 12, true, false);
 
       justify-content: center;
       display: flex;
@@ -49,7 +53,7 @@
     }
 
     &:last-child {
-      @include col(6, 12, false, true);
+      @include col(5, 12, false, true);
 
       justify-content: center;
       display: flex;
@@ -65,12 +69,13 @@
   margin-bottom: 12px;
 
   @media only screen and (min-width: 768px) {
-    font-size: 60px;
+    font-size: 48px;
     margin-bottom: 15px;
+    max-width: 480px;
   }
 }
 
 .homepage-hero__subtitle {
-  max-width: 390px;
+  max-width: 480px;
   line-height: 1.6;
 }
