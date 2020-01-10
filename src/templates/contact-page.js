@@ -1,34 +1,28 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import { graphql } from 'gatsby'
+import React from "react";
+import PropTypes from "prop-types";
+import { graphql } from "gatsby";
 
-import Layout from '../components/Layout'
-import Hero from '../components/Hero'
-import LeadText from '../components/LeadText'
-import ContactForm from '../components/ContactForm'
-import Credits from '../components/Credits'
-import Emergency from '../components/Emergency'
-import FeatureInverted from '../components/FeatureInverted'
+import Layout from "../components/Layout";
+import Hero from "../components/Hero";
+import LeadText from "../components/LeadText";
+import ContactForm from "../components/ContactForm";
+import Credits from "../components/Credits";
+import Emergency from "../components/Emergency";
+import FeatureInverted from "../components/FeatureInverted";
+import Faq from "../components/Faq";
 
-export const ContactPageTemplate = ({ 
-  hero,
-  featureInverted,
-  credits
- }) => (
+export const ContactPageTemplate = ({ hero, featureInverted, credits }) => (
   <div>
     <Hero {...hero} />
     <ContactForm />
-    <Credits 
-      {...credits}
-    />
-    <FeatureInverted 
-      {...featureInverted}
-    />
+    <Credits {...credits} />
+    <FeatureInverted {...featureInverted} />
+    <Faq />
   </div>
-)
+);
 
 const ContactPage = ({ data }) => {
-  const { frontmatter } = data.markdownRemark
+  const { frontmatter } = data.markdownRemark;
 
   return (
     <Layout>
@@ -38,18 +32,18 @@ const ContactPage = ({ data }) => {
         credits={frontmatter.credits}
       />
     </Layout>
-  )
-}
+  );
+};
 
 ContactPage.propTypes = {
   data: PropTypes.shape({
     markdownRemark: PropTypes.shape({
-      frontmatter: PropTypes.object,
-    }),
-  }),
-}
+      frontmatter: PropTypes.object
+    })
+  })
+};
 
-export default ContactPage
+export default ContactPage;
 
 export const pageQuery = graphql`
   query ContactPageTemplate {
@@ -63,15 +57,15 @@ export const pageQuery = graphql`
                   ...GatsbyImageSharpFluid
                 }
               }
-            },
+            }
             alt
           }
           title
         }
         featureInverted {
-          title,
-          text,
-          primaryButtonText,
+          title
+          text
+          primaryButtonText
           backgroundImage {
             image {
               childImageSharp {
@@ -79,12 +73,12 @@ export const pageQuery = graphql`
                   ...GatsbyImageSharpFluid
                 }
               }
-            },
+            }
             alt
           }
-        }        
+        }
         credits {
-          title,
+          title
           creditList {
             logo {
               image {
@@ -93,11 +87,11 @@ export const pageQuery = graphql`
                     ...GatsbyImageSharpFluid
                   }
                 }
-              },
+              }
               alt
             }
             link {
-              url,
+              url
               target
             }
             description
@@ -106,4 +100,4 @@ export const pageQuery = graphql`
       }
     }
   }
-`
+`;

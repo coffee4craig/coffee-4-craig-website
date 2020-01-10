@@ -1,0 +1,66 @@
+.faq-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 50%;
+  margin: 0 auto;
+}
+
+.faq-card {
+  margin: 1em;
+}
+
+.faq-rail {
+  background-color: $primary-color-b;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 10em;
+  padding: 0.7em;
+  position: relative;
+}
+
+.faq-title {
+  margin-bottom: 0;
+  margin-left: 0.5em;
+}
+.faq-content {
+  padding: 1em;
+  border: 1px solid grey;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  margin-top: -1.2em;
+  z-index: -1;
+  position: relative;
+  padding-top: 1.5em;
+}
+.faq-minus {
+  font-size: 2em;
+  color: black;
+  border-radius: 100%;
+  background-color: white;
+  position: absolute;
+  right: 5%;
+  width: 5%;
+  height: 70%;
+  display: flex;
+  justify-content: center;
+}
+
+.faq-plus {
+  font-size: 2em;
+  color: black;
+  border-radius: 100%;
+  background-color: white;
+  position: absolute;
+  right: 5%;
+  width: 5%;
+  height: 70%;
+  display: flex;
+  justify-content: center;
+}
+
+// $primary-color-a;
+// color: $secondary-color-b;
