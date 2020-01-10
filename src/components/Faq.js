@@ -1,65 +1,91 @@
-import React from "react";
+import React from 'react';
+import FaqCard from './FaqCard';
 
-const Faq = ({ title, list }) => (
-  <div className="faq-container">
-    <h2 className="faq-title">Frequently Asked Questions</h2>
+const Faq = ({ title, list }) => {
+	title = 'Frequently Asked Questions';
+	list = [
+		{
+			title: 'What are the opening hours?',
+			content: `Lorem ipsum dolor sit amet consectetur adipisicing elit.
+    Ratione reiciendis, eveniet voluptate excepturi doloribus
+    quam expedita quibusdam nam obcaecati? Voluptatibus at
+    reprehenderit obcaecati nulla velit natus voluptatem nihil
+    id distinctio?`,
+		},
+		{
+			title: 'What are the opening hours?',
+			content: `Lorem ipsum dolor sit amet consectetur adipisicing elit.
+    Ratione reiciendis, eveniet voluptate excepturi doloribus
+    quam expedita quibusdam nam obcaecati? Voluptatibus at
+    reprehenderit obcaecati nulla velit natus voluptatem nihil
+    id distinctio?`,
+		},
+		{
+			title: 'What are the opening hours?',
+			content: `Lorem ipsum dolor sit amet consectetur adipisicing elit.
+    Ratione reiciendis, eveniet voluptate excepturi doloribus
+    quam expedita quibusdam nam obcaecati? Voluptatibus at
+    reprehenderit obcaecati nulla velit natus voluptatem nihil
+    id distinctio?`,
+		},
+		{
+			title: 'What are the opening hours?',
+			content: `Lorem ipsum dolor sit amet consectetur adipisicing elit.
+    Ratione reiciendis, eveniet voluptate excepturi doloribus
+    quam expedita quibusdam nam obcaecati? Voluptatibus at
+    reprehenderit obcaecati nulla velit natus voluptatem nihil
+    id distinctio? Lorem ipsum dolor sit amet consectetur adipisicing elit.
+    Ratione reiciendis, eveniet voluptate excepturi doloribus
+    quam expedita quibusdam nam obcaecati? Voluptatibus at
+    reprehenderit obcaecati nulla velit natus voluptatem nihil
+    id distinctio?`,
+		},
+		{
+			title: 'What are the opening hours?',
+			content: `Lorem ipsum dolor sit amet consectetur adipisicing elit.
+    Ratione reiciendis, eveniet voluptate excepturi doloribus
+    quam expedita quibusdam nam obcaecati? Voluptatibus at
+    reprehenderit obcaecati nulla velit natus voluptatem nihil
+    id distinctio? Lorem ipsum dolor sit amet consectetur adipisicing elit.
+    Ratione reiciendis, eveniet voluptate excepturi doloribus
+    quam expedita quibusdam nam obcaecati? Voluptatibus at
+    reprehenderit obcaecati nulla velit natus voluptatem nihil
+    id distinctio?`,
+		},
+		{
+			title: 'What are the opening hours?',
+			content: `Lorem ipsum dolor sit amet consectetur adipisicing elit.
+    Ratione reiciendis, eveniet voluptate excepturi doloribus
+    quam expedita quibusdam nam obcaecati? Voluptatibus at
+    reprehenderit obcaecati nulla velit natus voluptatem nihil
+    id distinctio? Lorem ipsum dolor sit amet consectetur adipisicing elit.
+    Ratione reiciendis, eveniet voluptate excepturi doloribus
+    quam expedita quibusdam nam obcaecati? Voluptatibus at
+    reprehenderit obcaecati nulla velit natus voluptatem nihil
+    id distinctio?`,
+		},
+		{
+			title: 'What are the opening hours?',
+			content: `Lorem ipsum dolor sit amet consectetur adipisicing elit.
+    Ratione reiciendis, eveniet voluptate excepturi doloribus
+    quam expedita quibusdam nam obcaecati? Voluptatibus at
+    reprehenderit obcaecati nulla velit natus voluptatem nihil
+    id distinctio? Lorem ipsum dolor sit amet consectetur adipisicing elit.
+    Ratione reiciendis, eveniet voluptate excepturi doloribus
+    quam expedita quibusdam nam obcaecati? Voluptatibus at
+    reprehenderit obcaecati nulla velit natus voluptatem nihil
+    id distinctio?`,
+		},
+	];
 
-    <div className="faq-card">
-      <div className="faq-rail">
-        <p className="faq-title">What are the opening hours?</p>
-        <div className="faq-plus">+</div>
-        <div className="faq-minus">-</div>
-      </div>
-      <div className="faq-content">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione
-        reiciendis, eveniet voluptate excepturi doloribus quam expedita
-        quibusdam nam obcaecati? Voluptatibus at reprehenderit obcaecati nulla
-        velit natus voluptatem nihil id distinctio?
-      </div>
-    </div>
-
-    <div className="faq-card">
-      <div className="faq-rail">
-        <p className="faq-title">What are the opening hours?</p>
-        <div className="faq-plus">+</div>
-        <div className="faq-minus">-</div>
-      </div>
-      <div className="faq-content">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione
-        reiciendis, eveniet voluptate excepturi doloribus quam expedita
-        quibusdam nam obcaecati? Voluptatibus at reprehenderit obcaecati nulla
-        velit natus voluptatem nihil id distinctio?
-      </div>
-    </div>
-
-    <div className="faq-card">
-      <div className="faq-rail">
-        <p className="faq-title">What are the opening hours?</p>
-        <div className="faq-plus">+</div>
-        <div className="faq-minus">-</div>
-      </div>
-      <div className="faq-content">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione
-        reiciendis, eveniet voluptate excepturi doloribus quam expedita
-        quibusdam nam obcaecati? Voluptatibus at reprehenderit obcaecati nulla
-        velit natus voluptatem nihil id distinctio?
-      </div>
-    </div>
-
-    <div className="faq-card">
-      <div className="faq-rail">
-        <p className="faq-title">What are the opening hours?</p>
-        <div className="faq-plus">+</div>
-        <div className="faq-minus">-</div>
-      </div>
-      <div className="faq-content">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione
-        reiciendis, eveniet voluptate excepturi doloribus quam expedita
-        quibusdam nam obcaecati? Voluptatibus at reprehenderit obcaecati nulla
-        velit natus voluptatem nihil id distinctio?
-      </div>
-    </div>
-  </div>
-);
+	return (
+		<div className='faq-container'>
+			<h2 className='faq-title'>{title}</h2>
+			{list.map(item => {
+				return <FaqCard {...item} />;
+			})}
+		</div>
+	);
+};
 
 export default Faq;
