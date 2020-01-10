@@ -35,7 +35,13 @@ class Tab extends React.Component {
 
 		return (
 			<div className={`tab ${isInverted ? `is-inverted` : ``}`}>
-				<div className='tab__button-wrapper'>
+				<div
+					className={
+						isInverted
+							? 'tab__button-wrapper tab__button-wrapper-inverted'
+							: 'tab__button-wrapper'
+					}
+				>
 					{tabList &&
 						tabList.length > 0 &&
 						tabList.map((item, i) => (
@@ -52,9 +58,15 @@ class Tab extends React.Component {
 							</button>
 						))}
 				</div>
-				<div className='tab__range-wrapper'>
+				<div
+					className={
+						isInverted
+							? 'tab__range-wrapper tab__range-wrapper-inverted'
+							: 'tab__range-wrapper'
+					}
+				>
 					<input
-						className='tab__range-selector'
+						className={'tab__range-selector'}
 						type='range'
 						min='1'
 						step='1'
@@ -63,7 +75,13 @@ class Tab extends React.Component {
 						onChange={e => this.handleInputChange(e)}
 					/>
 				</div>
-				<div className='tab__content-wrapper'>
+				<div
+					className={`${
+						isInverted
+							? 'tab__content-wrapper tab__content-wrapper-inverted'
+							: 'tab__content-wrapper'
+					}`}
+				>
 					{content &&
 						content.length > 0 &&
 						content.map((item, i) => (
