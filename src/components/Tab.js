@@ -28,6 +28,7 @@ class Tab extends React.Component {
 	selectTabCallback = activeTab => {
 		this.setState({
 			activeTab,
+			currentRange: activeTab + 1,
 		});
 	};
 	render() {
