@@ -11,8 +11,7 @@ class Tab extends React.Component {
 	};
 
 	componentDidMount() {
-		matchHeight('tab__content', true);
-
+		// matchHeight('tab__content', true);
 		this.setState({
 			activeTab: 0,
 		});
@@ -96,9 +95,9 @@ class Tab extends React.Component {
 							>
 								{item.text && (
 									<div class='tab__content-col '>
-										<h2 className='tab__content-col-title'>
+										{/* <h2 className='tab__content-col-title'>
 											{tabList[i]}
-										</h2>
+										</h2> */}
 										<div className='tab__content-col-text'>
 											<p>{item.text}</p>
 										</div>
