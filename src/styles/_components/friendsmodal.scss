@@ -1,0 +1,44 @@
+.friendsModal-overlay {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	background-color: black;
+	opacity: 0.6;
+	z-index: 50000;
+	top: 0;
+	left: 0;
+	right: 0;
+}
+
+.friendsModal-container {
+	position: absolute;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 50010;
+	height: 15%;
+	width: 40%;
+	min-width: 80%;
+	margin: -70% 9%;
+}
+
+.friendsModal-image {
+	height: 100%;
+	width: 34%;
+	pointer-events: none;
+
+	* {
+		border-top-left-radius: 5px !important;
+		border-bottom-left-radius: 5px !important;
+	}
+}
+
+.friendsModal-content-container {
+	background-color: white;
+	height: 85.3%;
+	width: 45%;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+	padding: 2em 1.5em;
+	position: relative;
+}
