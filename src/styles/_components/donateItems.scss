@@ -1,173 +1,175 @@
 .donate-items {
-    background: $primary-color-c;
-    position: relative;
-    margin-bottom: 115px;
+	background: $primary-color-c;
+	position: relative;
+	margin-bottom: 115px;
+}
+.donate-items__inModal {
+	width: 100%;
+	height: 30%;
 }
 
 .donate-items__wrapper {
-    @include gridWidth;
+	@include gridWidth;
 
-    &:after {
-        content: "";
-        display: block;
-        position: absolute;
-        z-index: 1;
-        bottom: -60px;
-        left: 0;
-        width: 100%;
-        height: 70px;
-        background: url("../img/brown-brush.svg") center top no-repeat;
-        background-size: contain;
-        transform: scaleX(6);
-      }
+	&:after {
+		content: '';
+		display: block;
+		position: absolute;
+		z-index: 1;
+		bottom: -60px;
+		left: 0;
+		width: 100%;
+		height: 70px;
+		background: url('../img/brown-brush.svg') center top no-repeat;
+		background-size: contain;
+		transform: scaleX(6);
+	}
 
-      &::before {
-        content: "";
-        display: block;
-        position: absolute;
-        z-index: 0;
-        top: -60px;
-        left: 0;
-        width: 100%;
-        height: 70px;
-        background: url("../img/brown-brush.svg") center top no-repeat;
-        background-size: contain;
-        transform: scaleX(6);
-      }
+	&::before {
+		content: '';
+		display: block;
+		position: absolute;
+		z-index: 0;
+		top: -60px;
+		left: 0;
+		width: 100%;
+		height: 70px;
+		background: url('../img/brown-brush.svg') center top no-repeat;
+		background-size: contain;
+		transform: scaleX(6);
+	}
 }
 
 .donate-items__row_1 {
-    @include col(12, 12);
+	@include col(12, 12);
 
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    padding: 50px 0;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	padding: 50px 0;
 
-    .donate-items-title {
-        text-align: center;
-        font:  45px/55px Lato;
-        letter-spacing: 0;
-        color: #181F27;
-        opacity: 1;
-    }
+	.donate-items-title {
+		text-align: center;
+		font: 45px/55px Lato;
+		letter-spacing: 0;
+		color: #181f27;
+		opacity: 1;
+	}
 
-    .donate-items-subtitle {
-        text-align: center;
-        font: 20px/36px Lato;
-        letter-spacing: 0;
-        color: #181F27;
-        opacity: 1;
-        padding: 0 250px;
+	.donate-items-subtitle {
+		text-align: center;
+		font: 20px/36px Lato;
+		letter-spacing: 0;
+		color: #181f27;
+		opacity: 1;
+		padding: 0 250px;
 
-        @media only screen and (max-width: 768px) {
-            padding: 0 50px;
-          }
-    }
+		@media only screen and (max-width: 768px) {
+			padding: 0 50px;
+		}
+	}
 }
 
 .donate-items__row_2 {
-    @include col(12, 12);
-    
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    
-    @media only screen and (max-width: 768px) {
-        flex-direction: column;
-        margin-right: -15px;
-        overflow: hidden;
-      }
+	@include col(12, 12);
 
-    .donate-items__column {
-        position: relative;
-        vertical-align: middle;
-        width: 25%;
-        height: 261px;
-        display: flex;
-        flex-direction: column;
-        background: white;
-        margin-right: 10px;
-        align-items: center;
-        justify-content: center;
+	display: flex;
+	justify-content: center;
+	text-align: center;
 
-        @media only screen and (max-width: 768px) {        
-            width: 100%;
-            margin-bottom: 15px;
-        }
+	@media only screen and (max-width: 768px) {
+		flex-direction: column;
+		margin-right: -15px;
+		overflow: hidden;
+	}
 
-        .donate-items-label {
-            opacity: 0;
-            height: 0;
-            position: absolute;
-            text-align: center;
-            font: 24px/30px Lato;
-            font-weight: 700;
-            letter-spacing: 0;
-            color: #FFFFFF;
-        }
+	.donate-items__column {
+		position: relative;
+		vertical-align: middle;
+		width: 25%;
+		height: 261px;
+		display: flex;
+		flex-direction: column;
+		background: white;
+		margin-right: 10px;
+		align-items: center;
+		justify-content: center;
 
-        .donate-items-button{
-            opacity: 0;
-            height: 0;
-            padding: 16px 60px;
-            position: absolute;
-            bottom: 15px;
-            text-align: center;
+		@media only screen and (max-width: 768px) {
+			width: 100%;
+			margin-bottom: 15px;
+		}
 
-            em {
-                font-weight: 700;
-            }
-        }
+		.donate-items-label {
+			opacity: 0;
+			height: 0;
+			position: absolute;
+			text-align: center;
+			font: 24px/30px Lato;
+			font-weight: 700;
+			letter-spacing: 0;
+			color: #ffffff;
+		}
 
-        &:hover {
-            opacity: 0.9;
-            background-color: $secondary-color-a;
-            color: $secondary-color-b;
+		.donate-items-button {
+			opacity: 0;
+			height: 0;
+			padding: 16px 60px;
+			position: absolute;
+			bottom: 15px;
+			text-align: center;
 
-            .donate-items-label {
-                opacity: 1;
-                height: auto;
+			em {
+				font-weight: 700;
+			}
+		}
 
-            }
+		&:hover {
+			opacity: 0.9;
+			background-color: $secondary-color-a;
+			color: $secondary-color-b;
 
-            .donate-items-button{
-                opacity: 1;
-                height: auto;
+			.donate-items-label {
+				opacity: 1;
+				height: auto;
+			}
 
-            }
-        }
-    }
+			.donate-items-button {
+				opacity: 1;
+				height: auto;
+			}
+		}
+	}
 
-    .donate-item__image {
-        height: 183px;
-        width: 183px;
-    }
+	.donate-item__image {
+		height: 183px;
+		width: 183px;
+	}
 }
 
 .donate-items__row_3 {
-    @include col(12, 12);
+	@include col(12, 12);
 
-    display: flex;
-    justify-content: center;
-    padding: 50px 0;
+	display: flex;
+	justify-content: center;
+	padding: 50px 0;
 
-    .donate-items-wishlist-button {
-        text-align: center;
-        background: #FFB036;
-        width: 30%;
-        padding: 20px 16px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        
-        em {
-            font-weight: 700;
-        }
+	.donate-items-wishlist-button {
+		text-align: center;
+		background: #ffb036;
+		width: 30%;
+		padding: 20px 16px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
 
-        @media only screen and (max-width: 768px) {        
-            width: 100%;
-            margin-bottom: 15px;
-        }
-    }
+		em {
+			font-weight: 700;
+		}
+
+		@media only screen and (max-width: 768px) {
+			width: 100%;
+			margin-bottom: 15px;
+		}
+	}
 }

@@ -1,5 +1,7 @@
 import React from 'react';
 import PreviewCompatibleImage from './PreviewCompatibleImage';
+import { IoMdClose } from 'react-icons/io';
+import DonateItems from './DonateItems';
 
 const FriendsModal = ({ name, bio, profileImage, toggleModal }) => {
 	return (
@@ -15,14 +17,22 @@ const FriendsModal = ({ name, bio, profileImage, toggleModal }) => {
 				/>
 
 				<div className='friendsModal-content-container'>
-					<button onClick={() => toggleModal(false)}>
-						Test Close
-					</button>
+					<IoMdClose
+						className='friendsModal-close'
+						onClick={() => toggleModal(false)}
+					/>
 					<h2>{name}</h2>
-					<p>{bio}</p>
+					<p className='friendsModal-bio'>
+						{
+							' tem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur,'
+						}
+					</p>
 					<div className='friendsModal-needs'>
-						<h4>People like {name} need...</h4>
-						<p>Or</p>
+						<h3 className='friendsModal-needs_title'>
+							People like {name} need...
+						</h3>
+						{/* <DonateItems inModal={true} /> */}
+						<h3>Or</h3>
 						<button className='btn btn--style-g'>
 							Donate another amount
 						</button>

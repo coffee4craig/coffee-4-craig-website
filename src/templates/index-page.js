@@ -21,8 +21,6 @@ export const IndexPageTemplate = ({
 	friends,
 	credits,
 }) => {
-	const [modalActive, setModalActive] = useState(false);
-	const [activeFriend, setActiveFriend] = useState({});
 	return (
 		<div>
 			<HomepageHero {...homepageHero} />
@@ -30,14 +28,7 @@ export const IndexPageTemplate = ({
 			<Quote {...quote} />
 			<Video {...video} />
 			<Feature {...feature} />
-			<Friends
-				{...friends}
-				toggleModal={setModalActive}
-				toggleFriend={setActiveFriend}
-			/>
-			{modalActive ? (
-				<FriendsModal {...activeFriend} toggleModal={setModalActive} />
-			) : null}
+			<Friends {...friends} />
 			<Credits {...credits} />
 		</div>
 	);
