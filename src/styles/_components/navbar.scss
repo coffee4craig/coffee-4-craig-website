@@ -68,10 +68,28 @@
 .navbar__links {
   @include list-unstyled;
 
+
+
+
   li {
     display: block;
     margin: 10px 0;
-
+    position: relative;
+    &.nav-link-active {
+      &::before {
+        content: "";
+        position: absolute;
+        top: -170%;
+        height: 5px;
+        width: 100%;
+        background-color: $primary-color-a;
+        z-index: 50;
+        border-bottom-left-radius: 2em;
+        border-bottom-right-radius: 2em;
+      }
+    
+    }
+  
     a {
       text-decoration: none;
       color: $secondary-color-a;
@@ -88,3 +106,6 @@
     }
   }
 }
+
+
+

@@ -12,6 +12,7 @@ class Navbar extends React.Component {
     navbarBackground: false, 
     isMobile: false,   
     isOpen: false, 
+    currentPage: window.location.pathname
   }
 
   targetRef = React.createRef();
@@ -23,6 +24,7 @@ class Navbar extends React.Component {
     window.addEventListener('scroll', this.handleScroll);
     window.addEventListener('resize', this.handleResize);
     this.targetElement = this.targetRef.current; 
+
   }
 
   componentWillUnmount() {
@@ -59,7 +61,6 @@ class Navbar extends React.Component {
   toggleMenu = (event) => {
     event.preventDefault();
     event.stopPropagation();
-    console.log('HELLO')
     const { isOpen } = this.state;
 
     this.setState({
@@ -101,16 +102,16 @@ class Navbar extends React.Component {
         <div ref={this.targetRef} className={`navbar__flex navbar__menu ${isMobile ? `is-mobile` : ``}`} style={{ 'transform': isMobile ? transform : 'translateX(0%)'}}>
           <ul className="navbar__links">
               <li>
-                <Link to="/about-us">About Us</Link>
+                <Link className={this.state.currentPage === "/about-us" ? "nav-link-active" : null} to="/about-us">About Us</Link>
               </li>
               <li>
-                <Link to="/support-us">Support Us</Link>
+                <Link className={this.state.currentPage === "/support-us" ? "nav-link-active" : null} to="/support-us">Support Us</Link>
               </li>
               <li>
-                <Link to="/fundraising">Fundraising</Link>
+                <Link className={this.state.currentPage === "/fundraising" ? "nav-link-active" : null} to="/fundraising">Fundraising</Link>
               </li>
               <li>
-                <Link to="/contact-us">Contact Us</Link>
+                <Link className={this.state.currentPage === "/contact-us" ? "nav-link-active" : null} to="/contact-us">Contact Us</Link>
               </li>
             </ul>
           </div>
