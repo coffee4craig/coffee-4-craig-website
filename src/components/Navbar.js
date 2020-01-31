@@ -23,6 +23,7 @@ class Navbar extends React.Component {
     window.addEventListener('scroll', this.handleScroll);
     window.addEventListener('resize', this.handleResize);
     this.targetElement = this.targetRef.current; 
+
   }
 
   componentWillUnmount() {
@@ -59,7 +60,6 @@ class Navbar extends React.Component {
   toggleMenu = (event) => {
     event.preventDefault();
     event.stopPropagation();
-    console.log('HELLO')
     const { isOpen } = this.state;
 
     this.setState({
@@ -69,6 +69,7 @@ class Navbar extends React.Component {
 
   render() {
     const { navbarBackground, isMobile, isOpen } = this.state;
+    const { pathname } = window.location;
 
     const transform = isOpen ? `translateX(0%)` : `translateX(100%)`;
     const bgColor = navbarBackground ? `#FFFFFF` : `transparent`;
@@ -78,8 +79,6 @@ class Navbar extends React.Component {
     } else {
       enableBodyScroll(this.targetElement);
     }
-
-    console.log('RERENDER')
 
     return (
       <nav
@@ -100,16 +99,16 @@ class Navbar extends React.Component {
         
         <div ref={this.targetRef} className={`navbar__flex navbar__menu ${isMobile ? `is-mobile` : ``}`} style={{ 'transform': isMobile ? transform : 'translateX(0%)'}}>
           <ul className="navbar__links">
-              <li>
+              <li className={pathname === "/about-us" ? "nav-link-active" : null}>
                 <Link to="/about-us">About Us</Link>
               </li>
-              <li>
+              <li className={pathname === "/support-us" ? "nav-link-active" : null}>
                 <Link to="/support-us">Support Us</Link>
               </li>
-              <li>
+              <li className={pathname === "/fundraising" ? "nav-link-active" : null}>
                 <Link to="/fundraising">Fundraising</Link>
               </li>
-              <li>
+              <li className={pathname === "/contact-us" ? "nav-link-active" : null}>
                 <Link to="/contact-us">Contact Us</Link>
               </li>
             </ul>
