@@ -12,7 +12,6 @@ class Navbar extends React.Component {
     navbarBackground: false, 
     isMobile: false,   
     isOpen: false, 
-    currentPage: window.location.pathname
   }
 
   targetRef = React.createRef();
@@ -70,6 +69,7 @@ class Navbar extends React.Component {
 
   render() {
     const { navbarBackground, isMobile, isOpen } = this.state;
+    const { pathname } = window.location;
 
     const transform = isOpen ? `translateX(0%)` : `translateX(100%)`;
     const bgColor = navbarBackground ? `#FFFFFF` : `transparent`;
@@ -79,8 +79,6 @@ class Navbar extends React.Component {
     } else {
       enableBodyScroll(this.targetElement);
     }
-
-    console.log('RERENDER')
 
     return (
       <nav
@@ -101,17 +99,17 @@ class Navbar extends React.Component {
         
         <div ref={this.targetRef} className={`navbar__flex navbar__menu ${isMobile ? `is-mobile` : ``}`} style={{ 'transform': isMobile ? transform : 'translateX(0%)'}}>
           <ul className="navbar__links">
-              <li>
-                <Link className={this.state.currentPage === "/about-us" ? "nav-link-active" : null} to="/about-us">About Us</Link>
+              <li className={pathname === "/about-us" ? "nav-link-active" : null}>
+                <Link to="/about-us">About Us</Link>
               </li>
-              <li>
-                <Link className={this.state.currentPage === "/support-us" ? "nav-link-active" : null} to="/support-us">Support Us</Link>
+              <li className={pathname === "/support-us" ? "nav-link-active" : null}>
+                <Link to="/support-us">Support Us</Link>
               </li>
-              <li>
-                <Link className={this.state.currentPage === "/fundraising" ? "nav-link-active" : null} to="/fundraising">Fundraising</Link>
+              <li className={pathname === "/fundraising" ? "nav-link-active" : null}>
+                <Link to="/fundraising">Fundraising</Link>
               </li>
-              <li>
-                <Link className={this.state.currentPage === "/contact-us" ? "nav-link-active" : null} to="/contact-us">Contact Us</Link>
+              <li className={pathname === "/contact-us" ? "nav-link-active" : null}>
+                <Link to="/contact-us">Contact Us</Link>
               </li>
             </ul>
           </div>
