@@ -72,10 +72,6 @@ class Navbar extends React.Component {
   render() {
     const { navbarBackground, isMobile, isOpen } = this.state;
     
-
-    if (typeof window !== 'undefined') {
-      const { pathname } = window.location;
-    }
     
     const transform = isOpen ? `translateX(0%)` : `translateX(100%)`;
     const bgColor = navbarBackground ? `#FFFFFF` : `transparent`;
@@ -87,6 +83,7 @@ class Navbar extends React.Component {
     }
 
     if (typeof window !== 'undefined') {
+      const { pathname } = window.location;
       return (
         <nav
           className={`navbar`}
