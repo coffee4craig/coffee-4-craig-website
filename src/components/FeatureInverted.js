@@ -12,7 +12,8 @@ const FeatureInverted = ({ title, text, primaryButtonText, backgroundImage }) =>
             <h2 className="feature-inverted__title">{title}</h2>
             <p className="feature-inverted__text">{text}</p>
             <div className="donate__cta">
-              <button className="btn btn--style-g donate__btn">{primaryButtonText}</button>
+              <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=VBW25QGTWEMYC&source=url" 
+              className="btn btn--style-g donate__btn">{primaryButtonText}</a>
             </div>
           </div>
         </div>

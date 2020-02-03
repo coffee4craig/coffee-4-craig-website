@@ -11,7 +11,7 @@ const FeatureComponent = ({ title, text, ctaOne, ctaTwo, featureImage }) => (
           <p className="feature-component__text">{text}</p>
           <div className="feature-component__donate-cta">
             <a className="btn btn--style-f feature-component__donate-btn" href={ctaOne.url}><em>{ctaOne.label}</em></a>
-            <a className="btn btn--style-e feature-component__donate-btn" href={ctaOne.url}><em>{ctaTwo.label}</em></a>
+            <a className="btn btn--style-e feature-component__donate-btn" href={ctaTwo.url}><em>{ctaTwo.label}</em></a>
           </div>
         </div>
       </div>
