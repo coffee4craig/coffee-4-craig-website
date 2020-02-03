@@ -9,5 +9,5 @@ leadText: aa
 richText: 
 cta: 
   label: CTA label
-  url: https://www.google.com/
+  url: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=VBW25QGTWEMYC&source=url
 ---

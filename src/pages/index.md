@@ -23,7 +23,7 @@ feature:
     url: https://docs.google.com/forms/d/e/1FAIpQLSemNku8dsK6_JD9ciOud2plvPN3wxKdMihiAaUvB3pOaoXwMA/viewform
     label: Volunteer with Us
   ctaTwo:
-    url: https://www.google.com/
+    url: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=VBW25QGTWEMYC&source=url
     label: Donate Today
   text: |
     Here in Manchester, we have had a dramatic increase in numbers, the likes that have never been seen before and it is increasing every day.
