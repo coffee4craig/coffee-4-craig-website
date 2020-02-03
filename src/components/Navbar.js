@@ -12,6 +12,7 @@ class Navbar extends React.Component {
     navbarBackground: false, 
     isMobile: false,   
     isOpen: false, 
+    pathname: "",
   }
 
   targetRef = React.createRef();
@@ -23,6 +24,8 @@ class Navbar extends React.Component {
     window.addEventListener('scroll', this.handleScroll);
     window.addEventListener('resize', this.handleResize);
     this.targetElement = this.targetRef.current; 
+    const { pathname } = window.location;
+    this.setState({pathname: pathname});
 
   }
 
@@ -81,9 +84,6 @@ class Navbar extends React.Component {
     } else {
       enableBodyScroll(this.targetElement);
     }
-
-    if (typeof window !== 'undefined') {
-      const { pathname } = window.location;
       return (
         <nav
           className={`navbar`}
@@ -103,16 +103,16 @@ class Navbar extends React.Component {
           
           <div ref={this.targetRef} className={`navbar__flex navbar__menu ${isMobile ? `is-mobile` : ``}`} style={{ 'transform': isMobile ? transform : 'translateX(0%)'}}>
             <ul className="navbar__links">
-                <li className={pathname === "/about-us" ? "nav-link-active" : null}>
+                <li className={this.state.pathname === "/about-us" ? "nav-link-active" : null}>
                   <Link to="/about-us">About Us</Link>
                 </li>
-                <li className={pathname === "/support-us" ? "nav-link-active" : null}>
+                <li className={this.state.pathname === "/support-us" ? "nav-link-active" : null}>
                   <Link to="/support-us">Support Us</Link>
                 </li>
-                <li className={pathname === "/fundraising" ? "nav-link-active" : null}>
+                <li className={this.state.pathname === "/fundraising" ? "nav-link-active" : null}>
                   <Link to="/fundraising">Fundraising</Link>
                 </li>
-                <li className={pathname === "/contact-us" ? "nav-link-active" : null}>
+                <li className={this.state.pathname === "/contact-us" ? "nav-link-active" : null}>
                   <Link to="/contact-us">Contact Us</Link>
                 </li>
               </ul>
@@ -126,15 +126,7 @@ class Navbar extends React.Component {
             </div>
           </div>
         </nav>
-      )
-    }
-    else {
-      return (
-      <div ref={this.targetRef} className="navbar__wrapper">
-      </div>)
-    }
-
-   
+      )   
   }
 }
 
