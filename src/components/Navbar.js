@@ -12,6 +12,7 @@ class Navbar extends React.Component {
     navbarBackground: false, 
     isMobile: false,   
     isOpen: false, 
+    pathname: "",
   }
 
   targetRef = React.createRef();
@@ -23,6 +24,8 @@ class Navbar extends React.Component {
     window.addEventListener('scroll', this.handleScroll);
     window.addEventListener('resize', this.handleResize);
     this.targetElement = this.targetRef.current; 
+    const { pathname } = window.location;
+    this.setState({pathname: pathname});
 
   }
 
@@ -81,9 +84,6 @@ class Navbar extends React.Component {
     } else {
       enableBodyScroll(this.targetElement);
     }
-
-    if (typeof window !== 'undefined') {
-      const { pathname } = window.location;
       return (
         <nav
           className={`navbar`}
@@ -126,15 +126,7 @@ class Navbar extends React.Component {
             </div>
           </div>
         </nav>
-      )
-    }
-    else {
-      return (
-      <div ref={this.targetRef} className="navbar__wrapper">
-      </div>)
-    }
-
-   
+      )   
   }
 }
 
