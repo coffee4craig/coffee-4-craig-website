@@ -165,6 +165,135 @@ collections:
                       },
                     ],
                 }
+      - label: "SupportUs"
+        name: "support"
+        file: "src/pages/support-us/index.md"
+        fields:
+          - {
+              label: "Template Key",
+              name: "templateKey",
+              widget: "hidden",
+              default: "support-page",
+            }
+          - label: Hero
+            name: hero
+            widget: object
+            fields:
+              - { label: Title, name: title, widget: string }
+              - {
+                  label: Background Image,
+                  name: backgroundImage,
+                  widget: object,
+                  fields:
+                    [
+                      { label: Image, name: image, widget: image },
+                      { label: Alt Text, name: alt, widget: string },
+                    ],
+                }
+          - label: Lead Text
+            name: leadText
+            widget: text 
+          - label: Volunteer
+            name: volunteer
+            widget: object
+            fields:
+              - { label: Title, name: title, widget: string }
+              - { label: Text, name: text, widget: text }   
+              - {
+                  label: Button one,
+                  name: ctaOne,
+                  widget: object,
+                  fields:
+                    [
+                      { label: Text, name: label, widget: string },
+                      { label: Url, name: url, widget: string },
+                    ]
+                }
+              - {
+                  label: Button two,
+                  name: ctaTwo,
+                  widget: object,
+                  fields:
+                    [
+                      { label: Text, name: label, widget: string },
+                      { label: Url, name: url, widget: string },
+                    ]
+                }
+          - label: Donate Items
+            name: donateItems
+            widget: object
+            fields:
+              - { label: Title, name: title, widget: string }
+              - { label: Sub Title, name: text, widget: string }
+              - { label: Primary Button, name: primaryButton, widget: string }
+              - {
+                  label: Donate List,
+                  name: list,
+                  widget: list,
+                  fields:
+                    [
+                      {
+                        label: image,
+                        name: image,
+                        widget: object,
+                        fields:
+                          [
+                            { label: Image, name: image, widget: image },
+                            { label: Alt Text, name: alt, widget: string },
+                          ],
+                      },
+                      {
+                        label: button,
+                        name: cta,
+                        widget: object,
+                        fields:
+                          [
+                            { label: Title, name: label, widget: string },
+                            { label: Url, name: url, widget: string }
+                          ]
+                      }
+                    ],
+                }
+          - label: Super Heroes
+            name: superheroes
+            widget: object
+            fields:
+              - { label: Title, name: title, widget: string }
+              - {
+                  label: Heroes List,
+                  name: superheroesList,
+                  widget: list,
+                  fields:
+                    [
+                      {
+                        label: image,
+                        name: image,
+                        widget: object,
+                        fields:
+                          [
+                            { label: Image, name: image, widget: image },
+                            { label: Alt Text, name: alt, widget: string },
+                          ],
+                      },
+                      { label: Name, name: name, widget: string },
+                      { label: Description, name: description, widget: string }
+                    ],
+                }
+          - label: CTA Block
+            name: ctaBlock
+            widget: object
+            fields:
+              - { label: Title, name: title, widget: string }
+              - {
+                  label: button,
+                  name: link,
+                  widget: object,
+                  fields:
+                    [
+                      { label: Title, name: label, widget: string },
+                      { label: Url, name: url, widget: string }
+                    ]
+                }
       - label: "About"
         name: "about"
         file: "src/pages/about-us/index.md"
