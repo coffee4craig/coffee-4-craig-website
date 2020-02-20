@@ -165,6 +165,77 @@ collections:
                       },
                     ],
                 }
+      - label: "ContactUs"
+        name: "contact"
+        file: "src/pages/contact-us/index.md"
+        fields:
+          - {
+              label: "Template Key",
+              name: "templateKey",
+              widget: "hidden",
+              default: "contact-page",
+            }
+          - label: Hero
+            name: hero
+            widget: object
+            fields:
+              - { label: Title, name: title, widget: string }
+              - {
+                  label: Background Image,
+                  name: backgroundImage,
+                  widget: object,
+                  fields:
+                    [
+                      { label: Image, name: image, widget: image },
+                      { label: Alt Text, name: alt, widget: string },
+                    ],
+                }
+          - label: Feature
+            name: featureInverted
+            widget: object
+            fields:
+              - { label: Title, name: title, widget: string }
+              - { label: Text, name: text, widget: text }
+              - { label: Button One, name: primaryButtonText, widget: string }
+              - label: Image
+                name: backgroundImage
+                widget: object
+                fields:
+                  - { label: Image, name: image, widget: image }
+                  - { label: Alt Text, name: alt, widget: string }
+          - label: Credits
+            name: credits
+            widget: object
+            fields:
+              - { label: Title, name: title, widget: string }
+              - {
+                  label: Credit List,
+                  name: creditList,
+                  widget: list,
+                  fields:
+                    [
+                      {
+                        label: Link,
+                        name: link,
+                        widget: object,
+                        fields:
+                          [
+                            { label: Url, name: url, widget: string },
+                            { label: Target, name: target, widget: string },
+                          ],
+                      },
+                      {
+                        label: Logo,
+                        name: logo,
+                        widget: object,
+                        fields:
+                          [
+                            { label: Image, name: image, widget: image },
+                            { label: Alt Text, name: alt, widget: string },
+                          ],
+                      },
+                    ],
+                }
       - label: "SupportUs"
         name: "support"
         file: "src/pages/support-us/index.md"
