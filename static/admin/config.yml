@@ -173,8 +173,26 @@ collections:
               label: "Template Key",
               name: "templateKey",
               widget: "hidden",
-              default: "about-page",
-            }      
+              default: "support-page",
+            }     
+          - label: Hero
+            name: hero
+            widget: object
+            fields:
+              - { label: Title, name: title, widget: string }
+              - {
+                  label: Background Image,
+                  name: backgroundImage,
+                  widget: object,
+                  fields:
+                    [
+                      { label: Image, name: image, widget: image },
+                      { label: Alt Text, name: alt, widget: string },
+                    ],
+                }
+          - label: Lead Text
+            name: leadText
+            widget: text
       - label: "About"
         name: "about"
         file: "src/pages/about-us/index.md"
