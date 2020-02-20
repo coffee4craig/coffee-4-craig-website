@@ -165,6 +165,16 @@ collections:
                       },
                     ],
                 }
+      - label: "SupportUs"
+      - name: "support"
+      - file: "src/pages/support-us/index.md"
+        fields:
+          - {
+              label: "Template Key",
+              name: "templateKey",
+              widget: "hidden",
+              default: "about-page",
+            }      
       - label: "About"
         name: "about"
         file: "src/pages/about-us/index.md"
