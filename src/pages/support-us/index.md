@@ -19,7 +19,6 @@ volunteer:
     label: Donate Today
 donateItems:
   title: Donate Items
-  primaryButton: View our full Amazon wish list
   text: >
     Please look at our Amazon Wish List to see a list of the things we currently need. There are also some items that we will always use; boxer shorts, socks, coffee, tea, milk, sugar, toiletries and sanitary products.
   list: 
@@ -28,31 +27,31 @@ donateItems:
         alt: about us
         image: /img/donate__backpack.png
       cta:
-        url: https://www.google.com/
+        url: https://www.amazon.co.uk/hz/wishlist/ls/MITAVGKN3Q2R?ref_=wl_share
         label: Buy Now
     - label: 3 pack of razors
       image: 
         alt: about us
         image: /img/donate__backpack.png
       cta:
-        url: https://www.google.com/
+        url: https://www.amazon.co.uk/hz/wishlist/ls/MITAVGKN3Q2R?ref_=wl_share
         label: Buy Now
     - label: Sleeping bag
       image: 
         alt: about us
         image: /img/donate__sleeping-bag.png
       cta:
-        url: https://www.google.com/
+        url: https://www.amazon.co.uk/hz/wishlist/ls/MITAVGKN3Q2R?ref_=wl_share
         label: Buy Now
     - label: Gloves
       image: 
         alt: about us
         image: /img/donate__gloves.png
       cta:
-        url: https://www.google.com/
+        url: https://www.amazon.co.uk/hz/wishlist/ls/MITAVGKN3Q2R?ref_=wl_share
         label: Buy Now
   cta:
-    url: https://www.google.com/
+    url: https://www.amazon.co.uk/hz/wishlist/ls/MITAVGKN3Q2R?ref_=wl_share
     label: View our full Amazon wish list
 ctaBlock:
   title: Become a super hero in just 5 mins...

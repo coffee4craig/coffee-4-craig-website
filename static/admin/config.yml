@@ -342,7 +342,16 @@ collections:
             fields:
               - { label: Title, name: title, widget: string }
               - { label: Sub Title, name: text, widget: string }
-              - { label: Primary Button, name: primaryButton, widget: string }
+              - { 
+                  label: CTA,
+                  name: cta,
+                  widget: object,
+                  fields:
+                    [
+                      { label: Title, name: label, widget: string },
+                      { label: Url, name: url, widget: string }
+                    ]
+                }
               - {
                   label: Donate List,
                   name: list,
