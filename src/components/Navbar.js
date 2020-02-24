@@ -26,6 +26,7 @@ class Navbar extends React.Component {
     this.targetElement = this.targetRef.current; 
     const { pathname } = window.location;
     this.setState({pathname: pathname});
+
   }
 
   componentWillUnmount() {
@@ -69,6 +70,8 @@ class Navbar extends React.Component {
     })
   }
 
+
+
   render() {
     const { navbarBackground, isMobile, isOpen } = this.state;
 
@@ -81,49 +84,50 @@ class Navbar extends React.Component {
       enableBodyScroll(this.targetElement);
     }
 
-    return (
-      <nav
-        className={`navbar`}
-        style={{
-          'backgroundColor': bgColor
-         }}
-        role="navigation"
-        aria-label="main-navigation"
-      >
-      <div className="navbar__wrapper">
-        <div className="navbar__flex">
-          <Link className="navbar__logo" to="/">
-            <img src={logo} alt="Coffee 4 Craig Logo" />
-          </Link>
-        </div>
-        
-        
-        <div ref={this.targetRef} className={`navbar__flex navbar__menu ${isMobile ? `is-mobile` : ``}`} style={{ 'transform': isMobile ? transform : 'translateX(0%)'}}>
-          <ul className="navbar__links">
-              <li className={this.state.pathname === "/about-us" ? "nav-link-active" : null}>
-                <Link to="/about-us">About Us</Link>
-              </li>
-              <li className={this.state.pathname === "/support-us" ? "nav-link-active" : null}>
-                <Link to="/support-us">Support Us</Link>
-              </li>
-              <li className={this.state.pathname === "/fundraising" ? "nav-link-active" : null}>
-                <Link to="/fundraising">Fundraising</Link>
-              </li>
-              <li className={this.state.pathname === "/contact-us" ? "nav-link-active" : null}>
-                <Link to="/contact-us">Contact Us</Link>
-              </li>
-            </ul>
-          </div>
+      return (
+        <nav
+          className={`navbar`}
+          style={{
+            'backgroundColor': bgColor
+           }}
+          role="navigation"
+          aria-label="main-navigation"
+        >
+        <div className="navbar__wrapper">
           <div className="navbar__flex">
+            <Link className="navbar__logo" to="/">
+              <img src={logo} alt="Coffee 4 Craig Logo" />
+            </Link>
+          </div>
+          
+          
+          <div ref={this.targetRef} className={`navbar__flex navbar__menu ${isMobile ? `is-mobile` : ``}`} style={{ 'transform': isMobile ? transform : 'translateX(0%)'}}>
+            <ul className="navbar__links">
+                <li className={this.state.pathname === "/about-us" ? "nav-link-active" : null}>
+                  <Link to="/about-us">About Us</Link>
+                </li>
+                <li className={this.state.pathname === "/support-us" ? "nav-link-active" : null}>
+                  <Link to="/support-us">Support Us</Link>
+                </li>
+                <li className={this.state.pathname === "/fundraising" ? "nav-link-active" : null}>
+                  <Link to="/fundraising">Fundraising</Link>
+                </li>
+                <li className={this.state.pathname === "/contact-us" ? "nav-link-active" : null}>
+                  <Link to="/contact-us">Contact Us</Link>
+                </li>
+              </ul>
+            </div>
+            <div className="navbar__flex">
+
             <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=VBW25QGTWEMYC&source=url" className="btn btn--paypal" type="button"><em>Donate Now</em></a>
             {
               isMobile && 
                 <a href="#" className="btn" type="button" onClick={this.toggleMenu}>{ isOpen ? <CloseIcon/> : <MenuIcon/>}</a>
             }
+            </div>
           </div>
-        </div>
-      </nav>
-    )
+        </nav>
+      )   
   }
 }
 

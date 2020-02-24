@@ -5,9 +5,5 @@ hero:
     alt: support us
     image: /img/fund-hero-image.jpg
   title: Fundraising
-leadText: aa
-richText: 
-cta: 
-  label: CTA label
-  url: https://www.google.com/
+leadText: Join 298 Supporters Who’ve Raised £8,749.74
 ---
