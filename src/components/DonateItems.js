@@ -21,7 +21,7 @@ const DonateItems = ({ title, text, list, cta }) => (
         }
       </div>
       <div className="donate-items__row_3">
-        <a className="btn btn--amazon donate-items-wishlist-button" ><em>View our full Amazon wish list</em></a>
+        <a href={cta.url} className="btn btn--amazon donate-items-wishlist-button" ><em>{cta.label}</em></a>
       </div> 
     </div>
   </div>

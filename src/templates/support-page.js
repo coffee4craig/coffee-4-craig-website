@@ -88,7 +88,10 @@ export const pageQuery = graphql`
         }
         donateItems {
           title
-          primaryButton
+          cta {
+            url
+            label
+          }
           text
           list {
             label

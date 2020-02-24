@@ -1,84 +1,110 @@
 .address-map {
-
-  
-  @media only screen and (min-width: 768px) {
-    flex-direction: row;
-    margin: 24px 80px 24px;
-  }
+	@media only screen and (min-width: 768px) {
+		flex-direction: row;
+		margin: 24px 80px 24px;
+	}
 }
 
 .address-map__wrapper {
-  @include gridWidth;
+	@include gridWidth;
 
-  display: flex;
+	display: flex;
 }
 
 .address-map__column {
-  @include col(12, 12, true, true);
-  font-size: 14px;
+	@include col(12, 12, true, true);
+	font-size: 14px;
 
-  @media only screen and (min-width: 768px) {
-    &:first-child {
-      @include col(7, 12, true, false);
+	@media only screen and (min-width: 768px) {
+		&:first-child {
+			@include col(7, 12, true, false);
 
-      justify-content: center;
-      display: flex;
-      flex-direction: column;
-    }
+			justify-content: center;
+			display: flex;
+			flex-direction: column;
+		}
 
-    &:last-child {
-      @include col(5, 12, false, true);
+		&:last-child {
+			@include col(5, 12, false, true);
 
-      justify-content: center;
-      display: flex;
-      flex-direction: column;
-      position: relative;
-      padding-left: 40px !important;
-    }
-  }
+			justify-content: center;
+			display: flex;
+			flex-direction: column;
+			position: relative;
+			padding-left: 40px !important;
+		}
+	}
 
-  & .title {
-    margin-top: $spacing;
+	& .title {
+		margin-top: $spacing;
+		position: relative;
 
-    @media only screen and (min-width: 768px) {
-      margin-top: $spacing * 0.75;
-    }
-  }
+		@media only screen and (min-width: 768px) {
+			margin-top: $spacing * 0.75;
+		}
+	}
 
-  img {
-    width: 100%;
-    height: auto;
-  }
+	img {
+		width: 100%;
+		height: auto;
+	}
 
-  .address-map__row {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+	.address-map__row {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
 
-    .address-map__column-address {
-      width: 50%;
-      line-height: 25px;
-      text-align: left;
-      letter-spacing: 0;
-      color: #181F27;
-      opacity: 0.9;
+		.address-map__column-address {
+			width: 50%;
+			line-height: 25px;
+			text-align: left;
+			letter-spacing: 0;
+			color: #181f27;
+			opacity: 0.9;
 
-      .address-map__row-open-title {
-        font-size: 20px;
-        letter-spacing: 0;
-        color: $primary-color-b;
-        opacity: 0.9;
-        font-weight: 700;
-      }
-    }
+			.address-map__row-open-title {
+				font-size: 20px;
+				letter-spacing: 0;
+				color: $primary-color-b;
+				opacity: 0.9;
+				font-weight: 700;
+			}
+		}
 
-    p {
-      font-weight: 400;
-      margin-bottom: 10px;
-    }
+		p {
+			font-weight: 400;
+			margin-bottom: 10px;
+		}
 
-    .address-map__row-title {
-      font-weight: 700;
-    }
-  }
+		.address-map__row-title {
+			font-weight: 700;
+		}
+	}
+}
+.location-pin {
+	color: $primary-color-b;
+	height: 80%;
+	width: 10%;
+	position: absolute;
+	top: 5%;
+	left: -10%;
+}
+
+.address-map__openin {
+	color: $primary-color-b;
+	text-transform: uppercase;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.address-map__clockicon {
+	margin-right: 0.5em;
+	font-size: 2em;
+	color: black;
+}
+
+.column-center {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
 }

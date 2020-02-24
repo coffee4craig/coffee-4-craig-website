@@ -12,5 +12,5 @@ list:
   - amount: £100
     description: By donating just £100, you can provide two pairs of thermal gloves for those sleeping rough in the winter months.
 buttonText: Donate Now
-paypalLink: https://google.com
+paypalLink: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=VBW25QGTWEMYC&source=url
 ---

@@ -121,28 +121,35 @@
         }
 
         &:hover {
-            opacity: 0.9;
             background-color: $secondary-color-a;
             color: $secondary-color-b;
 
-            .donate-items-label {
-                opacity: 1;
-                height: auto;
-
+            .donate-item__image {
+                opacity: 0.3;
             }
 
             .donate-items-button{
                 opacity: 1;
                 height: auto;
+            }
 
+            .donate-items-label {
+                opacity: 1;
+                height: auto;
             }
         }
+
+
+
+
     }
 
     .donate-item__image {
         height: 183px;
-        width: 183px;
+        width: 183px;        
     }
+
+    
 }
 
 .donate-items__row_3 {

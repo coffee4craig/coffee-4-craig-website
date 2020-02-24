@@ -9,14 +9,16 @@ import RichText from '../components/RichText'
 import Cta from '../components/Cta'
 
 export const FundraisingPageTemplate = ({ 
-  hero
+  hero,
+  leadText,
+  richText
  }) => (
   <div className="fundraising">
     <Hero
      {...hero}
     />
-    <LeadText text="Join 298 Supporters Who’ve Raised £8,749.74" />
-    <RichText text="Rich Text" />
+    <LeadText text={leadText} />
+    {/* <RichText {...richText} /> */}
   </div>
 )
 
@@ -27,6 +29,8 @@ const FundraisingPage = ({ data }) => {
     <Layout>
       <FundraisingPageTemplate
         hero={frontmatter.hero}
+        leadText={frontmatter.leadText}
+        // richText={frontmatter.richText}
       />
     </Layout>
   )
@@ -59,6 +63,7 @@ export const pageQuery = graphql`
             alt
           }
         }
+        leadText
       }
     }
   }

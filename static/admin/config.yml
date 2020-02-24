@@ -99,8 +99,26 @@ collections:
             fields:
               - { label: Title, name: title, widget: string }
               - { label: Text, name: text, widget: text }
-              - { label: Button One, name: primaryButtonText, widget: string }
-              - { label: Button Two, name: secondaryButtonText, widget: string }
+              - {
+                  label: Button one,
+                  name: ctaOne,
+                  widget: object,
+                  fields:
+                    [
+                      { label: Text, name: label, widget: string },
+                      { label: Url, name: url, widget: string },
+                    ]
+                }
+              - {
+                  label: Button two,
+                  name: ctaTwo,
+                  widget: object,
+                  fields:
+                    [
+                      { label: Text, name: label, widget: string },
+                      { label: Url, name: url, widget: string },
+                    ]
+                }
               - label: Image
                 name: featureImage
                 widget: object
@@ -164,6 +182,243 @@ collections:
                           ],
                       },
                     ],
+                }
+      - label: "ContactUs"
+        name: "contact"
+        file: "src/pages/contact-us/index.md"
+        fields:
+          - {
+              label: "Template Key",
+              name: "templateKey",
+              widget: "hidden",
+              default: "contact-page",
+            }
+          - label: Hero
+            name: hero
+            widget: object
+            fields:
+              - { label: Title, name: title, widget: string }
+              - {
+                  label: Background Image,
+                  name: backgroundImage,
+                  widget: object,
+                  fields:
+                    [
+                      { label: Image, name: image, widget: image },
+                      { label: Alt Text, name: alt, widget: string },
+                    ],
+                }
+          - label: Feature
+            name: featureInverted
+            widget: object
+            fields:
+              - { label: Title, name: title, widget: string }
+              - { label: Text, name: text, widget: text }
+              - { label: Button One, name: primaryButtonText, widget: string }
+              - label: Image
+                name: backgroundImage
+                widget: object
+                fields:
+                  - { label: Image, name: image, widget: image }
+                  - { label: Alt Text, name: alt, widget: string }
+          - label: Credits
+            name: credits
+            widget: object
+            fields:
+              - { label: Title, name: title, widget: string }
+              - {
+                  label: Credit List,
+                  name: creditList,
+                  widget: list,
+                  fields:
+                    [
+                      {
+                        label: Link,
+                        name: link,
+                        widget: object,
+                        fields:
+                          [
+                            { label: Url, name: url, widget: string },
+                            { label: Target, name: target, widget: string },
+                          ],
+                      },
+                      {
+                        label: Logo,
+                        name: logo,
+                        widget: object,
+                        fields:
+                          [
+                            { label: Image, name: image, widget: image },
+                            { label: Alt Text, name: alt, widget: string },
+                          ],
+                      },
+                    ],
+                }
+      - label: "Fundraising"
+        name: "fundraising"
+        file: "src/pages/fundraising/index.md"
+        fields:
+          - {
+              label: "Template Key",
+              name: "templateKey",
+              widget: "hidden",
+              default: "fundraising-page",
+            }
+          - label: Hero
+            name: hero
+            widget: object
+            fields:
+              - { label: Title, name: title, widget: string }
+              - {
+                  label: Background Image,
+                  name: backgroundImage,
+                  widget: object,
+                  fields:
+                    [
+                      { label: Image, name: image, widget: image },
+                      { label: Alt Text, name: alt, widget: string },
+                    ],
+                }
+          - label: Lead Text
+            name: leadText
+            widget: text 
+      - label: "SupportUs"
+        name: "support"
+        file: "src/pages/support-us/index.md"
+        fields:
+          - {
+              label: "Template Key",
+              name: "templateKey",
+              widget: "hidden",
+              default: "support-page",
+            }
+          - label: Hero
+            name: hero
+            widget: object
+            fields:
+              - { label: Title, name: title, widget: string }
+              - {
+                  label: Background Image,
+                  name: backgroundImage,
+                  widget: object,
+                  fields:
+                    [
+                      { label: Image, name: image, widget: image },
+                      { label: Alt Text, name: alt, widget: string },
+                    ],
+                }
+          - label: Lead Text
+            name: leadText
+            widget: text 
+          - label: Volunteer
+            name: volunteer
+            widget: object
+            fields:
+              - { label: Title, name: title, widget: string }
+              - { label: Text, name: text, widget: text }   
+              - {
+                  label: Button one,
+                  name: ctaOne,
+                  widget: object,
+                  fields:
+                    [
+                      { label: Text, name: label, widget: string },
+                      { label: Url, name: url, widget: string },
+                    ]
+                }
+              - {
+                  label: Button two,
+                  name: ctaTwo,
+                  widget: object,
+                  fields:
+                    [
+                      { label: Text, name: label, widget: string },
+                      { label: Url, name: url, widget: string },
+                    ]
+                }
+          - label: Donate Items
+            name: donateItems
+            widget: object
+            fields:
+              - { label: Title, name: title, widget: string }
+              - { label: Sub Title, name: text, widget: string }
+              - { 
+                  label: CTA,
+                  name: cta,
+                  widget: object,
+                  fields:
+                    [
+                      { label: Title, name: label, widget: string },
+                      { label: Url, name: url, widget: string }
+                    ]
+                }
+              - {
+                  label: Donate List,
+                  name: list,
+                  widget: list,
+                  fields:
+                    [
+                      {
+                        label: image,
+                        name: image,
+                        widget: object,
+                        fields:
+                          [
+                            { label: Image, name: image, widget: image },
+                            { label: Alt Text, name: alt, widget: string },
+                          ],
+                      },
+                      {
+                        label: button,
+                        name: cta,
+                        widget: object,
+                        fields:
+                          [
+                            { label: Title, name: label, widget: string },
+                            { label: Url, name: url, widget: string }
+                          ]
+                      }
+                    ],
+                }
+          - label: Super Heroes
+            name: superheroes
+            widget: object
+            fields:
+              - { label: Title, name: title, widget: string }
+              - {
+                  label: Heroes List,
+                  name: superheroesList,
+                  widget: list,
+                  fields:
+                    [
+                      {
+                        label: image,
+                        name: image,
+                        widget: object,
+                        fields:
+                          [
+                            { label: Image, name: image, widget: image },
+                            { label: Alt Text, name: alt, widget: string },
+                          ],
+                      },
+                      { label: Name, name: name, widget: string },
+                      { label: Description, name: description, widget: string }
+                    ],
+                }
+          - label: CTA Block
+            name: ctaBlock
+            widget: object
+            fields:
+              - { label: Title, name: title, widget: string }
+              - {
+                  label: button,
+                  name: link,
+                  widget: object,
+                  fields:
+                    [
+                      { label: Title, name: label, widget: string },
+                      { label: Url, name: url, widget: string }
+                    ]
                 }
       - label: "About"
         name: "about"

@@ -12,8 +12,11 @@ const RichText = () => (
     <p className="richtext__source">​Please donate through our giving fundraising page set up, consider setting up a monthly contribution.</p>
     <p className="richtext__source"> We will also support groups who are wanting to arrange fundraisers for us. We have had great events in the past from 
      sleep-outs to comedy nights….do you have a good fundraising idea?</p>
-     <button className="btn btn--style-d richtext__donate-btn">Donate £10 Now</button>
-     <div class="richtext__image__wrapper">
+
+     <div className="donate__cta">
+        <a href="" className="btn btn--style-d donate__btn"><em>Donate 10£ now </em></a>
+      </div>
+      <div class="richtext__image__wrapper">
      <img src={TotalGiving} class="richtext__image"></img>
      </div>
   </div>
