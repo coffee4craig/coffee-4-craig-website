@@ -254,6 +254,21 @@ collections:
                       },
                     ],
                 }
+          - label: faq
+            name: faq
+            widget: object
+            fields:
+              - { label: Faq Title, name: faqTitle, widget: string }
+              - {
+                  label: Faqs,
+                  name: faqList,
+                  widget: list,
+                  fields:
+                    [
+                      { label: Title, name: title, widget: string },
+                      { label: Description, name: description, widget: text },
+                    ],
+                }
       - label: "Fundraising"
         name: "fundraising"
         file: "src/pages/fundraising/index.md"

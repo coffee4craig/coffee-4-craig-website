@@ -1,87 +1,12 @@
 import React from 'react';
 import FaqCard from './FaqCard';
 
-const Faq = ({ title, list }) => {
-	title = 'Frequently Asked Questions';
-	list = [
-		{
-			title: 'What are the opening hours?',
-			content: `Lorem ipsum dolor sit amet consectetur adipisicing elit.
-    Ratione reiciendis, eveniet voluptate excepturi doloribus
-    quam expedita quibusdam nam obcaecati? Voluptatibus at
-    reprehenderit obcaecati nulla velit natus voluptatem nihil
-    id distinctio?`,
-		},
-		{
-			title: 'What are the opening hours?',
-			content: `Lorem ipsum dolor sit amet consectetur adipisicing elit.
-    Ratione reiciendis, eveniet voluptate excepturi doloribus
-    quam expedita quibusdam nam obcaecati? Voluptatibus at
-    reprehenderit obcaecati nulla velit natus voluptatem nihil
-    id distinctio?`,
-		},
-		{
-			title: 'What are the opening hours?',
-			content: `Lorem ipsum dolor sit amet consectetur adipisicing elit.
-    Ratione reiciendis, eveniet voluptate excepturi doloribus
-    quam expedita quibusdam nam obcaecati? Voluptatibus at
-    reprehenderit obcaecati nulla velit natus voluptatem nihil
-    id distinctio?`,
-		},
-		{
-			title: 'What are the opening hours?',
-			content: `Lorem ipsum dolor sit amet consectetur adipisicing elit.
-    Ratione reiciendis, eveniet voluptate excepturi doloribus
-    quam expedita quibusdam nam obcaecati? Voluptatibus at
-    reprehenderit obcaecati nulla velit natus voluptatem nihil
-    id distinctio? Lorem ipsum dolor sit amet consectetur adipisicing elit.
-    Ratione reiciendis, eveniet voluptate excepturi doloribus
-    quam expedita quibusdam nam obcaecati? Voluptatibus at
-    reprehenderit obcaecati nulla velit natus voluptatem nihil
-    id distinctio?`,
-		},
-		{
-			title: 'What are the opening hours?',
-			content: `Lorem ipsum dolor sit amet consectetur adipisicing elit.
-    Ratione reiciendis, eveniet voluptate excepturi doloribus
-    quam expedita quibusdam nam obcaecati? Voluptatibus at
-    reprehenderit obcaecati nulla velit natus voluptatem nihil
-    id distinctio? Lorem ipsum dolor sit amet consectetur adipisicing elit.
-    Ratione reiciendis, eveniet voluptate excepturi doloribus
-    quam expedita quibusdam nam obcaecati? Voluptatibus at
-    reprehenderit obcaecati nulla velit natus voluptatem nihil
-    id distinctio?`,
-		},
-		{
-			title: 'What are the opening hours?',
-			content: `Lorem ipsum dolor sit amet consectetur adipisicing elit.
-    Ratione reiciendis, eveniet voluptate excepturi doloribus
-    quam expedita quibusdam nam obcaecati? Voluptatibus at
-    reprehenderit obcaecati nulla velit natus voluptatem nihil
-    id distinctio? Lorem ipsum dolor sit amet consectetur adipisicing elit.
-    Ratione reiciendis, eveniet voluptate excepturi doloribus
-    quam expedita quibusdam nam obcaecati? Voluptatibus at
-    reprehenderit obcaecati nulla velit natus voluptatem nihil
-    id distinctio?`,
-		},
-		{
-			title: 'What are the opening hours?',
-			content: `Lorem ipsum dolor sit amet consectetur adipisicing elit.
-    Ratione reiciendis, eveniet voluptate excepturi doloribus
-    quam expedita quibusdam nam obcaecati? Voluptatibus at
-    reprehenderit obcaecati nulla velit natus voluptatem nihil
-    id distinctio? Lorem ipsum dolor sit amet consectetur adipisicing elit.
-    Ratione reiciendis, eveniet voluptate excepturi doloribus
-    quam expedita quibusdam nam obcaecati? Voluptatibus at
-    reprehenderit obcaecati nulla velit natus voluptatem nihil
-    id distinctio?`,
-		},
-	];
-
+const Faq = ({faqTitle, faqList}) => {
 	return (
-		<div className='faq-container'>
-			<h2 className='faq-title'>{title}</h2>
-			{list.map(item => {
+		<div className="faq-container">
+			<h2 className="faq-title">{faqTitle}</h2>
+			{
+        faqList && faqList.length > 0 && faqList.map(item => {
 				return <FaqCard {...item} />;
 			})}
 		</div>

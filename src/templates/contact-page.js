@@ -11,13 +11,13 @@ import Emergency from "../components/Emergency";
 import FeatureInverted from "../components/FeatureInverted";
 import Faq from "../components/Faq";
 
-export const ContactPageTemplate = ({ hero, featureInverted, credits }) => (
+export const ContactPageTemplate = ({ hero, featureInverted, credits, faq }) => (
   <div>
     <Hero {...hero} />
     <ContactForm />
     <Credits {...credits} />
     <FeatureInverted {...featureInverted} />
-    <Faq />
+    <Faq {...faq}/>
   </div>
 );
 
@@ -30,6 +30,7 @@ const ContactPage = ({ data }) => {
         hero={frontmatter.hero}
         featureInverted={frontmatter.featureInverted}
         credits={frontmatter.credits}
+        faq={frontmatter.faq}
       />
     </Layout>
   );
@@ -96,6 +97,13 @@ export const pageQuery = graphql`
             }
             description
           }
+        }
+        faq {
+          faqList {
+              title,
+              description
+          }
+          faqTitle
         }
       }
     }
