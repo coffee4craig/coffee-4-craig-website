@@ -74,8 +74,7 @@ class Navbar extends React.Component {
 
   render() {
     const { navbarBackground, isMobile, isOpen } = this.state;
-    
-    
+
     const transform = isOpen ? `translateX(0%)` : `translateX(100%)`;
     const bgColor = navbarBackground ? `#FFFFFF` : `transparent`;
 
@@ -84,6 +83,7 @@ class Navbar extends React.Component {
     } else {
       enableBodyScroll(this.targetElement);
     }
+
       return (
         <nav
           className={`navbar`}
@@ -118,6 +118,7 @@ class Navbar extends React.Component {
               </ul>
             </div>
             <div className="navbar__flex">
+
             <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=VBW25QGTWEMYC&source=url" className="btn btn--paypal" type="button"><em>Donate Now</em></a>
             {
               isMobile && 

@@ -1,0 +1,104 @@
+@keyframes grow {
+  from {
+    transform: rotateX(120deg);
+  }
+  50% {
+    transform: rotateX(0deg);
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes shrink {
+  from {
+    transform: scaleY(1);
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+    transform: scaleY(1);
+  }
+  to {
+    transform: scaleY(0);
+  }
+}
+.faq-card {
+  margin: 1em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 80%;
+  @media only screen and (max-width: 768px) {
+    width: 100%;
+  }
+  @media only screen and (max-width: 600px) {
+    width: 100%;
+  }
+}
+
+.faq-rail {
+  background-color: $secondary-color-a;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 10em;
+  padding: 0.7em;
+  position: relative;
+  transition: 0.4s all;
+  width: 80%;
+  @media only screen and (max-width: 600px) {
+    width: 100%;
+  }
+}
+
+.faq__icon__container {
+  position: relative;
+  height: 35px;
+  width: 35px;
+  background-color: white;
+  border-radius: 35px;
+  .faq-icon {
+    font-size: 2.5em;
+    color: black;
+    position: absolute;
+    right: 6px;
+    top: -6px;
+    &--minus {
+      right: 10px;
+      top: -7px;
+    }
+  }
+}
+
+.faq-card-title {
+  margin-bottom: 0;
+  margin-left: 0.5em;
+  font-weight: 300;
+}
+.faq-content {
+  padding: 2em;
+  border: 1px solid #e9e9e9;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  margin-top: -1.5em;
+  z-index: -1;
+  opacity: 0;
+  position: relative;
+  padding-top: 3rem;
+  animation: 0.4s linear grow;
+  animation-fill-mode: forwards;
+  perspective: 500em;
+  width: 80%;
+  @media only screen and (max-width: 768px) {
+    padding-top: 1.5em;
+  }
+
+  @media only screen and (max-width: 600px) {
+    width: 100%;
+    text-align: left;
+    padding-top: 2em;
+  }
+}

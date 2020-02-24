@@ -1,0 +1,25 @@
+.faq-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 60%;
+  margin: 5em auto;
+  padding: 5em;
+  @media only screen and (min-width: 960px) {
+    padding: 3em;
+    width: 100%;
+  }
+  @media only screen and (max-width: 768px) {
+    padding: 3em;
+    width: 100%;
+  }
+  @media only screen and (max-width: 600px) {
+    padding: 0;
+    margin: 0 auto;
+    width: 80%;
+    margin-bottom: 5em;
+    margin-top: 3em;
+    text-align: center;
+  }
+}
