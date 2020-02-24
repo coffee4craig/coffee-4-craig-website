@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const FaqCard = ({card}) => {
+const FaqCard = ({title, description}) => {
   const [clicked, setClicked] = useState(false);
   const [closingTransition, setClosingTransition] = useState(false);
   const backgroundChange = {
@@ -23,7 +23,7 @@ const FaqCard = ({card}) => {
   return (
     <div className="faq-card">
       <div className="faq-rail" style={clicked ? backgroundChange : null} onClick={() => {clicked == false ? setClicked(true) : handleClosingTransition()}}>
-        <p className="faq-card-title">{card.title}</p>
+        <p className="faq-card-title">{title}</p>
         {!clicked ? (
           <div className="faq__icon__container">
             <div className="faq-icon" >
@@ -46,7 +46,7 @@ const FaqCard = ({card}) => {
           style={closingTransition ? closingTrans : null}
           className="faq-content"
         >
-          {card.description}
+          {description}
         </div>
       ) : null}
     </div>

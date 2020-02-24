@@ -100,10 +100,8 @@ export const pageQuery = graphql`
         }
         faq {
           faqList {
-            card {
-              title
+              title,
               description
-            }
           }
           faqTitle
         }

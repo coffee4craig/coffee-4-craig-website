@@ -254,27 +254,19 @@ collections:
                       },
                     ],
                 }
-          - label: Faq
+          - label: faq
             name: faq
             widget: object
             fields:
-              - { label: FaqTitle, name: faqTitle, widget: string }
+              - { label: Faq Title, name: faqTitle, widget: string }
               - {
-                  label: Faq List,
+                  label: Faqs,
                   name: faqList,
                   widget: list,
                   fields:
                     [
-                      {
-                        label: Card,
-                        name: card,
-                        widget: object,
-                        fields:
-                          [
-                            { label: Title, name: title, widget: string },
-                            { label: Description, name: description, widget: string },
-                          ],
-                      },
+                      { label: Title, name: title, widget: string },
+                      { label: Description, name: description, widget: text },
                     ],
                 }
       - label: "Fundraising"

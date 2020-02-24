@@ -6,7 +6,7 @@ const Faq = ({faqTitle, faqList}) => {
 		<div className="faq-container">
 			<h2 className="faq-title">{faqTitle}</h2>
 			{
-        faqList => faqList.map(item => {
+        faqList && faqList.length > 0 && faqList.map(item => {
 				return <FaqCard {...item} />;
 			})}
 		</div>
