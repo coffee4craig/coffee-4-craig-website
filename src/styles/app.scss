@@ -1,10 +1,11 @@
-@import "./_base/normalize.scss";
-@import "./_base/fonts.scss";
-@import "./_base/typography.scss";
-@import "./_base/variables.scss";
-@import "./_base/mixins.scss";
+@import './_base/normalize.scss';
+@import './_base/fonts.scss';
+@import './_base/typography.scss';
+@import './_base/variables.scss';
+@import './_base/mixins.scss';
 
-@import "./global.scss";
+@import './global.scss';
+
 
 @import "./_components/buttons.scss";
 @import "./_components/navbar.scss";
@@ -35,4 +36,5 @@
 @import "./_components/timeline.scss";
 @import "./_components/donateItems.scss";
 @import "./_components/fundraising.scss";
+@import './_components/customamount.scss';
 @import "./_components/404.scss";
