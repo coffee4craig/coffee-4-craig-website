@@ -45,4 +45,16 @@ credits:
         image: /img/emergency_mind.png
       description: Visit Us
   title: Emergency Contact Information
+faq:
+  faqList:
+    - card:
+        title: test 
+        description: pisicing elit Ratione reiciendis
+    - card:
+        title: test 
+        description: pisicing elit Ratione reiciendis
+    - card:
+        title: test 
+        description: pisicing elit Ratione reiciendis
+  faqTitle: testinnnng 
 ---

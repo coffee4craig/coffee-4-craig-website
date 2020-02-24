@@ -11,6 +11,7 @@ const ContactPagePreview = ({ entry, getAsset }) => {
         hero={data.hero || {}}
         credits={data.credits || {}}
         featureInverted={data.featureInverted || {}}
+        faq={data.faq || {}}
       />
     )
   } else {
