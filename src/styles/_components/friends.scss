@@ -21,6 +21,12 @@
 
 .friends__title {
   margin-bottom: 40px;
+  width: 50%;
+  text-align: center;
+
+  @media only screen and (max-width: 768px) {
+    width: 90%;
+  }
 }
 
 .friends__grid {

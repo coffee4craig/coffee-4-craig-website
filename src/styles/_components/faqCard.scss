@@ -24,7 +24,7 @@
   }
 }
 .faq-card {
-  margin: 1em;
+  margin: 0.5em 1em;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -52,7 +52,12 @@
   @media only screen and (max-width: 600px) {
     width: 100%;
   }
+
+  &:hover{
+    cursor: pointer;
+  }
 }
+
 
 .faq__icon__container {
   position: relative;

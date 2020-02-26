@@ -12,8 +12,8 @@ const Superheroes = ({ title, superheroesList }) => (
       superheroesList && superheroesList.length > 0 && superheroesList.map((superhero, i) => (
         <div key={i} className="superheroes__section-col">
           <PreviewCompatibleImage cName="" isContained imageInfo={superhero.image} />
-          <h2>{superhero.name}</h2>
-          <p>{superhero.description}</p>
+          <div className="superheroes__section-col__title">{superhero.name}</div>
+          <div className="superheroes__section-col__body">{superhero.description}</div>
         </div>       
       ))
     }

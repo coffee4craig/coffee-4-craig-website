@@ -10,8 +10,10 @@
 
 .superheroes__title {
   text-align: center;
-  margin-bottom: 60px;
+  margin-bottom: 20px;
 }
+
+
 
 .superheroes__section {
   justify-content: center;
@@ -52,6 +54,17 @@
 
     max-width: 100%;
     margin-bottom: 0;
+  }
+
+  .superheroes__section-col__title {
+    font-size: 37px;
+    margin-bottom: 15px;
+  }
+
+  .superheroes__section-col__body {
+    font-size: 16px;
+    line-height: 26px;
+    padding: 0 35px;
   }
 
   display: flex;
