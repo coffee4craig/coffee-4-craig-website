@@ -6,15 +6,14 @@ hero:
     image: /img/about-hero.jpg
   title: About Us
 leadText: >
-  The Manchester drop-in is an evening and weekend service, working in
-  partnership with Centre Point, this service is supported by a grant from
-  Manchester City Council.
+  The Manchester drop-in is an evening and weekend service, this service is
+  supported by a grant from Manchester City Council.
 addressMap:
   address:
-    addressLine1: Address Line One
-    addressLine2: Address Line Two
-    postcode: Postcode
-    title: Address
+    addressLine1: '153 Great Ducie Street,'
+    addressLine2: 'Manchester, '
+    postcode: M3 1FB
+    title: 'Unit 5,'
   openingHours:
     monFriLabel: Monday to Friday
     monFriTime: '19:00 - 21:00'
