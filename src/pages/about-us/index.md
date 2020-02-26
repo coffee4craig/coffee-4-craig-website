@@ -11,7 +11,7 @@ leadText: >
 addressMap:
   address:
     addressLine1: '153 Great Ducie Street,'
-    addressLine2: 'Manchester, '
+    addressLine2: 'Manchester,'
     postcode: M3 1FB
     title: 'Unit 5,'
   openingHours:
