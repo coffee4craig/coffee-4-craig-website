@@ -10,10 +10,10 @@ leadText: >
   supported by a grant from Manchester City Council.
 addressMap:
   address:
-    addressLine1: '153 Great Ducie Street,'
+    addressLine1: 'Unit 5, 153 Great Ducie Street,'
     addressLine2: Manchester
     postcode: M3 1FB
-    title: 'Unit 5,'
+    title: Address
   openingHours:
     monFriLabel: Monday to Friday
     monFriTime: '19:00 - 21:00'
