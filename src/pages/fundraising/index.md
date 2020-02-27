@@ -5,5 +5,6 @@ hero:
     alt: support us
     image: /img/fund-hero-image.jpg
   title: Fundraising
-leadText: Join 298 Supporters Who’ve Raised £8,749.74
+leadText: 'Join 298 Supporters who’ve Raised £8,749.74'
 ---
+
