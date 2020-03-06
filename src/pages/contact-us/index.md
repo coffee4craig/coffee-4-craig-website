@@ -24,24 +24,28 @@ credits:
       logo:
         alt: NHS 111 Logo
         image: /img/emergency_111.png
+      description: When it’s less Urgent than 999
     - link:
         target: _blank
         url: 'https://www.samaritans.org/how-we-can-help/contact-samaritan/'
       logo:
         alt: Samaritans Logo
         image: /img/emergency_samaritans.png
+      description: Call for FREE
     - link:
         target: _blank
         url: 'https://www.totalgiving.co.uk/charity/the-sequoia-trust-1163457'
       logo:
         alt: Sequoia Logo
         image: /img/emergency_sequoia.png
+      description: Visit us
     - link:
         target: _blank
         url: 'https://www.mind.org.uk/'
       logo:
         alt: Mind logo
         image: /img/emergency_mind.png
+      description: Vist us
   title: Emergency Contact Information
 faq:
   faqList:

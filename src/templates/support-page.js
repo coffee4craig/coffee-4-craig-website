@@ -94,7 +94,6 @@ export const pageQuery = graphql`
           }
           text
           list {
-            label
             image {
               image {
                 childImageSharp {
