@@ -6,6 +6,7 @@
   left: 0;
   transition: background-color 0.2s ease;
   z-index: 100;
+  border-bottom: 1px solid $secondary-color-b;
 
   @media only screen and (min-width: 768px) {
     transition: background-color 0.5s ease;
@@ -87,9 +88,9 @@
         border-bottom-left-radius: 2em;
         border-bottom-right-radius: 2em;
       }
-    
+
     }
-  
+
     a {
       text-decoration: none;
       color: $secondary-color-a;
