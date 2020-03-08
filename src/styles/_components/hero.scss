@@ -2,7 +2,11 @@
   position: relative;
   background: $primary-color-c;
   height: 500px;
-  padding-top: 80px;
+  padding-top: 110px;
+
+  @media only screen and (max-width: 768px) {
+    padding-top: 80px;
+  }
 }
 
 .hero__image-wrapper {
