@@ -21,11 +21,11 @@
 
 .friends__title {
   margin-bottom: 40px;
-  width: 50%;
+  max-width: 320px;
   text-align: center;
 
-  @media only screen and (max-width: 768px) {
-    width: 90%;
+  @media only screen and (min-width: 768px) {
+    max-width: 580px;
   }
 }
 
@@ -61,6 +61,10 @@
   }
 
   @media only screen and (min-width: 768px) {
+    @include col(6, 12, true, false);
+  }
+
+  @media only screen and (min-width: 1024px) {
     @include col(4, 12, true, false);
 
     &:nth-of-type(2),

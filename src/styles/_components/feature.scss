@@ -41,7 +41,7 @@
   @include gridWidth;
 
   width: 100%;
-  margin-top: 60px;
+  margin-top: 100px;
   position: relative;
 
   &:before {
@@ -57,9 +57,12 @@
   }
 
   @media only screen and (min-width: 768px) {
+    margin-top: 80px;
+  }
+
+  @media only screen and (min-width: 1024px) {
     height: calc(100% - 80px);
     display: flex;
-    margin-top: 80px;
     padding-bottom: 80px;
   }
 }
@@ -68,7 +71,7 @@
   position: relative;
   z-index: 1;
   
-  @media only screen and (min-width: 768px) {
+  @media only screen and (min-width: 1024px) {
     width: 50%;
   }
 
@@ -80,7 +83,7 @@
     flex-direction: column;
     margin-bottom: 12px;
 
-    @media only screen and (min-width: 768px) {
+    @media only screen and (min-width: 1024px) {
       margin-bottom: 0;
       padding-right: 80px;
     }
@@ -99,20 +102,48 @@
         content: '';
         display: block;
         position: absolute;
-        top: -30px;
-        right: -30px;
+        top: 0px;
+        right: 0px;
         height: 538px;
         width: 213px;
         background: url('../img/photo-frame.svg') center right no-repeat;
         background-size: contain;
       }
     }
+
+    @media only screen and (min-width: 1024px) {
+      &:before {
+        top: -45px;
+        right: -15px;
+        height: 418px;
+        width: 213px;
+      }
+    }
+
+    @media only screen and (min-width: 1280px) {
+      &:before {
+        top: -30px;
+        right: -30px;
+      }
+    }
   }
 
   .feature-component__col-image {
     border-radius: 5px;
-    
+
     @media only screen and (min-width: 768px) {
+      position: relative;
+      overflow: hidden;
+      margin: 50px;
+    }
+    
+    @media only screen and (min-width: 1024px) {
+      width: 450px;
+      height: 400px;
+      margin: 0;
+    }
+
+    @media only screen and (min-width: 1280px) {
       width: 528px;
       height: 599px;
     }
@@ -122,9 +153,14 @@
 .feature-component__donate {
   display: flex;
   flex-direction: column;
+  text-align: center;
 
   @media only screen and (min-width: 768px) {
     padding: 0 24px;
+  }
+
+  @media only screen and (min-width: 1024px) {
+    text-align: left;
   }
 
   h1 {
@@ -152,12 +188,11 @@
   color: black;
   width: 100%;
   margin-bottom: 12px;
-
+  display: block;
 
   @media only screen and (min-width: 768px) {
     padding: 20px 16px;
-    margin-right: 15px;
-    margin-bottom: 0;
+    margin: 0 8px 0;
   }
 }
 
