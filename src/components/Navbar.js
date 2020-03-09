@@ -2,7 +2,7 @@ import React from 'react';
 
 import { disableBodyScroll, enableBodyScroll, clearAllBodyScrollLocks } from 'body-scroll-lock';
 
-import logo from '../img/logo.png';
+import logo from '../img/nav_logo.svg';
 import CloseIcon from '../img/icons/close-icon.svg';
 import MenuIcon from '../img/icons/menu-icon.svg';
 import { Link } from 'gatsby';
