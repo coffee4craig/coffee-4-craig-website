@@ -17,5 +17,9 @@ leadText: >-
   Join <span class="lead-text__text--highlighted" style="color:
   #2db88e">hundreds</span> supporters who’ve raised <span
   class="lead-text__text--highlighted" style="color: #2db88e">£8,749.74</span>
+cta:
+  label: Donate Today
+  url: >-
+    https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=VBW25QGTWEMYC&source=url
 ---
 

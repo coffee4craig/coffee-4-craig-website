@@ -6,11 +6,12 @@ import Layout from '../components/Layout'
 import Hero from '../components/Hero'
 import LeadText from '../components/LeadText'
 import NewRichText from '../components/NewRichText'
-
+import Cta from '../components/Cta'
 export const FundraisingPageTemplate = ({ 
   hero,
   leadText,
-  newRichText
+  newRichText,
+  cta
  }) => (
   <div className="fundraising">
     <Hero
@@ -18,6 +19,7 @@ export const FundraisingPageTemplate = ({
     />
     <LeadText text={leadText} />
     <NewRichText text={newRichText} />
+    <Cta {...cta} />
   </div>
 )
 
@@ -30,7 +32,7 @@ const FundraisingPage = ({ data }) => {
         hero={frontmatter.hero}
         leadText={frontmatter.leadText}
         newRichText={frontmatter.newRichText}
-        // richText={frontmatter.richText}
+        cta={frontmatter.cta}
       />
     </Layout>
   )
@@ -65,6 +67,10 @@ export const pageQuery = graphql`
         }
         leadText
         newRichText
+        cta {
+          url
+          label
+        }
       }
     }
   }
