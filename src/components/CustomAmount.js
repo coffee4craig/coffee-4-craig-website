@@ -13,6 +13,7 @@ const CustomAmount = ({ content }) => {
 					onChange={e => setAmountToDonate(e.target.value)}
 					value={amountToDonate}
 					class='customAmount__form-input'
+					autoFocus
 				/>
 			</label>
 		</div>
