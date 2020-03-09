@@ -5,93 +5,103 @@ homepageHero:
   donationDescription: |
     Donation description
   donationTitle: Donation Title
-  subtitle: Here in Manchester, we have had a dramatic increase in numbers, the likes that have never been seen before and it is increasing every day.
-  title: Make a huge difference today
+  subtitle: >-
+    Coffee4Craig provides vital support for Manchester’s homeless and people in
+    crisis. Each evening we operate an out of hours’ drop-in service in the
+    heart of Manchester city centre. We offer hot food, showers, food parcels,
+    medical support and mental health crisis intervention.
+  title: Helping Manchester’s homeless
 fullWidthImage:
-  image: /img/homepage-hero.jpg
   alt: feature media alt text
+  image: /img/hero.jpg
 quote:
   quoteSource: Hendrix Lancaster CEO
-  quoteText: ‘Homelessness is not the problem, it is a symptom of the problem’
+  quoteText: '‘Homelessness is not the problem, it is a symptom of the problem’'
 video:
   videoId: 8rn5Yef9OGw
 feature:
+  ctaOne:
+    label: Volunteer with Us
+    url: >-
+      https://docs.google.com/forms/d/e/1FAIpQLSemNku8dsK6_JD9ciOud2plvPN3wxKdMihiAaUvB3pOaoXwMA/viewform
+  ctaTwo:
+    label: Donate Today
+    url: >-
+      https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=VBW25QGTWEMYC&source=url
   featureImage:
     alt: feature media alt text
     image: /img/home-volunteer-image.png
-  ctaOne:
-    url: https://docs.google.com/forms/d/e/1FAIpQLSemNku8dsK6_JD9ciOud2plvPN3wxKdMihiAaUvB3pOaoXwMA/viewform
-    label: Volunteer with Us
-  ctaTwo:
-    url: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=VBW25QGTWEMYC&source=url
-    label: Donate Today
-  text: |
-    Here in Manchester, we have had a dramatic increase in numbers, the likes that have never been seen before and it is increasing every day.
+  text: >-
+    Support Coffee4Craig and you’ll be helping hundreds of people affected by
+    homelessness and poverty in Manchester. Together, we can make a positive
+    difference.
   title: Make a huge difference today.
 friends:
   friendsList:
     - bio: |
         Friend bio
-      name: Joe
+      name: Perter
       profileImage:
         alt: feature media alt text
-        image: /img/friends-image-one.png
+        image: /img/img_0574.jpeg
     - bio: |
         Friend 2 bio
-      name: Kate
+      name: Rose
       profileImage:
         alt: feature media alt text
-        image: /img/friends-image-two.png
+        image: /img/img_0578.jpeg
     - bio: |
         Friend 3 bio
-      name: Dan
+      name: Arthur
       profileImage:
         alt: feature media alt text
-        image: /img/friends-image-three.png
+        image: /img/img_0576.jpeg
     - bio: |
         Friend 4 bio
-      name: Michael
+      name: Luke
       profileImage:
         alt: feature media alt text
-        image: /img/friends-image-four.png
+        image: /img/img_0579.jpeg
     - bio: |
         Friend 5 bio
-      name: George
-      profileImage:
-        alt: feature media alt text
-        image: /img/friends-image-five.png
-    - bio: |
-        Friend 6 bio
       name: David
       profileImage:
         alt: feature media alt text
-        image: /img/friends-image-six.png
+        image: /img/img_0567.jpeg
+    - bio: |
+        Friend 6 bio
+      name: George
+      profileImage:
+        alt: feature media alt text
+        image: /img/img_0572.jpeg
   title: Here are just a few people we now call our friends.
 credits:
   creditList:
     - link:
         target: _blank
-        url: "https://www.w3schools.com"
+        url: 'https://www.bbc.co.uk/news/uk-england-manchester-48695604'
       logo:
-        alt: feature media alt text
+        alt: BBC News
         image: /img/bbc-logo.png
     - link:
         target: _blank
-        url: "https://www.w3schools.com"
+        url: '#'
       logo:
-        alt: feature media alt text
+        alt: The Independent
         image: /img/independent-logo.png
     - link:
         target: _blank
-        url: "https://www.w3schools.com"
+        url: >-
+          https://www.manchestereveningnews.co.uk/news/greater-manchester-news/coffee4craig-homeless-drop-centre-manchester-13710978
       logo:
-        alt: feature media alt text
-        image: /img/times-logo.png
+        alt: Manchester Evening News
+        image: /img/men.png
     - link:
         target: _blank
-        url: "https://www.w3schools.com"
+        url: 'https://news.streetsupport.net/tag/coffee-4-craig/'
       logo:
-        alt: feature media alt text
-        image: /img/telegraph-logo.png
+        alt: Street Support Network
+        image: /img/ssn.png
   title: As featured in…
 ---
+

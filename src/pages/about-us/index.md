@@ -6,7 +6,8 @@ hero:
     image: /img/about-hero.jpg
   title: About Us
 leadText: >-
-  The Manchester drop-in is an evening and weekend service, offering hot meals,
+  The Manchester drop-in is an <span class="lead-text__text--highlighted"
+  style="color: #2db88e">evening and weekend service</span>, offering hot meals,
   showers and medical support to the city’s homeless community
 addressMap:
   address:
@@ -40,10 +41,20 @@ services:
       text: Computer and phone access
     - icon: chat
       text: One-to-one advice
-    - icon: arrow
-      text: Signposting & referrals
     - icon: signpost
-      text: Signposting  & referrals
+      text: Signposting & referrals
+    - icon: provisions
+      text: Emergency provisions
+    - icon: clothing
+      text: Emergency clothing
+    - icon: parcels
+      text: Emergency food parcels
+    - icon: medical
+      text: Medical support
+    - icon: persons
+      text: Young Persons (16-25) support
+    - icon: coldweather
+      text: CWP support (Cold Weather Provision)
   title: This service provides
 history:
   timeline:

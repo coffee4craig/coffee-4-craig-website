@@ -45,12 +45,25 @@
 }
 
 .friends__section-col {
-  @include col(12, 12, true, true);
+  width: 50%;
+  display: inline-block;
+  box-sizing: border-box;
+  padding-left: 5px;
+  padding-right: 5px;
   display: flex;
   flex-direction: column;
   text-align: center;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
   position: relative;
+
+  @media only screen and (min-width: 768px) {
+    margin-bottom: 15px;
+  }
+
+  @media only screen and (min-width: 1024px) {
+    margin-bottom: 20px;
+  }
+
 
   img {
     width: 334px;
@@ -61,52 +74,68 @@
   }
 
   @media only screen and (min-width: 768px) {
-    @include col(6, 12, true, false);
+    @include col(4, 12, true, false);
   }
 
   @media only screen and (min-width: 1024px) {
-    @include col(4, 12, true, false);
+    width: 33.33333%;
+    display: inline-block;
+    box-sizing: border-box;
+    padding-left: 0;
+    padding-right: 20px;
+    will-change: transform;
 
     &:nth-of-type(2),
     &:nth-of-type(5) {
       margin-top: -30px;
+
+      .friends__section-col-text {
+        bottom: 40px;
+      }
     }
 
     &:hover {
       opacity: 0.8;
       transform: scale(1.04);
-      transition: 400ms;
+      transition: all .3s ease-in-out;
     }
-  
+
     &:hover h2 {
-      visibility: visible;
-      transition: 300ms;
+      opacity: 1;
+      transition: opacity .3s ease-in;
     }
-  
+
     &:hover p {
-      visibility: visible;
-      transition: 300ms;
+      opacity: 1;
+      transition: opacity .3s ease-in .2s;
     }
   }
 }
 
 .friends__section-col-text {
   position: absolute;
-  bottom: 30px;
   left: 0;
   right: 0;
+  bottom: 20px;
   text-align: center;
-  padding: 20px;
+  padding: 5px;
 
   @media only screen and (min-width: 768px) {
-    visibility: hidden;
+    bottom: 10px;
+    padding: 20px;
+    width: calc( 100% - 20px);
   }
+
 
   h2 {
     font-weight: 700;
     letter-spacing: 0;
     color: #ffffff;
     opacity: 1;
+    margin-bottom: 0;
+    @media only screen and (min-width: 1024px) {
+      opacity: 0;
+    }
   }
 
   p {
@@ -114,5 +143,9 @@
     letter-spacing: 0;
     color: #ffffff;
     opacity: 0.85;
+    margin-bottom: 0;
+    @media only screen and (min-width: 1024px) {
+      opacity: 0;
+    }
   }
 }

@@ -80,7 +80,7 @@ collections:
             name: fullWidthImage
             widget: object
             fields:
-              - { label: Image, name: image, widget: iamge }
+              - { label: Image, name: image, widget: image }
               - { label: Alt, name: alt, widget: string }
           - label: Quote
             name: quote
