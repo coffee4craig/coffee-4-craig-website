@@ -43,7 +43,7 @@ friends:
       name: Joe
       profileImage:
         alt: feature media alt text
-        image: /img/friends-image-one.png
+        image: /img/img_0574.jpeg
     - bio: |
         Friend 2 bio
       name: Kate
