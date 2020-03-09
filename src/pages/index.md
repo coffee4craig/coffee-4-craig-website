@@ -6,9 +6,11 @@ homepageHero:
     Donation description
   donationTitle: Donation Title
   subtitle: >-
-    Here in Manchester, we have had a dramatic increase in numbers, the likes
-    that have never been seen before and it is increasing every day.
-  title: Make a huge difference today
+    Coffee4Craig provides vital support for Manchester’s homeless and people in
+    crisis. Each evening we operate an out of hours’ drop-in service in the
+    heart of Manchester city centre. We offer hot food, showers, food parcels,
+    medical support and mental health crisis intervention.
+  title: Helping Manchester’s homeless
 fullWidthImage:
   alt: feature media alt text
   image: /img/hero.jpg
@@ -29,9 +31,10 @@ feature:
   featureImage:
     alt: feature media alt text
     image: /img/home-volunteer-image.png
-  text: >
-    Here in Manchester, we have had a dramatic increase in numbers, the likes
-    that have never been seen before and it is increasing every day.
+  text: >-
+    Support Coffee4Craig and you’ll be helping hundreds of people affected by
+    homelessness and poverty in Manchester. Together, we can make a positive
+    difference.
   title: Make a huge difference today.
 friends:
   friendsList:
