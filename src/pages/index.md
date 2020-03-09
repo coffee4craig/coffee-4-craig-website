@@ -55,7 +55,7 @@ friends:
       name: Dan
       profileImage:
         alt: feature media alt text
-        image: /img/friends-image-three.png
+        image: /img/img_0576.jpeg
     - bio: |
         Friend 4 bio
       name: Michael
@@ -73,7 +73,7 @@ friends:
       name: David
       profileImage:
         alt: feature media alt text
-        image: /img/friends-image-six.png
+        image: /img/img_0572.jpeg
   title: Here are just a few people we now call our friends.
 credits:
   creditList:
