@@ -10,6 +10,7 @@ const FundraisingPagePreview = ({ entry, getAsset }) => {
       <FundraisingPageTemplate
         hero={data.hero || {}}
         leadText={data.leadText || ""}
+        newRichText={data.newRichText || ""}
       />
     )
   } else {

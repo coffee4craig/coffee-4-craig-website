@@ -297,6 +297,9 @@ collections:
           - label: Lead Text
             name: leadText
             widget: text 
+          - label: Rich Text
+            name: newRichText
+            widget: markdown 
       - label: "SupportUs"
         name: "support"
         file: "src/pages/support-us/index.md"
