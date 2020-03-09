@@ -8,6 +8,7 @@
 	text-align: center;
 	z-index: 10;
 	position: relative;
+	min-height: 450px;
 
 	p {
 		font-size: 20px;
@@ -28,7 +29,6 @@
 
 	@media only screen and (min-width: 1024px) {
 		position: absolute;
-		min-height: 370px;
 		top: 0;
 		margin: 0;
 	}
