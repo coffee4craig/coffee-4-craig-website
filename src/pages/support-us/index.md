@@ -3,7 +3,7 @@ templateKey: support-page
 hero:
   backgroundImage:
     alt: support us
-    image: /img/support-hero.png
+    image: /img/support-hero-fixed-whole.jpg
   title: Support Us
 leadText: >-
   Join our team of volunteers and make a positive difference to those in need
