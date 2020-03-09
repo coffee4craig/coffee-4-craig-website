@@ -6,6 +6,7 @@
   justify-content: center;
   margin-bottom: 100px;
   position: relative;
+  overflow-x: hidden;
 }
 
 .superheroes__title {
@@ -27,7 +28,7 @@
     top: -25px;
     right: -122px;
     height: 316px;
-    z-index: 1;
+    z-index: -1;
     width: 345px;
     background: url('../img/coffee-stain-support-us.svg') center right no-repeat;
     background-size: cover;

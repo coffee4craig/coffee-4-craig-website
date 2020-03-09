@@ -2,7 +2,7 @@
   background-color: $primary-color-b;
   display: flex;
   justify-content: center;
-  padding: 80px 0 170px;
+  padding: 80px 0 100px;
   position: relative;
 
   &::before {
@@ -16,6 +16,10 @@
     height: 70px;
     background: url("../img/green-brush-top.svg") center bottom no-repeat;
     background-size: contain;
+  }
+
+  @media (min-width: 768px) {
+    padding: 80px 0 170px;
   }
 }
 
