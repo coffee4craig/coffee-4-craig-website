@@ -49,7 +49,7 @@ friends:
       name: Kate
       profileImage:
         alt: feature media alt text
-        image: /img/friends-image-two.png
+        image: /img/img_0578.jpeg
     - bio: |
         Friend 3 bio
       name: Dan
@@ -61,7 +61,7 @@ friends:
       name: Michael
       profileImage:
         alt: feature media alt text
-        image: /img/friends-image-four.png
+        image: /img/img_0579.jpeg
     - bio: |
         Friend 5 bio
       name: George
