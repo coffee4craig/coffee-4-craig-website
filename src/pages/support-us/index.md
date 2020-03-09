@@ -19,20 +19,19 @@ volunteer:
     url: >-
       https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=VBW25QGTWEMYC&source=url
   text: >-
-    Each evening we operate an out of hours’ drop-in service in the heart of
-    Manchester city centre. We offer hot food, food parcels, showers, medical
-    support and mental health crisis intervention. 
+    <b>We need a team of volunteers every day at our drop-in center on Oldham
+    Street in Manchester. The roles include; cooking, sorting collections,
+    giving out hot drinks and food, keeping the kitchen clean and tidy, greeting
+    at reception, monitoring the shower list and sitting down with guests for a
+    brew and a chat!</b>
 
-    We need a team of volunteers every day to help run our drop-in centre on
-    Oldham Street, Manchester. Roles include: cooking; sorting collections;
-    giving out hot drinks and food; keeping the kitchen clean; greeting guests
-    at reception; monitoring the shower list, and sitting down with our guests
-    for a brew and a chat!
+    <br>
+
+    <br>
 
     We also need help behind the scenes with lots of different things like
-    sorting donations, keeping the food bank organised, sending newsletters and
-    thank you letters. If you have a skill that you think could help us, please
-    get in touch!
+    sorting through donations, keeping the food bank organised, sending
+    newsletters and thanks yous. Maybe you have a skill that we could use? 
   title: Volunteer
 donateItems:
   cta:
