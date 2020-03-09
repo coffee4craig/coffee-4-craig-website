@@ -79,28 +79,29 @@ credits:
   creditList:
     - link:
         target: _blank
-        url: 'https://www.w3schools.com'
+        url: 'https://www.bbc.co.uk/news/uk-england-manchester-48695604'
       logo:
-        alt: feature media alt text
+        alt: BBC News
         image: /img/bbc-logo.png
     - link:
         target: _blank
-        url: 'https://www.w3schools.com'
+        url: '#'
       logo:
-        alt: feature media alt text
+        alt: The Independent
         image: /img/independent-logo.png
     - link:
         target: _blank
-        url: 'https://www.w3schools.com'
+        url: >-
+          https://www.manchestereveningnews.co.uk/news/greater-manchester-news/coffee4craig-homeless-drop-centre-manchester-13710978
       logo:
-        alt: feature media alt text
-        image: /img/times-logo.png
+        alt: Manchester Evening News
+        image: /img/men.png
     - link:
         target: _blank
-        url: 'https://www.w3schools.com'
+        url: 'https://news.streetsupport.net/tag/coffee-4-craig/'
       logo:
-        alt: feature media alt text
-        image: /img/telegraph-logo.png
+        alt: Street Support Network
+        image: /img/ssn.png
   title: As featured in…
 ---
 
