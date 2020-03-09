@@ -67,7 +67,7 @@ friends:
       name: George
       profileImage:
         alt: feature media alt text
-        image: /img/friends-image-five.png
+        image: /img/img_0567.jpeg
     - bio: |
         Friend 6 bio
       name: David
