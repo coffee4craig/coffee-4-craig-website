@@ -21,8 +21,8 @@ addressMap:
     satSunTime: '17:00 - 19:00'
     title: Opening hours
   telephone:
-    phoneNumberOne: +44 1111 111111
-    phoneNumberTwo: +44 1111 111111
+    phoneNumberOne: 07543590330
+    phoneNumberTwo: 07543590330
     title: Phone
   title: Manchester Drop-in
 partners:
