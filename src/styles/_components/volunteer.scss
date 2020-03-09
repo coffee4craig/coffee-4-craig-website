@@ -1,79 +1,71 @@
 .volunteer {
-    height: 650px;
     display: flex;
     justify-content: center;
     position: relative;
     margin-bottom: 50px;
-
-    @media only screen and (max-width: 768px) {
-        height: 1500px;
+    
+    @media only screen and (min-width: 1024px) {
+        height: 650px;
     }
 }
 
 .volunteer__wrapper {
     @include gridWidth;
-
-    display: flex;
     width: 100%;
-    justify-content: center;
-    align-items: center;
     position: relative;
+    padding: 0 0 40px;
+
+    @media (min-width: 768px) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0 60px 40px;
+    }
 
     .volunteer-title {
-        text-align: left;
-        font:  45px/55px Lato;
+        text-align: center;
+        font-size: 32px;
+        line-height: 1.2;
         letter-spacing: 0;
         color: #181F27;
         opacity: 1;
 
+        @media (min-width: 768px) {
+            text-align: left;
+            font-size: 45px;
+        }
     }
 
     .volunteer-text {
-        text-align: left;
         letter-spacing: 0;
         color: #181F27;
         opacity: 1;
         font-weight: 500;
         font-size: 16px;
-        line-height: 26px;
-        padding-bottom: 40px;
-        padding-right: 65px;
+        padding-bottom: 20px;
+        text-align: center;
+        line-height: 1.4;
 
+        @media (min-width: 768px) {
+            text-align: left;
+            padding-right: 65px;
+            padding-bottom: 40px;
+        }
     }
-
-    
-    @media only screen and (max-width: 768px) {
-        flex-direction: column;
-        overflow: hidden;
-        
-        .volunteer-title {
-            text-align: center
-        }
-
-        .volunteer-text {
-            text-align: center;
-            padding-right: 0;
-            font-size: 24px;
-            line-height: 1.4;
-        }
-
-      }
 }
 
 .volunteer__col {
 
-    padding: 50px;
-
     &:first-child {
-        @include col(6, 12, true, false);
-    
+        
         justify-content: center;
         display: flex;
         flex-direction: column;
-      
-        @media only screen and (max-width: 768px) {
-            width: 100%;
-          }
+        padding: 0 24px 24px;
+        
+        @media only screen and (min-width: 768px) {
+            @include col(6, 12, true, false);
+        }
     }
     
       &:last-child {
@@ -84,6 +76,7 @@
         flex-direction: column;
         position: relative;
         text-align: center;
+        padding: 0;
 
 
         @media only screen and (max-width: 768px) {
@@ -97,17 +90,19 @@
 }
 
 .volunteer__button-row {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-
+    @media (min-width: 768px) {
+        display: flex;
+        flex-direction: row;
+    }
+    
     .volunteer-button {
         padding: 20px;
-        margin-right: 10px;
+        margin: 0 8px 10px;
         text-align: center;
+        display: block;
 
-        @media only screen and (max-width: 768px) {
-            width: 50%;
-          }
+        @media (min-width: 768px) {
+            margin: 0 16px 0 0;
+        }
     }
 }
