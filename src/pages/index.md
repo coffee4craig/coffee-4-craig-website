@@ -40,37 +40,37 @@ friends:
   friendsList:
     - bio: |
         Friend bio
-      name: Joe
+      name: Perter
       profileImage:
         alt: feature media alt text
         image: /img/img_0574.jpeg
     - bio: |
         Friend 2 bio
-      name: Kate
+      name: Rose
       profileImage:
         alt: feature media alt text
         image: /img/img_0578.jpeg
     - bio: |
         Friend 3 bio
-      name: Dan
+      name: Arthur
       profileImage:
         alt: feature media alt text
         image: /img/img_0576.jpeg
     - bio: |
         Friend 4 bio
-      name: Michael
+      name: Luke
       profileImage:
         alt: feature media alt text
         image: /img/img_0579.jpeg
     - bio: |
         Friend 5 bio
-      name: George
+      name: David
       profileImage:
         alt: feature media alt text
         image: /img/img_0567.jpeg
     - bio: |
         Friend 6 bio
-      name: David
+      name: George
       profileImage:
         alt: feature media alt text
         image: /img/img_0572.jpeg
