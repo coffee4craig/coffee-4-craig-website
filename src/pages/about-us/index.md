@@ -5,9 +5,9 @@ hero:
     alt: about us
     image: /img/about-hero.jpg
   title: About Us
-leadText: >
-  The Manchester drop-in is an evening and weekend service, this service is
-  supported by a grant from Manchester City Council.
+leadText: >-
+  The Manchester drop-in is an evening and weekend service, offering hot meals,
+  showers and medical support to the city’s homeless community
 addressMap:
   address:
     addressLine1: 'Unit 5, 153 Great Ducie Street,'
