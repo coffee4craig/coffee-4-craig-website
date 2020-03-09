@@ -66,18 +66,21 @@ history:
         alt: feature media alt text
         image: /img/home-jumbotron.jpg
       text: >-
-        Coffee4Craig and Lifeshare, along with CAN, started the Coalition of
-        Relief Network to create a forum for grassroots charities and
+        Coffee4Craig, Lifeshare, and CAN team together to start Coalition of
+        Relief Network.  This forum is for grassroots charities and
         organisations to work together and support each other in providing a
-        better service for rough sleepers. This fed into the Manchester
-        Homelessness Partnership and the first Manchester Homelessness Charter.
-        Coffee4Craig begins running a larger 'food bank' in Salford to support
-        people who are living in poverty and those who are at risk of becoming
-        homeless. We also rolled out our 'education is key' program, this means
-        we get to work with young people to educate on the issues surrounding
-        homelessness, food poverty and mental health. This program has been
-        really successful and we have been invited to many local schools,
-        universities and centres for further education.
+        better service for rough sleepers. The work from this forum has
+        subsequently led to the Manchester Homelessness Partnership and the
+        first Manchester Homelessness Charter.
+         
+        Coffee4Craig launches a food bank in Salford to support people who are
+        living in poverty and those who are at risk of becoming homeless.
+         
+        Coffee4Craig launches its 'Education is Key' programme, working with
+        young people in schools and universities to educate them on the issues
+        surrounding homelessness, food poverty and mental health. 
+         
+        In 2014, there were 47 rough sleepers in Manchester.
       year: 2014
     - featuredImage:
         alt: feature media alt text
@@ -92,37 +95,42 @@ history:
         alt: feature media alt text
         image: /img/home-jumbotron.jpg
       text: >-
-        Coffee4Craig partnered with Centre Point North and moved the three days
-        a week 'street kitchen' to a seven day a week indoor drop-in centre with
-        other homelessness charities Vow and Myriad. 
+        Coffee4Craig partners with Centre Point North and moves its
+        three-days-a-week street kitchen into a seven-day-a-week indoor drop-in
+        centre, together with other homelessness charities Vow and Myriad. 
+         
+        In 2016, there were 78 rough sleepers in Manchester.
       year: 2016
     - featuredImage:
         alt: feature media alt text
         image: /img/home-jumbotron.jpg
       text: >-
-        Our services have expanded again and we are working with Manchester City
-        Council for the third year running to provide Cold Weather relief, an
-        outreach service supporting the issues surrounding New Psychoactive
-        Substances (spice) and engaging with more and more business partners
-        around Manchester. 
+        Coffee4Craig works with Manchester City Council for the third year
+        running to provide Cold Weather relief. 
+
+
+        The charity provides an outreach service to tackle the challenges around
+        new psychoactive substances (‘spice’).
+         
+        In 2017, there were 94 rough sleepers in Manchester.
       year: 2017
     - featuredImage:
         alt: feature media alt text
         image: /img/home-jumbotron.jpg
       text: >-
-        Coffee4Craig has continued to develop it's service's and are now in the
-        process of expanding into the social enterprise sector to provide a more
-        sustainable financial future to protect the vital work we do until,
-        hopefully, one day it is not required. 
+        Coffee4Craig fosters business partnerships with companies around
+        Manchester and is nominated for a TSB Local Pride award.
+         
+        In 2018, there were 123 rough sleepers in Manchester.
       year: 2018
     - featuredImage:
         alt: feature media alt text
         image: /img/home-jumbotron.jpg
       text: >-
-        Here in Manchester, we have had a dramatic increase in numbers, the
-        likes that have never been seen before and it is increasing every
-        day.Here in Manchester, we have had a dramatic increase in numbers, the
-        likes that have never been seen before and it is increasing every day.
+        Coffee4Craig continues to develop its services and begins the process of
+        expanding into the social enterprise sector, to provide a more
+        sustainable financial future to protect the vital work the charity does,
+        hopefully, one day it is not required. 
       year: 2019
   title: Our History
 ---
