@@ -5,7 +5,10 @@ hero:
     alt: support us
     image: /img/support-hero.png
   title: Support Us
-leadText: Join our team of volunteers and make a positive difference to those in need
+leadText: >-
+  Join our team of volunteers and make a positive difference to those in need
+  <span class="lead-text__text--highlighted" style="color: #2db88e">It might
+  make a difference.</span>
 volunteer:
   ctaOne:
     label: Volunteer with Us
