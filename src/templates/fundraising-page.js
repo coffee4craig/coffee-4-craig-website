@@ -5,20 +5,19 @@ import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
 import Hero from '../components/Hero'
 import LeadText from '../components/LeadText'
-import RichText from '../components/RichText'
-import Cta from '../components/Cta'
+import NewRichText from '../components/NewRichText'
 
 export const FundraisingPageTemplate = ({ 
   hero,
   leadText,
-  richText
+  newRichText
  }) => (
   <div className="fundraising">
     <Hero
      {...hero}
     />
     <LeadText text={leadText} />
-    {/* <RichText {...richText} /> */}
+    <NewRichText text={newRichText} />
   </div>
 )
 
@@ -30,6 +29,7 @@ const FundraisingPage = ({ data }) => {
       <FundraisingPageTemplate
         hero={frontmatter.hero}
         leadText={frontmatter.leadText}
+        newRichText={frontmatter.newRichText}
         // richText={frontmatter.richText}
       />
     </Layout>
@@ -64,6 +64,7 @@ export const pageQuery = graphql`
           }
         }
         leadText
+        newRichText
       }
     }
   }
