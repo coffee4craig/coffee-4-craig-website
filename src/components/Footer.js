@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'gatsby';
 
 import HeartIcon from '../img/icons/heart.svg';
 import DonateIcon from '../img/icons/donate.svg';
@@ -15,34 +16,34 @@ const Footer = () => {
     <footer className="footer">
       <div className="footer__cta-block">
         <div className="footer__cta-row">
-          <div className="footer__cta-col">
+          <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=VBW25QGTWEMYC&source=url" className="footer__cta-col" target="_blank">
             <div className="footer__cta-card">
               <DonateIcon />
               <h3 className="footer__cta-title">Donate</h3>
-              <p className="footer__cta-subtitle">Volunteer - Fundraise - Raise Awareness - Share - Smile</p>
+              <p className="footer__cta-subtitle">Clothing - Toiletries - Food - Drink</p>
             </div>
-          </div>
-          <div className="footer__cta-col">
+          </a>
+          <Link to="/support-us" className="footer__cta-col">
             <div className="footer__cta-card">
               <HeartIcon />
               <h3 className="footer__cta-title">Support</h3>
-              <p className="footer__cta-subtitle">Volunteer - Fundraise - Raise Awareness - Share - Smile</p>
+              <p className="footer__cta-subtitle">Volunteer - Fundraise - Raise Awareness - Share</p>
             </div>
-          </div>
-          <div className="footer__cta-col">
+          </Link>
+          <Link to="/fundraising" className="footer__cta-col">
             <div className="footer__cta-card">
               <BalloonIcon />
-              <h3 className="footer__cta-title">Fundraise</h3>
-              <p className="footer__cta-subtitle">Volunteer - Fundraise - Raise Awareness - Share - Smile</p>
+              <h3 className="footer__cta-title">Fundraising</h3>
+              <p className="footer__cta-subtitle">Virgin Giving - Donate Now - PayPal - Direct Bank Transfer</p>
             </div>
-          </div>
-          <div className="footer__cta-col">
+          </Link>
+          <Link to="/contact-us" className="footer__cta-col">
             <div className="footer__cta-card">
               <EnvelopeIcon />
-              <h3 className="footer__cta-title">Contact Us</h3>
-              <p className="footer__cta-subtitle">Volunteer - Fundraise - Raise Awareness - Share - Smile</p>
+              <h3 className="footer__cta-title">Get in touch</h3>
+              <p className="footer__cta-subtitle">Email - Phone - Social Media - Write to us</p>
             </div>
-          </div>
+          </Link>
         </div>
       </div>
       <div className="footer__main">

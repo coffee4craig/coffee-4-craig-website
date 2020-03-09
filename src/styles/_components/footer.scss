@@ -115,12 +115,13 @@
   left: 0;
   height: 100%;
   width: 100%;
-  padding: 10px;
+  padding: 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
+  text-decoration: none;
 
   svg {
     height: 90px;
