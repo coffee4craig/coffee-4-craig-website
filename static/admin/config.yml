@@ -300,6 +300,14 @@ collections:
           - label: Rich Text
             name: newRichText
             widget: markdown 
+          - label: Button
+            name: cta
+            widget: object
+            fields:
+              [
+                { label: Text, name: label, widget: string },
+                { label: Url, name: url, widget: string },
+              ]
       - label: "SupportUs"
         name: "support"
         file: "src/pages/support-us/index.md"

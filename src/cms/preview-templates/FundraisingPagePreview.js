@@ -11,6 +11,7 @@ const FundraisingPagePreview = ({ entry, getAsset }) => {
         hero={data.hero || {}}
         leadText={data.leadText || ""}
         newRichText={data.newRichText || {}}
+        cta={data.cta || {}}
       />
     )
   } else {

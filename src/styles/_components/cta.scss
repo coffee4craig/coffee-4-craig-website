@@ -1,0 +1,26 @@
+.cta {
+    @include gridWidth;
+  
+    @media only screen and (min-width: 768px) {
+        display: flex;
+        justify-content: center;
+    }
+
+}
+
+.cta__wrapper {
+    @media only screen and (min-width: 768px) {
+        @include col(8, 12, true, true);
+        width: 684px;
+    }
+ }
+
+.cta__button {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 15px 0;
+}
+
+
+
