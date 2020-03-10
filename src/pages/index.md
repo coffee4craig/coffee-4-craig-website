@@ -38,38 +38,38 @@ feature:
   title: Make a huge difference today.
 friends:
   friendsList:
-    - bio: |
-        Friend bio
+    - bio: |+
+
       name: Peter
       profileImage:
         alt: feature media alt text
         image: /img/img_0574.jpeg
-    - bio: |
-        Friend 2 bio
+    - bio: |+
+
       name: Rose
       profileImage:
         alt: feature media alt text
         image: /img/img_0578.jpeg
-    - bio: |
-        Friend 3 bio
+    - bio: |+
+
       name: Arthur
       profileImage:
         alt: feature media alt text
         image: /img/img_0576.jpeg
-    - bio: |
-        Friend 4 bio
+    - bio: |+
+
       name: Luke
       profileImage:
         alt: feature media alt text
         image: /img/img_0579.jpeg
-    - bio: |
-        Friend 5 bio
+    - bio: |+
+
       name: David
       profileImage:
         alt: feature media alt text
         image: /img/img_0567.jpeg
-    - bio: |
-        Friend 6 bio
+    - bio: |+
+
       name: George
       profileImage:
         alt: feature media alt text
