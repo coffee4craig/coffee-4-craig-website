@@ -120,7 +120,7 @@ class Navbar extends React.Component {
                   <Link to="/contact-us">Contact Us</Link>
                 </li>
               </ul>
-              <MenuCta {...cta}></MenuCta>
+              {isMobile && <MenuCta {...cta}></MenuCta>}
             </div>
             <div className="navbar__flex">
 
