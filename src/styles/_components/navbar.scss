@@ -65,6 +65,9 @@
   flex: 4;
 
   &.is-mobile {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
     position: fixed;
     top: 80px;
     left: 0;
@@ -95,10 +98,15 @@
         border-bottom-right-radius: 2em;
 
         @media only screen and (max-width: 768px) {
-          top: 20px;
+          top: 70px;
+          left: 0px;
         }
       }
 
+    }
+    @media only screen and (max-width: 768px) {
+      font-size: 40px;
+      line-height: 85px;
     }
 
     a {
