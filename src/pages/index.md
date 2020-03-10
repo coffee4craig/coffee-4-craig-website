@@ -40,7 +40,7 @@ friends:
   friendsList:
     - bio: |
         Friend bio
-      name: Perter
+      name: Peter
       profileImage:
         alt: feature media alt text
         image: /img/img_0574.jpeg
