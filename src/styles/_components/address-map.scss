@@ -35,12 +35,21 @@
 		}
 	}
 
+	@media only screen and (max-width: 768px) {
+		display: flex;
+		flex-direction: column;
+	}
+
 	& .title {
 		margin-top: $spacing;
 		position: relative;
 
 		@media only screen and (min-width: 768px) {
 			margin-top: $spacing * 0.75;
+		}
+
+		@media only screen and (max-width: 768px) {
+			text-align: center;
 		}
 	}
 
@@ -88,6 +97,11 @@
 	position: absolute;
 	top: 5%;
 	left: -10%;
+
+	@media only screen and (max-width: 768px) {
+		left: 0%;
+
+	}
 }
 
 .address-map__openin {
