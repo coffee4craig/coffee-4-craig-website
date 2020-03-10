@@ -104,9 +104,10 @@
       }
 
     }
-    @media only screen and (max-width: 768px) {
+    @media only screen and (max-width: 961px) {
       font-size: 40px;
       line-height: 85px;
+      display: flex;
     }
 
     a {
