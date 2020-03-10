@@ -65,6 +65,7 @@
   flex: 4;
 
   &.is-mobile {
+    text-align: center;
     display: flex;
     flex-direction: column;
     position: fixed;

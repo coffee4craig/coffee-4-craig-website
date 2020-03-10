@@ -6,7 +6,7 @@ import logo from '../img/nav_logo.svg';
 import CloseIcon from '../img/icons/close-icon.svg';
 import MenuIcon from '../img/icons/menu-icon.svg';
 import { Link } from 'gatsby';
-import Cta from '../components/Cta'; 
+import MenuCta from '../components/MenuCta'; 
 
 class Navbar extends React.Component {
   state = {
@@ -120,7 +120,7 @@ class Navbar extends React.Component {
                   <Link to="/contact-us">Contact Us</Link>
                 </li>
               </ul>
-              <Cta {...cta}></Cta>
+              <MenuCta {...cta}></MenuCta>
             </div>
             <div className="navbar__flex">
 
