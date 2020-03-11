@@ -6,6 +6,7 @@ import logo from '../img/nav_logo.svg';
 import CloseIcon from '../img/icons/close-icon.svg';
 import MenuIcon from '../img/icons/menu-icon.svg';
 import { Link } from 'gatsby';
+import MenuCta from '../components/MenuCta'; 
 
 class Navbar extends React.Component {
   state = {
@@ -77,7 +78,10 @@ class Navbar extends React.Component {
 
     const transform = isOpen ? `translateX(0%)` : `translateX(100%)`;
     const bgColor = navbarBackground ? `#FFFFFF` : `transparent`;
-
+    const cta = {
+      label: "Donate Now!",
+      url: "https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=VBW25QGTWEMYC&source=url"
+    };
     if (isOpen) {
       disableBodyScroll(this.targetElement);
     } else {
@@ -116,6 +120,7 @@ class Navbar extends React.Component {
                   <Link to="/contact-us">Contact Us</Link>
                 </li>
               </ul>
+              {isMobile && <MenuCta {...cta}></MenuCta>}
             </div>
             <div className="navbar__flex">
 

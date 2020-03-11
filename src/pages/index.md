@@ -101,7 +101,7 @@ credits:
         url: 'https://news.streetsupport.net/tag/coffee-4-craig/'
       logo:
         alt: Street Support Network
-        image: /img/ssn.png
+        image: /img/street-support-logo.png
   title: As featured in…
 ---
 
