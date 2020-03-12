@@ -49,7 +49,7 @@ donateItems:
         url: 'https://www.amazon.co.uk/hz/wishlist/ls/MITAVGKN3Q2R?ref_=wl_share'
       image:
         alt: about us
-        image: /img/istock-185113116.jpg
+        image: /img/Razor.png
     - cta:
         label: Buy Now
         url: 'https://www.amazon.co.uk/hz/wishlist/ls/MITAVGKN3Q2R?ref_=wl_share'
