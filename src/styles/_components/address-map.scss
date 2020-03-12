@@ -10,7 +10,7 @@
 
 	display: flex;
 
-	@media only screen and (max-width: 768px) {
+	@media only screen and (max-width: 1024px) {
 		flex-direction: column;
 	}
 }
@@ -19,7 +19,7 @@
 	@include col(12, 12, true, true);
 	font-size: 14px;
 
-	@media only screen and (min-width: 768px) {
+	@media only screen and (min-width: 1024px) {
 		&:first-child {
 			@include col(7, 12, true, false);
 
