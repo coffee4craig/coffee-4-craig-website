@@ -89,7 +89,7 @@
       &::before {
         content: "";
         position: absolute;
-        top: 80px;
+        top: -46px;
         height: 5px;
         width: 100%;
         background-color: $primary-color-a;
@@ -97,7 +97,7 @@
         border-bottom-left-radius: 2em;
         border-bottom-right-radius: 2em;
 
-        @media only screen and (max-width: 768px) {
+        @media only screen and (max-width: 961px) {
           top: 70px;
           left: 0px;
         }
