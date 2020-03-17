@@ -51,7 +51,7 @@ const Footer = () => {
         
           <div className="footer__column">
             <img className="footer__image" src={LivingWageLogo} alt="We are a Living Wage employer"/>
-            <p className="footer__copyright">&copy; 2019 Coffee4Craig</p>
+            <p className="footer__copyright">&copy; 2020 Coffee4Craig</p>
           </div>
 
           <div className="footer__column">
