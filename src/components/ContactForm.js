@@ -17,20 +17,22 @@ class ContactForm extends React.Component {
     sending: false
   };
 
-  handleInputChange = e =>
-    e.persist() &&
+  handleInputChange = e => {
+    e.persist();
     this.setState(state => ({
       fields: {
         ...state.fields,
-        [e.target.name]: e.target.value
+        [e.nativeEvent.target.name]: e.nativeEvent.target.value
       }
     }));
+  };
 
   checkEmpty = () => {
     const notEmpty = Object.values(this.state.fields).filter(
       field => field !== ""
     );
-    if (notEmpty.length) {
+
+    if (notEmpty.length > 0) {
       return true;
     } else {
       return false;
@@ -39,7 +41,7 @@ class ContactForm extends React.Component {
 
   handleFormSubmit = e => {
     e.preventDefault();
-
+    console.log(this.checkEmpty());
     if (this.checkEmpty()) {
       this.setState({ sending: true });
       fetch("/", {
@@ -86,6 +88,7 @@ class ContactForm extends React.Component {
                       type="text"
                       name="fullName"
                       onChange={this.handleInputChange}
+                      value={this.state.fields.fullName}
                     />
                   </label>
                   <label>
@@ -94,6 +97,7 @@ class ContactForm extends React.Component {
                       type="email"
                       name="emailAddress"
                       onChange={this.handleInputChange}
+                      value={this.state.fields.emailAddress}
                     />
                   </label>
                 </div>
@@ -104,6 +108,7 @@ class ContactForm extends React.Component {
                       rows="5"
                       name="message"
                       onChange={this.handleInputChange}
+                      value={this.state.fields.message}
                     />
                   </label>
                 </div>
@@ -117,7 +122,12 @@ class ContactForm extends React.Component {
                   </button>
                 </div>
                 <div className="contact-form__form-group">
-                  <p>We’ll aim to get back to you within 48 hrs</p>
+                  <p
+                    style={{ textAlign: "center" }}
+                    className="contact-form__form-group__submition-text"
+                  >
+                    We’ll aim to get back to you within 48 hrs
+                  </p>
                 </div>
               </form>
             </Fragment>
