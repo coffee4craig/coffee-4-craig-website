@@ -41,7 +41,7 @@ class ContactForm extends React.Component {
 
   handleFormSubmit = e => {
     e.preventDefault();
-    console.log(this.checkEmpty());
+
     if (this.checkEmpty()) {
       this.setState({ sending: true });
       fetch("/", {
