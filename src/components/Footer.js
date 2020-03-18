@@ -54,7 +54,7 @@ const Footer = () => {
             <p className="footer__copyright">&copy; 2020 Coffee4Craig</p>
           </div>
 
-          <div className="footer__column">
+          <div className="footer__column footer__column--flex">
             <h5 className="footer__title">Registered Offices</h5>
             <p className="footer__text">
                 53 King Street <br/>
@@ -67,23 +67,6 @@ const Footer = () => {
             </p>            
           </div>
 
-          <div className="footer__column">
-            <h5 className="footer__title">Terms and conditions</h5>
-            <ul className="footer__list">
-              <li>
-                <a href="www.google.com" className="footer__list_item">Disclaimer</a>
-              </li>
-              <li>
-                <a href="www.google.com" className="footer__list_item">Privacy</a>
-              </li>
-              <li>
-                <a href="www.google.com" className="footer__list_item">Cookies</a>
-              </li>
-              <li>
-                <a href="www.google.com" className="footer__list_item">Accessibility</a>
-              </li>
-            </ul>
-          </div>
           <div className="footer__column">
             <ul className="footer__list_social">
               <li>

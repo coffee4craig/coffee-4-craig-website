@@ -200,6 +200,10 @@
       @include col(3, 12, false, true);
     }
   }
+
+  &--flex {
+    flex: 1;
+  }
 }
 
 .footer__title {
