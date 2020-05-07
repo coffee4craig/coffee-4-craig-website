@@ -19,7 +19,7 @@ volunteer:
     url: >-
       https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=VBW25QGTWEMYC&source=url
   text: >-
-    <b>We need a team of volunteers every day at our drop-in center on Oldham
+    <b>We need a team of volunteers every day at our drop-in center at 153 Ducie
     Street in Manchester. The roles include; cooking, sorting collections,
     giving out hot drinks and food, keeping the kitchen clean and tidy, greeting
     at reception, monitoring the shower list and sitting down with guests for a
