@@ -516,6 +516,11 @@ collections:
                         name: phoneNumberTwo,
                         widget: string,
                       },
+                      {
+                        label: Phone Number Three,
+                        name: phoneNumberThree,
+                        widget: string,
+                      },
                     ],
                 }
               - {

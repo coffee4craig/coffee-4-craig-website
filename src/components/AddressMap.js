@@ -81,7 +81,8 @@ const AddressMap = ({ title, address, telephone, openingHours }) => {
 								</p>
 								<p>
 									{telephone.phoneNumberOne} <br />
-									{telephone.phoneNumberTwo}
+									{telephone.phoneNumberTwo} <br/>
+									{telephone.phoneNumberThree}
 								</p>
 							</div>
 						)}

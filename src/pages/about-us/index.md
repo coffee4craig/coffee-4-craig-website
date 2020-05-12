@@ -22,14 +22,15 @@ addressMap:
     satSunTime: '17:00 - 19:00'
     title: Opening hours
   telephone:
-    phoneNumberOne: 07543590330
-    phoneNumberTwo: 07543590330
+    phoneNumberOne: Risha 07973955003
+    phoneNumberTwo: Hendrix 07543590330
+    phoneNumberThree: Donations 07895983932
     title: Phone
   title: Manchester Drop-in
 partners:
   text: >
     Centre Point North, Team Vow, The Myriad Foundation, North West First Aid,
-    Not Just Soup…and all of our amazing staff and volunteers.
+    Not Just Soup… and all of our amazing staff and volunteers.
   title: Working in partnership with
 services:
   serviceList:

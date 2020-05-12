@@ -85,7 +85,8 @@ export const pageQuery = graphql`
           telephone {
             title,
             phoneNumberOne,
-            phoneNumberTwo
+            phoneNumberTwo,
+            phoneNumberThree
           },
           openingHours {
             title,
