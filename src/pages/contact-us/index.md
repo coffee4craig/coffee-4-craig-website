@@ -12,8 +12,8 @@ featureInverted:
   primaryButtonText: Donate Now!
   text: >
     For any press and media enquiries, please contact the Coffee4Craig press
-    team on 0754 3590 330 or alternatively email hendrix@coffee4craig.co.uk.
-    Follow the link below to download our press pack for logo, information and
+    team on 07973 955003 or 07543 590330. Alternatively email office@coffee4craig.co.uk.
+    Contact us to download our press pack for logo, information and
     photos.
   title: Press and Media
 credits:
