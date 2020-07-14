@@ -63,7 +63,7 @@ const Footer = () => {
             </p>
             <h5 className="footer__title">Registered Charity</h5>
             <p className="footer__text">
-                No. 115674
+                No. 1167146
             </p>            
           </div>
 
