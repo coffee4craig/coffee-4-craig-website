@@ -92,8 +92,9 @@ superheroes:
         neither of us could.’
       image:
         alt: about us
-        image: /img/thomas.png
-      name: Thomas
+        image: >-
+          /img/8332538-6574433-risha_lancaster_49_pictured_began_the_charity_coffee4craig_after-a-22_1547075030995.jpg
+      name: Risha
   title: Our Super Heroes
 ctaBlock:
   link:
