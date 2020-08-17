@@ -92,7 +92,7 @@ superheroes:
         neither of us could.’
       image:
         alt: Risha
-        image: /img/risha.png
+        image: /img/risha-crop.png
       name: Risha
   title: Our Super Heroes
 ctaBlock:
