@@ -91,9 +91,8 @@ superheroes:
         this situation without help. I couldn’t walk past blindly anymore,
         neither of us could.’
       image:
-        alt: about us
-        image: >-
-          /img/8332538-6574433-risha_lancaster_49_pictured_began_the_charity_coffee4craig_after-a-22_1547075030995.jpg
+        alt: Risha
+        image: /img/risha.png
       name: Risha
   title: Our Super Heroes
 ctaBlock:
