@@ -11,8 +11,8 @@ leadText: >-
   showers and medical support to the city’s homeless community
 addressMap:
   address:
-    addressLine1: 'Unit 5, 153 Great Ducie Street,'
-    addressLine2: Manchester
+    addressLine1: 'The Meanwhile, Unit 5'
+    addressLine2: '123 Great Ducie Street, Manchester'
     postcode: M3 1FB
     title: Address
   openingHours:
@@ -23,8 +23,8 @@ addressMap:
     title: Opening hours
   telephone:
     phoneNumberOne: Risha 07973955003
-    phoneNumberTwo: Hendrix 07543590330
     phoneNumberThree: Donations 07895983932
+    phoneNumberTwo: Hendrix 07543590330
     title: Phone
   title: Manchester Drop-in
 partners:
