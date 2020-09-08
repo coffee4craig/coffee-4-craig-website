@@ -38,7 +38,7 @@ feature:
   title: Make a huge difference today.
 friends:
   friendsList: []
-  title: Making a difference for our friends
+  title: 'Changing peoples lives, and making new friends. All from a cup of coffee.'
 credits:
   creditList:
     - link:
