@@ -19,8 +19,8 @@ volunteer:
     url: >-
       https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=VBW25QGTWEMYC&source=url
   text: >-
-    <b>We need a team of volunteers every day at our drop-in center at 153 Ducie
-    Street in Manchester. The roles include; cooking, sorting collections,
+    <b>We need a team of volunteers every day at our drop-in center at The
+    Meanwhile in Manchester. The roles include; cooking, sorting collections,
     giving out hot drinks and food, keeping the kitchen clean and tidy, greeting
     at reception, monitoring the shower list and sitting down with guests for a
     brew and a chat!</b>
@@ -31,7 +31,7 @@ volunteer:
 
     We also need help behind the scenes with lots of different things like
     sorting through donations, keeping the food bank organised, sending
-    newsletters and thanks yous. Maybe you have a skill that we could use? 
+    newsletters and thank yous. Maybe you have a skill that we could use? 
   title: Volunteer
 donateItems:
   cta:
