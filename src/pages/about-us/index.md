@@ -52,8 +52,6 @@ services:
       text: Emergency food parcels
     - icon: medical
       text: Medical support
-    - icon: persons
-      text: Young Persons (16-25) support
     - icon: coldweather
       text: CWP support (Cold Weather Provision)
   title: This service provides
