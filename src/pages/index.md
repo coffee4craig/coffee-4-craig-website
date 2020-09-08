@@ -37,44 +37,8 @@ feature:
     difference.
   title: Make a huge difference today.
 friends:
-  friendsList:
-    - bio: |+
-
-      name: Peter
-      profileImage:
-        alt: feature media alt text
-        image: /img/img_0574.jpeg
-    - bio: |+
-
-      name: Rose
-      profileImage:
-        alt: feature media alt text
-        image: /img/img_0578.jpeg
-    - bio: |+
-
-      name: Arthur
-      profileImage:
-        alt: feature media alt text
-        image: /img/img_0576.jpeg
-    - bio: |+
-
-      name: Luke
-      profileImage:
-        alt: feature media alt text
-        image: /img/img_0579.jpeg
-    - bio: |+
-
-      name: David
-      profileImage:
-        alt: feature media alt text
-        image: /img/img_0567.jpeg
-    - bio: |+
-
-      name: George
-      profileImage:
-        alt: feature media alt text
-        image: /img/img_0572.jpeg
-  title: Here are just a few people we now call our friends.
+  friendsList: []
+  title: Making a difference for our friends
 credits:
   creditList:
     - link:
