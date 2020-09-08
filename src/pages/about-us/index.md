@@ -29,8 +29,8 @@ addressMap:
   title: Manchester Drop-in
 partners:
   text: >
-    Centre Point North, Team Vow, The Myriad Foundation, North West First Aid,
-    Not Just Soup… and all of our amazing staff and volunteers.
+    Northwest First Aid, Vow, The Street Engagement Hub, On the Out, COR and Not
+    Just Soup… and all of our amazing staff and volunteers.
   title: Working in partnership with
 services:
   serviceList:
