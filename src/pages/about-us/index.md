@@ -43,7 +43,7 @@ services:
     - icon: chat
       text: One-to-one advice
     - icon: signpost
-      text: Signposting & referrals
+      text: Signposting & advice
     - icon: provisions
       text: Emergency provisions
     - icon: clothing
