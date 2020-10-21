@@ -36,9 +36,12 @@ export const IndexPageTemplate = ({
     <Feature
       {...feature}
     />
-    <Friends
+    {
+  friends && 
+      <Friends
       {...friends}
-    />
+      />
+    }
     <Credits 
       {...credits}
     />
@@ -47,7 +50,6 @@ export const IndexPageTemplate = ({
 
 const IndexPage = ({ data }) => {
   const { frontmatter } = data.markdownRemark
-
   return (
     <Layout>
       <IndexPageTemplate
@@ -123,23 +125,7 @@ export const pageQuery = graphql`
             alt
           }
         }
-        friends {
-          title,
-          friendsList {
-            profileImage {
-              image {
-                childImageSharp {
-                  fluid(maxWidth: 1200, quality: 64) {
-                    ...GatsbyImageSharpFluid
-                  }
-                }
-              },
-              alt
-            }
-            name,
-            bio
-          }
-        }
+       
         credits {
           title,
           creditList {
@@ -163,3 +149,23 @@ export const pageQuery = graphql`
     }
   }
 `
+
+//  In case our friends comes back 
+//
+// friends {
+//   title,
+//   friendsList {
+//     profileImage {
+//       image {
+//         childImageSharp {
+//           fluid(maxWidth: 1200, quality: 64) {
+//             ...GatsbyImageSharpFluid
+//           }
+//         }
+//       },
+//       alt
+//     }
+//     name,
+//     bio
+//   }
+// }
