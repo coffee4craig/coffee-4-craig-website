@@ -17,10 +17,10 @@ addressMap:
     title: Address
   openingHours:
     monFriLabel: Monday to Friday
-    monFriTime: '19:00 - 21:00 (will be 18:00 - 20:00 on 2nd Nov)'
+    monFriTime: '18:00 - 20:00'
     satSunLabel: Saturday to Sunday
     satSunTime: '17:00 - 19:00'
-    title: Opening hours (changing 2nd Nov 2020)
+    title: Opening hours
   telephone:
     phoneNumberOne: Risha 07973955003
     phoneNumberThree: Donations 07895983932
