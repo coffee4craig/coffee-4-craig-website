@@ -12,8 +12,7 @@ leadText: >-
 volunteer:
   ctaOne:
     label: Volunteer with Us
-    url: >-
-      https://docs.google.com/forms/d/e/1FAIpQLSemNku8dsK6_JD9ciOud2plvPN3wxKdMihiAaUvB3pOaoXwMA/viewform
+    url: 'https://forms.gle/Mtr7EdKDcNGs7Ak5A'
   ctaTwo:
     label: Donate Today
     url: >-
