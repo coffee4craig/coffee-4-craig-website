@@ -12,7 +12,7 @@ leadText: >-
 addressMap:
   address:
     addressLine1: 'The Meanwhile, Unit 5'
-    addressLine2: '123 Great Ducie Street, Manchester'
+    addressLine2: '153 Great Ducie Street, Manchester'
     postcode: M3 1FB
     title: Address
   openingHours:
