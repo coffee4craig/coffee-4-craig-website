@@ -95,7 +95,6 @@ export const pageQuery = graphql`
               url
               target
             }
-            description
           }
         }
         faq {
