@@ -7,7 +7,7 @@ import '../styles/app.scss'
 import useSiteMetadata from './SiteMetadata'
 import { withPrefix } from 'gatsby'
 
-const TemplateWrapper = ({ children }) => {
+const TemplateWrapper = ({ children, noFooter }) => {
   const { title, description, image } = useSiteMetadata()
   return (
     <div>
@@ -51,7 +51,9 @@ const TemplateWrapper = ({ children }) => {
       </Helmet>
       <Navbar />
       <div>{children}</div>
-      <Footer />
+      {
+        !noFooter &&  <Footer />
+      }
     </div>
   )
 }

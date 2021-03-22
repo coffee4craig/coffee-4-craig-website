@@ -21,6 +21,15 @@ exports.createPages = ({ actions, graphql }) => {
           }
         }
       }
+
+      markdownRemark(frontmatter: { templateKey: { eq: "redirects" } }) {
+        frontmatter {
+          list {
+            slug
+            url
+          }
+        }
+      }
     }
   `).then(result => {
     if (result.errors) {
@@ -29,6 +38,21 @@ exports.createPages = ({ actions, graphql }) => {
     }
 
     const posts = result.data.allMarkdownRemark.edges
+    const redirects = result.data.markdownRemark.frontmatter.list;
+
+    redirects.forEach(({slug, url}) => {
+      createPage({
+        path: slug,
+        component: path.resolve(
+          `src/templates/redirects.js`
+        ),
+        // additional data can be passed via context
+        context: {
+          url,
+        },
+      })
+    })
+
 
     posts.forEach(edge => {
       const id = edge.node.id
