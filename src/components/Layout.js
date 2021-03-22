@@ -54,7 +54,6 @@ const TemplateWrapper = ({ children, noFooter }) => {
       {
         !noFooter &&  <Footer />
       }
-     
     </div>
   )
 }
