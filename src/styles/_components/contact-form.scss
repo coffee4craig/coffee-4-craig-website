@@ -31,6 +31,28 @@
     background: url("../img/contact/seperator-3.svg") center bottom no-repeat;
     background-size: contain;
   }
+
+  &__select-arrow {
+    &::after,
+    &::before {
+      content: "";
+      position: absolute;
+      background: black;
+      height: 2px;
+      width: 10px;
+      top: 56px;
+    }
+
+    &::after {
+      transform: rotate(40deg);
+      right: 27px;
+    }
+
+    &::before {
+      transform: rotate(-40deg);
+      right: 20px;
+    }
+  }
 }
 
 .contact-form__title {
@@ -107,7 +129,19 @@
     font-size: 18px;
   }
 
+  select {
+    width: 100%;
+    display: block;
+    margin-top: 10px;
+    border: 1px solid $secondary-color-c;
+    padding: 20px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+  }
+
   label {
+    position: relative;
     margin: 0 5px 30px 5px;
     width: 100%;
     text-align: left;
@@ -116,4 +150,5 @@
   .btn {
     margin-bottom: 30px;
   }
+
 }
