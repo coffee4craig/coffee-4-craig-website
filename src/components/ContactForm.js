@@ -11,6 +11,7 @@ class ContactForm extends React.Component {
     fields: {
       fullName: "",
       emailAddress: "",
+      reason: "",
       message: ""
     },
     submitted: false,
@@ -19,6 +20,7 @@ class ContactForm extends React.Component {
 
   handleInputChange = e => {
     e.persist();
+   
     this.setState(state => ({
       fields: {
         ...state.fields,
@@ -81,6 +83,8 @@ class ContactForm extends React.Component {
                 data-netlify-honeypot="bot-field"
                 onSubmit={this.handleFormSubmit}
               >
+            
+
                 <input type="hidden" name="form-name" value="contact" />
                 <div className="contact-form__form-group">
                   <label>
@@ -100,6 +104,20 @@ class ContactForm extends React.Component {
                       onChange={this.handleInputChange}
                       value={this.state.fields.emailAddress}
                     />
+                  </label>
+                </div>
+                <div className="contact-form__form-group">
+                  <label>I am contacting you...
+                    <div className="contact-form__select-arrow"></div>
+                    <select id="reason-select" name="reason" onChange={this.handleInputChange}>
+                      <option disabled selected>Please select an option</option>
+                      <option>About a guest that uses your service</option>
+                      <option>Interested in become a volunteer</option>
+                      <option>I'd like to make a donation</option>
+                      <option>Media enquiry</option>
+                      <option>I need advice</option>
+                      <option>Something else</option>
+                    </select>
                   </label>
                 </div>
                 <div className="contact-form__form-group">
