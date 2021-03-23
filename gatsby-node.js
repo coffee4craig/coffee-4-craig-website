@@ -39,21 +39,25 @@ exports.createPages = ({ actions, graphql }) => {
       return Promise.reject(result.errors)
     }
 
+   
     const posts = result.data.allMarkdownRemark.edges
-    const redirects = result.data.markdownRemark.frontmatter.redirects;
 
-    redirects.forEach(({redirect: {slug, url}}) => {
-      createPage({
-        path: slug,
-        component: path.resolve(
-          `src/templates/redirects.js`
-        ),
-        // additional data can be passed via context
-        context: {
-          url,
-        },
-      })
-    })
+    const redirects = result.data.markdownRemark.frontmatter.redirects;
+    
+    if(redirects) {
+      redirects.forEach(({redirect: {slug, url}}) => {
+        createPage({
+          path: slug,
+          component: path.resolve(
+            `src/templates/redirects.js`
+            ),
+            // additional data can be passed via context
+            context: {
+              url,
+            },
+          })
+        })
+      }
 
 
     posts.forEach(edge => {
