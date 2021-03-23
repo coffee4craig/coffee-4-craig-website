@@ -1,6 +1,7 @@
 ---
 templateKey: redirects
 redirects:
-  - slug: '/test'
-    url: 'https://google.com'
+  - redirect:
+      slug: /testluke
+      url: 'https://www.youtube.com'
 ---
