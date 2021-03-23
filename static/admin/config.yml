@@ -22,6 +22,36 @@ collections:
   #         preview: false
   #       fields:
   #         - { label: "Site Title", name: siteTitle, widget: string }
+  
+         
+  - name: "redirects"
+    label: "Redirects"
+    files: 
+      - file: "src/pages/redirects.md"
+        name: 'redirects'
+        label: 'Redirect'     
+        editor:
+          preview: false 
+        fields: 
+              - {
+                      label: Redirects,
+                      name: redirects,
+                      widget: list,
+                      fields:
+                        [
+                          {
+                            label: redirect,
+                            name: redirect,
+                            widget: object,
+                            fields:
+                              [
+                                { label: slug, name: slug, widget: string },
+                                { label: url, name: url, widget: string },
+                              ],
+                          },
+                      
+                        ],
+                    }
   - name: "donate"
     label: "Donate"
     files:
@@ -590,3 +620,5 @@ collections:
                       },
                     ],
                 }
+
+

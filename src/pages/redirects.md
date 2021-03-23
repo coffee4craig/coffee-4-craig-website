@@ -1,6 +1,6 @@
 ---
 templateKey: redirects
-list:
+redirects:
   - slug: '/test'
     url: 'https://google.com'
 ---

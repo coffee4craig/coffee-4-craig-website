@@ -24,7 +24,7 @@ exports.createPages = ({ actions, graphql }) => {
 
       markdownRemark(frontmatter: { templateKey: { eq: "redirects" } }) {
         frontmatter {
-          list {
+          redirects {
             slug
             url
           }
@@ -38,7 +38,7 @@ exports.createPages = ({ actions, graphql }) => {
     }
 
     const posts = result.data.allMarkdownRemark.edges
-    const redirects = result.data.markdownRemark.frontmatter.list;
+    const redirects = result.data.markdownRemark.frontmatter.redirects;
 
     redirects.forEach(({slug, url}) => {
       createPage({
