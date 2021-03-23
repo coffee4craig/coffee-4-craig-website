@@ -1,4 +1,5 @@
 ---
+templateKey: redirects
 redirects:
   - redirect:
       slug: /testluke
