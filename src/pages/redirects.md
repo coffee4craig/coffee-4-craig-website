@@ -6,4 +6,8 @@ list:
     Redirect:
       slug: /testluke
       url: 'https://www.youtube.com/'
+redirects:
+  - redirect:
+      slug: /testluke
+      url: 'https://www.youtube.com'
 ---
