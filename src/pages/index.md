@@ -6,19 +6,19 @@ homepageHero:
     Donation description
   donationTitle: Donation Title
   subtitle: >-
-    Coffee4Craig provides vital support for Manchester’s homeless and people in
-    crisis. Each evening we operate an out of hours’ drop-in service in the
-    heart of Manchester city centre. We offer hot food, showers, food parcels,
-    medical support and mental health crisis intervention.
+    Coffee4Craig provides vital support for people sleeping on the streets of
+    Manchester. Each evening we operate an out of hours’ drop-in service from
+    our new home, The Meanwhile, offering hot food, showers, emergency
+    provisions, and medical support .
   title: Helping Manchester’s homeless
 fullWidthImage:
   alt: feature media alt text
-  image: /img/hero.jpg
+  image: /img/164759778_4587058057975931_1853227584533191958_n-4-.jpg
 quote:
   quoteSource: Hendrix Lancaster CEO
   quoteText: '‘Homelessness is not the problem, it is a symptom of the problem’'
 video:
-  videoId: 8rn5Yef9OGw
+  videoId: IwwlHAk3_ac
 feature:
   ctaOne:
     label: Volunteer with Us
@@ -30,11 +30,10 @@ feature:
       https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=VBW25QGTWEMYC&source=url
   featureImage:
     alt: feature media alt text
-    image: /img/home-volunteer-image.png
+    image: /img/whatsapp-image-2021-05-27-at-01.10.19.jpeg
   text: >-
-    Support Coffee4Craig and you’ll be helping hundreds of people affected by
-    homelessness and poverty in Manchester. Together, we can make a positive
-    difference.
+    Support Coffee4Craig and you’ll be helping people affected by street
+    homelessness in Manchester. Together, we can make a positive difference.
   title: Make a huge difference today.
 friends:
   friendsList: []
