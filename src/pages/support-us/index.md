@@ -3,12 +3,9 @@ templateKey: support-page
 hero:
   backgroundImage:
     alt: support us
-    image: /img/support-hero-fixed-whole.jpg
+    image: /img/whatsapp-image-2021-05-20-at-18.13.44.jpeg
   title: Support Us
-leadText: >-
-  Join our team of volunteers and make a positive difference to those in need
-  <span class="lead-text__text--highlighted" style="color: #2db88e">It might
-  make a difference.</span>
+leadText: Join our team of volunteers to make a positive difference!
 volunteer:
   ctaOne:
     label: Volunteer with Us
@@ -18,24 +15,30 @@ volunteer:
     url: >-
       https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=VBW25QGTWEMYC&source=url
   text: >-
-    <b>We need a team of volunteers every day at our drop-in center at The
-    Meanwhile in Manchester. The roles include; cooking, sorting collections,
-    giving out hot drinks and food, keeping the kitchen clean and tidy, greeting
-    at reception, monitoring the shower list and sitting down with guests for a
-    brew and a chat!</b>
+    <b>We are dependant on volunteers.<br></b>
+
+    <br>
+
+    Every day at The Meanwhile evening drop-in out team of volunteers support
+    serving food, washing up, sorting collections, a bit more washing up, 
+    keeping the kitchen clean and tidy (which includes washing up), greeting
+    guests (in between rounds of washing up), supporting guests to access
+    showers (and wondering how much how washing up has piled up),  and sitting
+    down with guests for a brew and a chat, to whinge about how their hands are
+    sore from washing up!</b>
 
     <br>
 
     <br>
 
-    We also need help behind the scenes with lots of different things like
-    sorting through donations, keeping the food bank organised, sending
-    newsletters and thank yous. Maybe you have a skill that we could use? 
+    <b>We also need help behind the scenes with lots of different things like
+    sorting through donations, keeping the food stores organised, and much more!
+    Maybe you have a skill that we could use? </b>
   title: Volunteer
 donateItems:
   cta:
     label: View our full Amazon wish list
-    url: 'https://www.amazon.co.uk/hz/wishlist/ls/MITAVGKN3Q2R?ref_=wl_share'
+    url: 'https://www.amazon.co.uk/hz/wishlist/ls/2SN8KQQ4F9ZL0?ref_=wl_fv_le'
   list:
     - cta:
         label: Buy Now
