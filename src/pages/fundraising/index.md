@@ -13,7 +13,7 @@ newRichText: >-
   baked beans?<br><br>
 
 
-  The whackier the better for us?<br><br></b>
+  The whackier the better for us!<br><br></b>
 
 
 
