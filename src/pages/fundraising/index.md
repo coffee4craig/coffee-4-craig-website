@@ -3,20 +3,27 @@ templateKey: fundraising-page
 hero:
   backgroundImage:
     alt: support us
-    image: /img/fund-hero-image.jpg
+    image: /img/eyc52onwgauqidr-1-.jpg
   title: Fundraising
-newRichText: >-
-   <b>We have running costs and the six paid staff (three of which are part-time) are all on the same hourly living wage. We do, however, need funding to pay volunteer expenses, buy guests bus passes so they can attend appointments, support people who are living in fuel poverty (pay gas/electricity bills), and keep the food bank well stocked.</b> <br><br>
-
-   If you specify on your donation we will use it directly to support people who experience homelessness or are at risk of homelessness.
-   <br><br>
-   ​Please donate through our giving fundraising page set up, consider setting up a monthly contribution.
-    <br><br>
-   We will also support groups who are wanting to arrange fundraisers for us. We have had great events in the past from  sleep-outs to comedy nights….do you have a good fundraising idea?
 leadText: >-
-  Join <span class="lead-text__text--highlighted" style="color:
-  #2db88e">hundreds</span> supporters who’ve raised <span
-  class="lead-text__text--highlighted" style="color: #2db88e">£8,749.74</span>
+  Join our family of supporters, who think of innovative ideas to fundraise for
+  us!
+newRichText: >-
+  <center><b>Jumping out of a plane? Hosting a bake sale? Taking a bath in some
+  baked beans?<br><br>
+
+
+  The whackier the better for us?<br><br></b>
+
+
+
+
+  Why not fill out our Fundrasing Sign-Up form <a
+  href="https://airtable.com/shrq86cKlK32CmERV">here?</a><br><br>
+
+
+  Because we apprecaite the amazing things that you do for us, we endevour to
+  support you every step of the way!</<center>
 cta:
   label: Donate Today
   url: >-
