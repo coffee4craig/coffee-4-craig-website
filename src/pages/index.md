@@ -18,7 +18,7 @@ quote:
   quoteSource: Hendrix Lancaster CEO
   quoteText: '‘Homelessness is not the problem, it is a symptom of the problem’'
 video:
-  videoId: IwwlHAk3_ac
+  videoId: IwwlHAk3_ac&t=4s
 feature:
   ctaOne:
     label: Volunteer with Us
