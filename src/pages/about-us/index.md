@@ -74,7 +74,7 @@ history:
       year: 2013
     - featuredImage:
         alt: feature media alt text
-        image: /img/home-jumbotron.jpg
+        image: /img/2014.jpg
       text: >-
         Coffee4Craig, Lifeshare, and CAN team together to start Coalition of
         Relief Network.  This forum is for grassroots charities and
