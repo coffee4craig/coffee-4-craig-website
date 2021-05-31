@@ -38,8 +38,8 @@ services:
       text: Hot meals
     - icon: shower
       text: Showers
-    - icon: laptop
-      text: Computer and phone access
+    - icon: dog
+      text: Pet Friendly
     - icon: chat
       text: One-to-one advice
     - icon: signpost
