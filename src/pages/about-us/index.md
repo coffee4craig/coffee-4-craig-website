@@ -29,8 +29,8 @@ addressMap:
   title: Manchester Drop-in
 partners:
   text: >
-    Northwest First Aid, Vow, The Street Engagement Hub, On the Out, COR and Not
-    Just Soup… and all of our amazing staff and volunteers.
+    Northwest First Aid, Vow, The Street Engagement Hub, On the Out, COR and
+    Delta Security… and all of our amazing staff and volunteers.
   title: Working in partnership with
 services:
   serviceList:
@@ -59,7 +59,7 @@ history:
   timeline:
     - featuredImage:
         alt: feature media alt text
-        image: /img/contact-hero.jpg
+        image: /img/2013aaa.jpg
       text: >
         Sept 2013, Craig White died of a heroin overdose in a car park in
         Cardiff, he was the brother of Risha Lancaster, one of the Coffee4Craig
