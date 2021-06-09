@@ -33,7 +33,8 @@ feature:
     image: /img/whatsapp-image-2021-05-27-at-01.10.19.jpeg
   text: >-
     Support Coffee4Craig and you’ll be helping people affected by street
-    homelessness in Manchester. Together, we can make a positive difference.
+    homelessness in Manchester. Together, we can make a positive difference, one
+    person at a time.
   title: Make a huge difference today.
 friends:
   friendsList: []
