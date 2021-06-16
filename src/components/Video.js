@@ -3,6 +3,9 @@ import YouTube from 'react-youtube';
 
 class Video extends React.Component {
   render () {
+    
+    const {videoId} = this.props;
+    
     const opts = {
       height: '548',
       width: '996',
@@ -13,7 +16,7 @@ class Video extends React.Component {
     return (
       <div className="video">
           <YouTube
-            videoId="8rn5Yef9OGw"
+            videoId={videoId}
             opts={opts}
             onReady={this._onReady} 
             containerClassName="video__wrapper"
