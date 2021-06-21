@@ -97,10 +97,12 @@ history:
         alt: feature media alt text
         image: /img/home-jumbotron.jpg
       text: >-
-        Here in Manchester, we have had a dramatic increase in numbers, the
-        likes that have never been seen before and it is increasing every
-        day.Here in Manchester, we have had a dramatic increase in numbers, the
-        likes that have never been seen before and it is increasing every day.
+        In 2015 we moved to The Cathedral with SPIN (Supported People In Need),
+        VOW, Not Just Soup and Myriad Foundation.
+
+
+        Here we provided a 7-night-a-week street kitchen, which lead the way for
+        moving indoors. 
       year: 2015
     - featuredImage:
         alt: feature media alt text
