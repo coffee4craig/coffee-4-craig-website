@@ -106,13 +106,19 @@ history:
       year: 2015
     - featuredImage:
         alt: feature media alt text
-        image: /img/home-jumbotron.jpg
+        image: /img/cathedral.jpg
       text: >-
-        Coffee4Craig partners with Centre Point North and moves its
-        three-days-a-week street kitchen into a seven-day-a-week indoor drop-in
-        centre, together with other homelessness charities Vow and Myriad. 
-         
-        In 2016, there were 78 rough sleepers in Manchester.
+        Coffee4Craig partners with Centre Point North to provide an indoor
+        provision one night a week, whilst still providing an outdoor provision
+        six days a week at the Cathedral with SPIN (Supported People In Need),
+        VOW, Not Just Soup and Myriad Foundation.
+
+
+        This set us up to move full time into an indoor provision, seven days a
+        week the following year. 
+
+
+        In 2016, there were 78 people sleeping on the streets in Manchester.
       year: 2016
     - featuredImage:
         alt: feature media alt text
