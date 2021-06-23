@@ -166,7 +166,7 @@ history:
       year: 2016
     - featuredImage:
         alt: feature media alt text
-        image: /img/home-jumbotron.jpg
+        image: /img/cp1.jpg
       text: >
         Coffee4Craig partners with Centre Point North to provide an indoor
         provision 7 evenings a week moving from the Cathedral partnering with
