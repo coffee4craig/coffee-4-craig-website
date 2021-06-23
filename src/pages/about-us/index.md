@@ -142,7 +142,7 @@ history:
     - featuredImage:
         alt: feature media alt text
         image: /img/cathedral.jpg
-      text: >
+      text: >-
         Coffee4Craig started to work with MCC on the Cold Weather Provision
         ensuring people sleeping on the streets got shelter when temperatures
         hit zero and below. This started a president and Coffee4Craig are now
@@ -162,15 +162,7 @@ history:
 
         Coffee4Craig moved from Picadilly to the back of Manchester Cathedral in
         September along with NorthWest FirstAid, Not Just Soup, Myriad 
-        Foundation, SPIN and VOW. Together we provided a street kitchen 7
-        evenings a week for people sleeping on the streets. 
-
-        We also launched an Evening Provision from the YPFS building every
-        Sunday evening,  we had started to take our service indoors. 
-
-        Coffee4Craig continues to provide a street kitchen in Cardiff and start
-        to work with a charity shop in Barry named Craigs Corner partnering up
-        with a community hub. 
+        Foundation, SPIN and VOW. 
       year: 2016
     - featuredImage:
         alt: feature media alt text
