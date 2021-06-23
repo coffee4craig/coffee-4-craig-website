@@ -175,33 +175,77 @@ history:
     - featuredImage:
         alt: feature media alt text
         image: /img/home-jumbotron.jpg
-      text: >-
-        Coffee4Craig works with Manchester City Council for the third year
-        running to provide Cold Weather relief. 
+      text: >
+        Coffee4Craig partners with Centre Point North to provide an indoor
+        provision 7 evenings a week moving from the Cathedral partnering with
+        NorthWest First Aid, Not Just Soup, Myriad Foundation and VOW. They
+        employ a Staff Team of 5 for the first time and become a living wage
+        employer making the decision to pay everyone the same hourly rate. 
 
+        The charity provides an outreach service with North West First Aid to
+        tackle the challenges around new psychoactive substances (‘spice’). 
 
-        The charity provides an outreach service to tackle the challenges around
-        new psychoactive substances (‘spice’).
-         
-        In 2017, there were 94 rough sleepers in Manchester.
+        Andy Burnham becomes Manchester Mayor and his focus is on homelessness. 
+
+        Coffee4Craig ran the cold weather provision but there were no night
+        shelters Beast from the east hit Manchester in winter of 17/18 and
+        Coffee4Craig opened the doors to the Methodist Hall for people sleeping
+        on the streets to shelter from unusually harsh winter.  
+
+        Coffee4Craig Cardiff continues
+         to provide essential services for people sleeping on the streets. 
       year: 2017
     - featuredImage:
         alt: feature media alt text
         image: /img/home-jumbotron.jpg
       text: >-
+        GMHAN was launched by Andy Burnham  (Greater Manchester Housing Action
+        Network) including Coffee4Craig, Homelessness charities, organisations
+        and businesses in Greater Manchester and ABEN (A Bed Everynight) was
+        born. 
+
+        Coffee4Craig got their own Defibrillator with NorthWest FirstAid in
+        response to numerous medical emergencies at our Evening Provision and
+        the surrounding area. 
+
+        Risha and Hendrix visit European Parliament for several talks and
+        conferences around poverty and homelessness.
+
         Coffee4Craig fosters business partnerships with companies around
-        Manchester and is nominated for a TSB Local Pride award.
-         
-        In 2018, there were 123 rough sleepers in Manchester.
+        Manchester and is nominated for a TSB Local Pride award. In 2018.
+        https://youtu.be/Gy9Ayi_LmgU?t=5
+
+        Coffee4Craig Cardiff team Sian and Jake retire after 6 years of
+        tirelessly running a weekly street kitchen and highlighting homelessness
+        in Cardiff.   
       year: 2018
     - featuredImage:
         alt: feature media alt text
         image: /img/home-jumbotron.jpg
       text: >-
-        Coffee4Craig continues to develop its services and begins the process of
-        expanding into the social enterprise sector, to provide a more
-        sustainable financial future to protect the vital work the charity does,
-        hopefully, one day it is not required. 
+        Coffee4Craig continues to run their 7 evening a week drop-in from Center
+        point. while working with MCC GMHAN to provide essential services for
+        people sleeping on the streets. Coffee4Craig continually works to
+        support people sleeping on the street and highlighting the barriers
+        people face. continuing their work in the media news and documentaries.
+
+        GMP launched The Street Engagement Hub with a variety of homelessness
+        services including Coffee4Craig working with people who are, begging,
+        facing extreme poverty and street homelessness. This initiative was to
+        bring all the services under one roof to ensure people could have a
+        wrap-around bespoke service to fit their needs and to support them on
+        their first steps to recovery.
+
+        Risha is listed as one of the 22 most influential women in Manchester
+        for her work in homelessness. 
+
+        Coffee4Craig is noticed by super Rock Group Metallica and are donated
+        much-needed funding from their own foundation All Within Your Hands. 
+
+        Coffee4Craig partner with DEPT for a rebrand and new shiny website.
+
+        Center Point announced that their building will be closing for
+        renovations and the hunt begins to relocate Coffee4Craig. 
       year: 2019
   title: Our History
 ---
