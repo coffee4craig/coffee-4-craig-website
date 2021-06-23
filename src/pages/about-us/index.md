@@ -69,8 +69,9 @@ history:
         same month and it grew from there. On 28/9/13 Coffee4Craig had their
         first event with City Temple in Cardiff holding a meal to celebrate
         Craig's life for the people who shared the last couple of years with
-        him. People who were sleeping on the streets in Cardiff. 
+        him. People who were sleeping on the streets in Cardiff. <br>
 
+        <br>
 
         The demand for hot drinks went above and beyond the initial expectation
         of Risha and Hendrix and they felt a calling into the homelessness
@@ -92,18 +93,23 @@ history:
         people who are living in poverty and those who are at risk of becoming
         homeless. Coffee4Craig launches its 'Education is Key' programme,
         working with young people in schools and universities to educate them on
-        the issues surrounding homelessness, food poverty and mental health. 
+        the issues surrounding homelessness, food poverty and mental health.
+        <br>
 
+        <br>
 
         Sain and Jake started the Cardiff branch of Coffee4Craig working
         alongside City Temple to provide clothing for people who were Street
-        Homeless and also launched a weekly Street kitchen in the town centre.
+        Homeless and also launched a weekly Street kitchen in the town
+        centre.<br>
 
+        <br>
 
         In November this year, The first Street Store was launched with
         Coffee4Craig (A world initiative to bring dignity of choice to people
-        living on the streets).
+        living on the streets).<br>
 
+        <br>
 
         Bez became Coffee4Craig Patron.
       year: 2014
