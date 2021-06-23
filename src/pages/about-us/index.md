@@ -59,18 +59,27 @@ history:
   timeline:
     - featuredImage:
         alt: feature media alt text
-        image: /img/2013aaa.jpg
+        image: /img/craigs-meal.jpg
       text: >
-        Sept 2013, Craig White died of a heroin overdose in a car park in
-        Cardiff, he was the brother of Risha Lancaster, one of the Coffee4Craig
-        founders, Coffee4Craig began as a reaction to his death and a desire to
-        make the world a little better for those who find themselves on the
-        streets. Risha and Hendrix Lancaster started giving out coffee on the
-        streets of Manchester that same month and it grew from there. The demand
-        for hot drinks went above and beyond the initial expectation of Risha
-        and Hendrix and they felt a calling into the homelessness sector. With a
-        small group of volunteers and supporters starting to grow, we developed
-        an outdoor 'street kitchen' three evenings a week in Piccadilly Gardens.
+        In September 2013, Craig White died of a heroin overdose in a car park
+        in Cardiff, he was the brother of Risha Lancaster. Coffee4Craig began as
+        a reaction to his death and a desire to make the world a little better
+        for those who find themselves on the streets. Risha and Hendrix
+        Lancaster started giving out coffee on the streets of Manchester that
+        same month and it grew from there. On 28/9/13 Coffee4Craig had their
+        first event with City Temple in Cardiff holding a meal to celebrate
+        Craig's life for the people who shared the last couple of years with
+        him. People who were sleeping on the streets in Cardiff. 
+
+
+        The demand for hot drinks went above and beyond the initial expectation
+        of Risha and Hendrix and they felt a calling into the homelessness
+        sector.
+
+        Christmas that year they joined Lifeshare in Manchester for their
+        Christmas project and ran a small street kitchen during the night
+        through Christmas and New Year. Starting the work they would continue
+        with people sleeping on the streets.
       year: 2013
     - featuredImage:
         alt: feature media alt text
