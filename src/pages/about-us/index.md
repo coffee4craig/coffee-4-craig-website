@@ -197,7 +197,7 @@ history:
       year: 2017
     - featuredImage:
         alt: feature media alt text
-        image: /img/home-jumbotron.jpg
+        image: /img/europe.jpg
       text: >-
         GMHAN was launched by Andy Burnham  (Greater Manchester Housing Action
         Network) including Coffee4Craig, Homelessness charities, organisations
@@ -221,7 +221,7 @@ history:
       year: 2018
     - featuredImage:
         alt: feature media alt text
-        image: /img/home-jumbotron.jpg
+        image: /img/cp1.jpg
       text: >-
         Coffee4Craig continues to run their 7 evening a week drop-in from Center
         point. while working with MCC GMHAN to provide essential services for
