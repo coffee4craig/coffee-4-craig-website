@@ -3,7 +3,7 @@ templateKey: about-page
 hero:
   backgroundImage:
     alt: about us
-    image: /img/161345094_4562427307105673_1687838402594123773_n.jpg
+    image: /img/untitled-design.png
   title: About Us
 leadText: >-
   The Manchester drop-in is an <span class="lead-text__text--highlighted"
