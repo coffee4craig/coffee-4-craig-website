@@ -83,35 +83,66 @@ history:
       year: 2013
     - featuredImage:
         alt: feature media alt text
-        image: /img/cor.jpg
+        image: /img/street-store-2014-nov.jpg
       text: >-
-        Coffee4Craig, Lifeshare, and CAN team together to start Coalition of
-        Relief Network.  This forum is for grassroots charities and
-        organisations to work together and support each other in providing a
-        better service for people sleeping on the streets. The work from this
-        forum has subsequently led to the Manchester Homelessness Partnership
-        and the first Manchester Homelessness Charter.
-         
-        Coffee4Craig launches a food bank in Salford to support street homeless
+        On January 16, 2014, Coffee4Craig started the first static C4C street
+        kitchen on Piccadilly Gardens Manchester, with Northwest first aid, this
+        became 3 nights a week between 7 pm and 9 pm Sunday, Monday and
+        Tuesday.  A food bank was launched in Salford to support street homeless
         people who are living in poverty and those who are at risk of becoming
-        homeless.
-         
-        Coffee4Craig launches its 'Education is Key' programme, working with
-        young people in schools and universities to educate them on the issues
-        surrounding homelessness, food poverty and mental health. 
-         
-        In 2014, there were 47 people sleeping on the streets in Manchester.
+        homeless. Coffee4Craig launches its 'Education is Key' programme,
+        working with young people in schools and universities to educate them on
+        the issues surrounding homelessness, food poverty and mental health. 
+
+
+        Sain and Jake started the Cardiff branch of Coffee4Craig working
+        alongside City Temple to provide clothing for people who were Street
+        Homeless and also launched a weekly Street kitchen in the town centre.
+
+
+        In November this year, The first Street Store was launched with
+        Coffee4Craig (A world initiative to bring dignity of choice to people
+        living on the streets).
+
+
+        Bez became Coffee4Craig Patron.
       year: 2014
     - featuredImage:
         alt: feature media alt text
-        image: /img/home-jumbotron.jpg
-      text: >-
-        In 2015 we moved to The Cathedral with SPIN (Supported People In Need),
-        VOW, Not Just Soup and Myriad Foundation.
+        image: /img/cor.jpg
+      text: >+
+        2015 Coffee4Craig, Lifeshare, and CAN team together to start COR
+        (Coalition of Relief Network.) This forum is for grassroots charities
+        and organisations working together to provide sustainable long term
+        support for people sleeping on the streets in Greater Manchester. The
+        work from this forum has subsequently led to the Manchester Homelessness
+        Partnership, the first Manchester Homelessness Charter and Big Change. 
 
 
-        Here we provided a 7-night-a-week street kitchen, which lead the way for
-        moving indoors. 
+        COR Officially launched on World Homeless Day 15 October joined by MCC,
+        The Urban Village Health Center, Breakfast in Bed and Myriad Foundation
+        and Steph and Becky who later formed Reach Out To The Community. 
+
+        Street Support Launched. 
+
+
+        A protest was held in Manchester by people sleeping on the streets and
+        tent cities started forming all over the city. 
+
+
+        Coffee4Craig started to work with Manchester City Council. 
+
+
+        We still ran our 3 night a week Street kitchen at Piccadilly Not Just
+        Soup joined us every Tuesday with different restaurants each week
+        providing the food for the street kitchen and the Cardiff team continued
+        to run a street kitchen every Wednesday.
+
+
+        Street homelessness was becoming prevalent in Manchester and hitting the
+        headlines we were featured in several documentaries including ITV
+        Tonight show https://youtu.be/xUQDg5NC-fM
+
       year: 2015
     - featuredImage:
         alt: feature media alt text
