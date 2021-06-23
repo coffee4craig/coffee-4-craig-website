@@ -69,9 +69,8 @@ history:
         same month and it grew from there. On 28/9/13 Coffee4Craig had their
         first event with City Temple in Cardiff holding a meal to celebrate
         Craig's life for the people who shared the last couple of years with
-        him. People who were sleeping on the streets in Cardiff. <br>
+        him. People who were sleeping on the streets in Cardiff. 
 
-        <br>
 
         The demand for hot drinks went above and beyond the initial expectation
         of Risha and Hendrix and they felt a calling into the homelessness
@@ -93,30 +92,26 @@ history:
         people who are living in poverty and those who are at risk of becoming
         homeless. Coffee4Craig launches its 'Education is Key' programme,
         working with young people in schools and universities to educate them on
-        the issues surrounding homelessness, food poverty and mental health.
-        <br>
+        the issues surrounding homelessness, food poverty and mental health. 
 
-        <br>
 
         Sain and Jake started the Cardiff branch of Coffee4Craig working
         alongside City Temple to provide clothing for people who were Street
         Homeless and also launched a weekly Street kitchen in the town
         centre.<br>
 
-        <br>
 
         In November this year, The first Street Store was launched with
         Coffee4Craig (A world initiative to bring dignity of choice to people
         living on the streets).<br>
 
-        <br>
 
         Bez became Coffee4Craig Patron.
       year: 2014
     - featuredImage:
         alt: feature media alt text
         image: /img/cor.jpg
-      text: >+
+      text: >
         2015 Coffee4Craig, Lifeshare, and CAN team together to start COR
         (Coalition of Relief Network.) This forum is for grassroots charities
         and organisations working together to provide sustainable long term
@@ -143,28 +138,39 @@ history:
         Soup joined us every Tuesday with different restaurants each week
         providing the food for the street kitchen and the Cardiff team continued
         to run a street kitchen every Wednesday.
-
-
-        Street homelessness was becoming prevalent in Manchester and hitting the
-        headlines we were featured in several documentaries including ITV
-        Tonight show https://youtu.be/xUQDg5NC-fM
-
       year: 2015
     - featuredImage:
         alt: feature media alt text
         image: /img/cathedral.jpg
-      text: >-
-        Coffee4Craig partners with Centre Point North to provide an indoor
-        provision one night a week, whilst still providing an outdoor provision
-        six days a week at the Cathedral with SPIN (Supported People In Need),
-        VOW, Not Just Soup and Myriad Foundation.
+      text: >
+        Coffee4Craig started to work with MCC on the Cold Weather Provision
+        ensuring people sleeping on the streets got shelter when temperatures
+        hit zero and below. This started a president and Coffee4Craig are now
+        prevalent in the Homelessness Out Of Hours Cities Response Extreme
+        Weather. 
 
+        Manchester's Homelessness Charter was born and the Homelessness
+        Partnership. This was to help improve homelessness in Manchester
+        bringing together the charities and organisations and people who are
+        homeless working together. From here several Action groups were formed
+        to improve services and get voices heard. We formed the Evening
+        Provision Action Group alongside Barnabus, MCC and Reach Out to The
+        Community to discuss how we could provide a 7 evening a week provision
+        for the city. The Big Change was Launched to provide a fund for the
+        smaller charities to provide essential items deposits etc for peoples
+        first steps away from the street. 
 
-        This set us up to move full time into an indoor provision, seven days a
-        week the following year. 
+        Coffee4Craig moved from Picadilly to the back of Manchester Cathedral in
+        September along with NorthWest FirstAid, Not Just Soup, Myriad 
+        Foundation, SPIN and VOW. Together we provided a street kitchen 7
+        evenings a week for people sleeping on the streets. 
 
+        We also launched an Evening Provision from the YPFS building every
+        Sunday evening,  we had started to take our service indoors. 
 
-        In 2016, there were 78 people sleeping on the streets in Manchester.
+        Coffee4Craig continues to provide a street kitchen in Cardiff and start
+        to work with a charity shop in Barry named Craigs Corner partnering up
+        with a community hub. 
       year: 2016
     - featuredImage:
         alt: feature media alt text
