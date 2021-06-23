@@ -235,10 +235,57 @@ history:
         much-needed funding from their own foundation All Within Your Hands. 
 
         Coffee4Craig partner with DEPT for a rebrand and new shiny website.
-
-        Center Point announced that their building will be closing for
-        renovations and the hunt begins to relocate Coffee4Craig. 
       year: 2019
+    - featuredImage:
+        alt: feature media alt text
+        image: /img/164563008_4587100397971697_2109127868500667690_n.jpg
+      text: >
+        February 14th Coffee4Craig have to temporarily close the evening
+        provision and move out of Center Point but have found a building and
+        start renovating the site so they continue their essential work. 
+
+
+        16 March 2020 Briton went into a full Lockdown. We were facing a world
+        Pandemic...
+
+
+        Coffee4Craig started to do outreach and worked with the homelessness
+        charities, GMP street engagement team and MCC to help support people on
+        the streets, and initiate the emergency response for homelessness in the
+        city  Coffee4Craig were asked to open the first hotel in the everybody
+        in the scheme until Riverside could continue the essential work in the
+        first Homeless Hotel. 
+
+
+        September Coffee4Craig finally opened the doors to their New Building
+        The Meanwhile..... Continuing the evening drop-in 7 days a week working
+        as always with NorthWest First Aid, teaming up with Delta Solutions to
+        provide security. Coffee4Craig continued to work through the Lockdowns
+        and Pandemic providing essential frontline services and once again led
+        the out of hours response to the Cold Weather teaming up with Men's Room
+        On The Out and North West First Aid. Coffee4Craig partner with Frank
+        Dawd who launches Baubles4Beds fundraising for C4C Barnabus and Mustard
+        Tree.
+      year: '2020'
+    - featuredImage:
+        alt: feature media alt text
+        image: /img/copy-of-untitled.png
+      text: >-
+        Coffee4Craig continues to work around the restrictions of the Pandemic,
+        working in the homelessness partnership to ensure people continue to be
+        safe through the pandemic and cold weather. 
+
+        Coffee4Craig partner with On The Out who run a drop in during the day at
+        The Meanwhile. For people leaving prison and sleeping on the street. 
+
+        Coffee4Craig continues to develop its services and begins the process of
+        expanding into the social enterprise sector, to provide a more
+        sustainable financial future to protect the vital work the charity does,
+        hopefully, one day it is not required.
+
+
+        TO BE CONTINUED..........
+      year: '2021'
   title: Our History
 ---
 
